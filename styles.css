@@ -1,0 +1,14 @@
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color:rgb(240, 235, 227);
+}
+
+.bold {
+    font-style: bold;
+    text-shadow: 0.5px 0.5px black;
+}
