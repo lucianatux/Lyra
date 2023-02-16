@@ -11,6 +11,7 @@
     --first-color: #e6e6e6;
     --second-color: #131313;
     --third-color: #b82c80;
+    --success: #198754;
   }
   
 
@@ -84,6 +85,7 @@ body {
 
   .elem-gallery img:hover {
    box-shadow: 2px 2px 3px black;
+
   }
   
   .gallery::after {
@@ -94,6 +96,12 @@ body {
   .enlace{
     text-decoration: none;
   }
+
+  .texto-gallery{
+    color: var(--second-color);
+    font-weight: 600;
+  }
+
 
   /*===================RUBROS==========================*/
 
