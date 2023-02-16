@@ -262,9 +262,9 @@ button {
 /*=========================CONTACTOS FORMULARIO================================*/
 
 #contenedor-formulario {
-  background: #fbfafa;
+  background: var(--first-color);
   border-radius: 5px;
-  border: 5px solid black;
+  border: 5px solid var(--second-color);
 }
 
 #titulo-formulario {
@@ -279,17 +279,17 @@ button {
 /*=========================FOOTER================================*/
 
 footer {
-  background: #1b2a4e;
+  background: var(--third-color);
   min-height: 100px;
 }
 footer p {
-  color: #f3f3f3;
+  color: var(--first-color);
   text-align: center;
 }
 #iconos i {
   font-size: 26px;
   padding: 0 8px;
-  color: #f3f3f3;
+  color: var(--first-color);
 }
 
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
