@@ -267,4 +267,20 @@ transition: filter .5s;
     visibility: visible;
   }
     
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contenedor-formulario{  
+    background: #fbfafa;
+    border-radius:5px; 
+    border: 5px solid black;
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+.icono-contacto{
+    width: 80px;
+    height: auto;
+}
 

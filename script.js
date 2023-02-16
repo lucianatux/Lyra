@@ -1,77 +1,31 @@
-/** 
-const elementos = document.querySelectorAll('.list-group-item');
-console.log(elementos)
+const form = document.querySelector('form');
 
-
-
-document.getElementById('greeting').onclick= function (){
-    document.getElementById('hello').innerHTML="Hello World!<br> My name is Luciana Soledad Caminos Cano.<br>I am a Web Developer.";
-    document.getElementById('greeting').innerHTML="";
-}
-
-
-document.addEventListener('click', function(){
-    document.getElementById('enjoy').innerHTML="Enjoy it!";
-})
-
-
-document.getElementById('enjoy').addEventListener('click', function(){
-    document.getElementById('enjoy').innerHTML="Enjoy it!";
-})
-
-document.getElementById('music').addEventListener('click', function(){
-    document.getElementById('rolling').controls='controls';
-})
-
-
-
-document.getElementById('papreg').addEventListener('click', function(){
-   if(document.getElementById('papregfoto').style.display== 'none'){
-    document.getElementById('papregfoto').style.display= 'block';
-}else{
-    document.getElementById('papregfoto').style.display= 'none';
-}
-})
-*/
-/** 
-document.getElementById('contactme').addEventListener('click', function(){
-    if(document.getElementById('extrainfo').style.display== 'none'){
-        document.getElementById('extrainfo').style.display= 'block';
-    }else{
-        document.getElementById('extrainfo').style.display= 'none';
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  
+  // Aquí podrías validar los datos ingresados por el usuario antes de enviar el formulario
+  
+  // Una vez validados los datos, envías el formulario utilizando el siguiente código:
+  const formData = new FormData(form);
+  
+  fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
     }
-    
-})
-
-const imagenes= document.querySelectorAll('.img-galeria')
-const imagenesLight= document.querySelector('.agregarimagen')
-const contenedorLight= document.querySelector('.imagenlight')
-const hamburguer1 = document.querySelector('.hamburguer');
-
-//console.log(imagenes);
-//console.log(imagenesLight);
-//console.log(contenedorLight);
-
-imagenes.forEach(imagen=>{
-    imagen.addEventListener('click',()=>{
-        aparecerImagen(imagen.getAttribute('src'))
-        
-    })
-})
-
-contenedorLight.addEventListener('click',(e)=>{
-    console.log(e.target);
-    if(e.target != imagenesLight){
-        contenedorLight.classList.toggle('show');
-        imagenesLight.classList.toggle('showimage'); 
-        hamburguer1.style.opacity = '1';
+  })
+  .then(response => {
+    if (response.ok) {
+      // Aquí podrías mostrar un mensaje de confirmación al usuario
+      console.log('Formulario enviado con éxito');
+    } else {
+      // Aquí podrías mostrar un mensaje de error al usuario
+      console.log('Error al enviar el formulario');
     }
-})
-
-const aparecerImagen = (imagen)=>{
-    imagenesLight.src = imagen;
-    contenedorLight.classList.toggle('show');
-    imagenesLight.classList.toggle('showimage');
-    hamburguer1.style.opacity = '0';
-}
-*/
+  })
+  .catch(error => {
+    // Aquí podrías mostrar un mensaje de error al usuario
+    console.log(error);
+  });
+});
