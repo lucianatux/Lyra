@@ -1,286 +1,323 @@
 /*===============Propiedades Globales================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 
 :root {
-    --first-color: #e6e6e6;
-    --second-color: #131313;
-    --third-color: #b82c80;
-    --success: #198754;
-  }
-  
+  --first-color: #e6e6e6;
+  --second-color: #131313;
+  --third-color: #b82c80;
+  --success: #198754;
+}
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-    background-color: var(--first-color);
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--first-color);
 }
 
 .bold {
-    font-style: bold;
-    text-shadow: 0.5px 0.5px var(--second-color);
+  font-style: bold;
+  text-shadow: 0.5px 0.5px var(--second-color);
 }
 
-#lyra{
-    font-size: 25px;
-    font-family: 'Aclonica', sans-serif;
-
+#lyra {
+  font-size: 25px;
+  font-family: "Aclonica", sans-serif;
 }
-
 
 /*===================HEADER==========================*/
 
-.tel{
-    text-decoration: none;
-    color: var(--first-color);
+.tel {
+  text-decoration: none;
+  color: var(--first-color);
 }
 
-.tel:hover{
-    color: var(--first-color);
-    text-shadow: 1px 1px 1px var(--first-color);
+.tel:hover {
+  color: var(--first-color);
+  text-shadow: 1px 1px 1px var(--first-color);
 }
 
- #menu a, button{
-     font-size: 18px !important;   
- }
-
- #menu a{
-     color:var(--first-color);   
- }
-
- #menu a:hover{
-    background-color:#80aa86;
+#menu a,
+button {
+  font-size: 18px !important;
 }
 
+#menu a {
+  color: var(--first-color);
+}
 
+#menu a:hover {
+  background-color: #80aa86;
+}
 
- /*===================GALLERY==========================*/
+/*===================GALLERY==========================*/
 
- #inicio{
-    padding-top: 150px;
- }
+#inicio {
+  padding-top: 150px;
+}
 
- .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 0;
-  }
-  
-  .elem-gallery img {
-    width: 100%;
-    max-width: 160px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0;
+}
 
-  .elem-gallery img:hover {
-   box-shadow: 2px 2px 3px black;
+.elem-gallery img {
+  width: 100%;
+  max-width: 160px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-  }
-  
-  .gallery::after {
-    content: "";
-    width: 350px;
-  }
+.elem-gallery img:hover {
+  box-shadow: 2px 2px 3px black;
+}
 
-  .enlace{
-    text-decoration: none;
-  }
+.gallery::after {
+  content: "";
+  width: 350px;
+}
 
-  .texto-gallery{
-    color: var(--second-color);
-    font-weight: 600;
-  }
+.enlace {
+  text-decoration: none;
+}
 
+.texto-gallery {
+  color: var(--second-color);
+  font-weight: 600;
+}
 
-  /*===================RUBROS==========================*/
+/*===================RUBROS==========================*/
 
-  .list-group-item:hover{
-    background-color: rgb(230, 225, 217);
-    }
-    
-    .icono{
-        width: 40px;
-        height: auto;
-    }
-    
-    .dropdown-toggle {
-     white-space:unset;
-    }
-    
-    .hamburguer {
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        background: white;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        border-radius: 10px;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 5);
-      }
-    
-      
-    .img-galeria {
-        object-fit: cover;
-        width: 10%;
-        display: block;
-        margin-bottom: 15px;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 5);
-        cursor: pointer;
-      }
-      
-      .imagenlight {
-        position: fixed;
-        background: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translate(100%);
-        transition: transform 0.2s ease-in-out;
-      }
-      
-      .show {
-        transform: translate(0);
-      }
-      
-      .agregarimagen {
-        width: 50%;
-        border-radius: 10px;
-        transform: scale(0);
-        transition: transform 0.3s 0.2s;
-        object-fit: cover;
-      }
-      
-      .showimage {
-        transform: scale(1);
-      }
-      
-      .close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 40px;
-        cursor: pointer;
-      }
+.list-group-item:hover {
+  background-color: rgb(230, 225, 217);
+}
 
-      /*===================quienes somos==========================*/
+.icono {
+  width: 40px;
+  height: auto;
+}
 
-.container-grid{
-    display: grid;
-    width: 70%;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(6,1fr);
-    grid-template-areas: 
+.dropdown-toggle {
+  white-space: unset;
+}
+
+.hamburguer {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: white;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 5);
+}
+
+.img-galeria {
+  object-fit: cover;
+  width: 10%;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 5);
+  cursor: pointer;
+}
+
+.imagenlight {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.show {
+  transform: translate(0);
+}
+
+.agregarimagen {
+  width: 50%;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: transform 0.3s 0.2s;
+  object-fit: cover;
+}
+
+.showimage {
+  transform: scale(1);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  cursor: pointer;
+}
+
+/*===================quienes somos==========================*/
+
+.container-grid {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
     "img1 img2 img3 img3 img3"
     "img1 img2 img3 img3 img3"
     "img4 img4 img3 img3 img3"
     "img4 img4 img3 img3 img3"
     "img6 img6 img6 img5 img5"
     "img6 img6 img6 img5 img5";
-    gap: 5px;
+  gap: 5px;
 }
 
-.img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.img:hover{
-filter: grayscale(50%);
-cursor: pointer;
-transition: filter .5s;
+.img:hover {
+  filter: grayscale(50%);
+  cursor: pointer;
+  transition: filter 0.5s;
 }
 
-.img-1{
-    grid-area: img1;
+.img-1 {
+  grid-area: img1;
 }
-.img-2{
-    grid-area: img2;
+.img-2 {
+  grid-area: img2;
 }
-.img-3{
-    grid-area: img3;
+.img-3 {
+  grid-area: img3;
 }
-.img-4{
-    grid-area: img4;
+.img-4 {
+  grid-area: img4;
 }
-.img-5{
-    grid-area: img5;
+.img-5 {
+  grid-area: img5;
 }
-.img-6{
-    grid-area: img6;
+.img-6 {
+  grid-area: img6;
 }
 
 /* prueba */
-.wrapper{
-    position: relative;
-    top: 40vh;
-  }
-  #button1{
-    border: 5px solid #FFAB33;
-    width: 200px;
-    text-align: center;
-    padding: 10px;
-    font-size: 30px;
-    cursor: pointer;
-    margin: auto;
-    background: #FF5733;
-  }
-  
-  #button1:hover{
-    background: #DFF30B;
-  }
-  
-  #mes{
-    font-size: 26px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .hide{
-    visibility: hidden;
-  }
-  
-  .reveal{
-    visibility: visible;
-  }
-    
+.wrapper {
+  position: relative;
+  top: 40vh;
+}
+#button1 {
+  border: 5px solid #ffab33;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  margin: auto;
+  background: #ff5733;
+}
+
+#button1:hover {
+  background: #dff30b;
+}
+
+#mes {
+  font-size: 26px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.reveal {
+  visibility: visible;
+}
+
 /*=========================CONTACTOS FORMULARIO================================*/
 
-#contenedor-formulario{  
-    background: #fbfafa;
-    border-radius:5px; 
-    border: 5px solid black;
+#contenedor-formulario {
+  background: #fbfafa;
+  border-radius: 5px;
+  border: 5px solid black;
 }
 
 #titulo-formulario {
-    color: #3f3f3f;
+  color: #3f3f3f;
 }
 
-.icono-contacto{
-    width: 80px;
-    height: auto;
+.icono-contacto {
+  width: 80px;
+  height: auto;
 }
 
+/*=========================FOOTER================================*/
+
+footer {
+  background: #1b2a4e;
+  min-height: 100px;
+}
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+@media (max-width: 768px) {
+  #intro,
+  #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  #bg-contactos {
+    top: -120px;
+  }
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+  #servicios-fila-2 {
+    width: 100% !important;
+  }
+  #servicios-fila-1 {
+    width: 100% !important;
+  }
+
+  .icono-wrap {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+}
