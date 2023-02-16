@@ -1,14 +1,10 @@
 /*===============Propiedades Globales================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
 
 
 :root {
@@ -19,7 +15,7 @@
   
 
 body {
-    font-family: 'Amaranth', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     background-color: var(--first-color);
 }
@@ -30,8 +26,8 @@ body {
 }
 
 #lyra{
-    font-size: 20px;
-    font-family: 'Jacques Francois Shadow', sans-serif;
+    font-size: 25px;
+    font-family: 'Aclonica', sans-serif;
 
 }
 
@@ -49,8 +45,7 @@ body {
 }
 
  #menu a, button{
-     font-size: 19px !important;
-    
+     font-size: 18px !important;   
  }
 
  #menu a{
