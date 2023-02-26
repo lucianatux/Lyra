@@ -24,6 +24,10 @@ body {
   text-shadow: 0.5px 0.5px var(--second-color);
 }
 
+button{
+  margin: 5px;
+}
+
 #lyra {
   font-size: 25px;
   font-family: "Aclonica", sans-serif;
