@@ -21,7 +21,6 @@ body {
 
 .bold {
   font-style: bold;
-  text-shadow: 0.5px 0.5px var(--second-color);
 }
 
 button{
@@ -175,6 +174,10 @@ button {
   right: 15px;
   width: 40px;
   cursor: pointer;
+}
+
+#porta{
+  font-size: 12px;
 }
 
 /*===================quienes somos==========================*/
