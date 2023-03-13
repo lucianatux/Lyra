@@ -35,12 +35,12 @@ button{
 
 /*===================HEADER==========================*/
 
-.tel {
+#tel {
   text-decoration: none;
   color: var(--first-color);
 }
 
-.tel:hover {
+#tel:hover {
   color: var(--first-color);
   text-shadow: 1px 1px 1px var(--first-color);
 }
@@ -284,11 +284,15 @@ button {
 
 footer {
   background: var(--third-color);
-  min-height: 100px;
+  min-height: 200px;
 }
 footer p {
   color: var(--first-color);
   text-align: center;
+}
+#iconos{
+  text-align: center;
+  padding-bottom: 10px;
 }
 #iconos i {
   font-size: 26px;
