@@ -66,12 +66,12 @@ button {
 }
 
 .slide{
-  width: 60vw;
+  width: 80vw;
   margin: auto;
 }
 
 .carousel-item img {
-  width: 40vw;
+  width: 60vw;
   margin: auto;
 }
 
@@ -82,9 +82,14 @@ button {
 }
 
 .carousel-caption {
-  background-color: rgba(255,255 , 255, 0.7); /* Agrega un fondo semitransparente */
+  background-color: rgba(255,255 , 255, 0.6); /* Agrega un fondo semitransparente */
   color: var(--second-color); /* Cambia el color del texto del caption */
-  padding: 10px; /* Añade un espaciado interno al caption */
+  padding: 5px; /* Añade un espaciado interno al caption */
+  margin-bottom: -40px; /* Ajusta el valor según sea necesario */
+}
+
+#heart{
+  color: lightskyblue;
 }
 
 /*===================GALLERY==========================*/
