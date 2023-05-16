@@ -62,16 +62,17 @@ button {
 /*===================CAROUSEL==========================*/
 
 #inicio{
-  padding-top: 150px;
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
 
 .slide{
-  width: 80vw;
+  width: 60vw;
   margin: auto;
 }
 
 .carousel-item img {
-  width: 60vw;
+  width: 40vw;
   margin: auto;
 }
 
@@ -93,6 +94,7 @@ button {
 }
 
 /*===================GALLERY==========================*/
+
 
 .gallery {
   display: flex;
