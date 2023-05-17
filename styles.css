@@ -352,6 +352,21 @@ footer p {
   #bg-contactos {
     top: -120px;
   }
+
+  #inicio{
+    margin-top: 120px;
+  }
+
+  .slide{
+    width: 90vw;
+    margin: auto;
+  }
+  
+  .carousel-item img {
+    width: 70vw;
+    margin: auto;
+  }
+  
 }
 /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
