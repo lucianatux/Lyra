@@ -9,14 +9,15 @@
 :root {
   --first-color: #e6e6e6;
   --second-color: #131313;
-  --third-color: #b82c80;
-  --success: #198754;
+  --third-color: #d95679;
+  --success: #306abb;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   background-color: var(--first-color);
+  font-size: 20px;
 }
 
 .bold {
@@ -32,6 +33,13 @@ button{
 #lyra {
   font-size: 25px;
   font-family: "Aclonica", sans-serif;
+}
+.special-color{
+  background-color: var(--success);
+  color: var(--first-color);
+}
+.text-special-color{
+  color: var(--success);
 }
 
 /*===================HEADER==========================*/
@@ -72,7 +80,7 @@ button {
 }
 
 .carousel-item img {
-  width: 40vw;
+  width: 50vw;
   margin: auto;
 }
 
@@ -343,6 +351,12 @@ footer p {
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
 
 @media (max-width: 768px) {
+  .distr{
+    display: none;
+  }
+  #lyra{
+    font-size: 20px;
+  }
   #intro,
   #equipo {
     width: 90% !important;
@@ -368,19 +382,4 @@ footer p {
   }
   
 }
-/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
-@media (max-width: 576px) {
-  #servicios-fila-2 {
-    width: 100% !important;
-  }
-  #servicios-fila-1 {
-    width: 100% !important;
-  }
-
-  .icono-wrap {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    text-align: center;
-  }
-}

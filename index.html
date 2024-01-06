@@ -25,9 +25,10 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="assets/greenstar.png" />
+    <link rel="icon" type="image/x-icon" href="assets/star.png" />
     <title>Lyra</title>
   </head>
+
   <body>
     <!--========================================================== -->
     <!-- ENCABEZADO -->
@@ -35,20 +36,24 @@
     <div class="fixed-top">
       <section class="container-fluid bg-dark text-center p-1">
         <p class="text-light">
-          Venta Mayorista - Hacemos entrega a domicilio sin cargo en Córdoba
-          Capital
+          Venta Mayorista - Hacemos envíos a Córdoba Capital y alrededores
         </p>
       </section>
-      <header class="container-fluid bg-success d-flex justify-content-around">
+      <header
+        class="container-fluid special-color d-flex justify-content-around"
+      >
+        <button class="special-color" onclick="toggleDarkMode()">☀️🌙</button>
         <p class="text-light mb-0 p-2 fs-5">
-          <span id="lyra">LYRA <i class="fas fa-star"></i></span> Distribuidora
+          <span id="lyra">LYRA <i class="fas fa-star"></i></span
+          ><span class="distr">Distribuidora</span>
         </p>
-
-        <p class="text-light mb-0 p-2 fs-5">
-          <a href="https://wa.me/543512309375" target="_blank" id="tel"
-            ><i class="bi bi-whatsapp"></i> Chat
-          </a>
-        </p>
+        <a
+          href="https://wa.me/543512309375"
+          target="_blank"
+          id="tel"
+          class="text-light mb-0 p-2 fs-5"
+          ><i class="bi bi-whatsapp"></i> Chat
+        </a>
         <nav class="navbar navbar-expand-lg navbar-light p-0 m-0" id="menu">
           <div class="container">
             <button
@@ -65,59 +70,54 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#inicio"
+                  <a class="nav-link text-light" aria-current="page" href="#inicio"
                     >Inicio</a
                   >
                 </li>
-                <!--
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#quienesSomos"
-                    >Quienes somos</a
-                  >
+                  <a class="nav-link text-light" aria-current="page" href="#promos">
+                    Promos
+                  </a>
                 </li>
-                -->
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle text-light"
                     href="#inicio"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    >Rubros</a
-                  >
-                  <ul class="dropdown-menu bg-success">
+                    >Rubros
+                  </a>
+                  <ul class="dropdown-menu special-color">
                     <li>
-                      <a class="dropdown-item" href="#libreria">Librería</a>
+                      <a class="dropdown-item text-light" href="#libreria">Librería</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#exhibidores"
-                        >Exhibidores</a
-                      >
+                      <a class="dropdown-item text-light" href="#accesoriosPelo"
+                        >Accesorios para el pelo
+                      </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#pizarras">Pizarras</a>
+                      <a class="dropdown-item text-light" href="#marroquineria"
+                        >Marroquinería
+                      </a>
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#cuero">Cuero</a></li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#sublimados">Sublimados</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#accesoriosPelo"
-                        >Accesorios para el pelo</a
-                      >
+                      <a class="dropdown-item text-light" href="#tinturas">Tinturas</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#marroquineria"
-                        >Marroquinería</a
-                      >
-                    </li>
-                    <li><a class="dropdown-item" href="#cuero">Cuero</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#sublimados">Sublimados</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#tinturas">Tinturas</a>
+                      <a class="dropdown-item text-light" href="#carpinteria"
+                        >Carpinteria
+                      </a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#seccion-contacto">Contacto</a>
+                  <a class="nav-link text-light" href="#seccion-contacto">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -136,79 +136,37 @@
         data-bs-ride="carousel"
         data-bs-wrap="true"
       >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="5"
-          aria-label="Slide 6"
-        ></button>
-        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/novedades/jenga2.jpeg"
+              src="./assets/menu/hebillas.jpeg"
               class="d-block"
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>
-                Jenga<i class="fas fa-heart" id="heart"></i>
-              </h5>
+              <h5>Accesorios para el pelo<i class="fas fa-heart" id="heart"></i></h5>
               <p></p>
             </div>
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/novedades/atrilesbanquito.jpeg"
+              src="./assets/menu/lib.jpg"
               class="d-block"
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Atriles con banquito</h5>
+              <h5>Productos de librería</h5>
               <p></p>
             </div>
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/novedades/libritos.png"
+              src="./assets/menu/sub.jpg"
               class="d-block"
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Libritos para colorear</h5>
+              <h5>Sublimados</h5>
               <p></p>
             </div>
           </div>
@@ -326,14 +284,14 @@
     <!--========================================================== -->
     <!-- QUIENES SOMOS-->
     <!--========================================================== -->
-<!--
+    <!--
     <section class="container pt-5" id="quienesSomos">
       <div
         class="container w-75 justify-content-center align-items-center text-center"
       >
         <hr />
         <h1 class="p-4 fs-1">
-          <span class="text-success">Quiénes Somos</span>
+          <span class="text-special-color">Quiénes Somos</span>
         </h1>
         <p>
           "Somos un equipo de amigos y amigas comprometidos con la calidad y el
@@ -374,10 +332,10 @@
             alt=""
             class="icono"
           />
-          Artículos de <span class="text-success">Librería</span>
+          Artículos de <span class="text-special-color">Librería</span>
         </h1>
         <a href="./assets/libreriaprecios.pdf" target="_blank">
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn special-color">
             Lista de precios
             <i class="fas fa-download"></i>
           </button>
@@ -506,7 +464,7 @@
                     (verde, amarillo, celeste, rosa) <br />
                     Papel Obra 180gr x10u <br />
                     Separador n°3 x6 <br />
-                    Separador A4 x10 
+                    Separador A4 x10
                   </li>
                 </a>
               </ul>
@@ -516,22 +474,19 @@
               target="_blank"
               class="list-group-item list-group-item-action"
               ><span class="bold">LIBRITOS PARA COLOREAR</span><br />tamaño A4
-              </a
-            >
+            </a>
             <a
               href="./assets/libreria/cuentos.jpg"
               target="_blank"
               class="list-group-item list-group-item-action"
               ><span class="bold">LIBRITOS DIDÁCTICOS</span><br />tamaño A4
-              </a
-            >
+            </a>
             <a
               href="./assets/libreria/cuentos.jpg"
               target="_blank"
               class="list-group-item list-group-item-action"
               ><span class="bold">CUENTOS PARA COLOREAR</span><br />tamaño A4
-              </a
-            >
+            </a>
           </div>
         </div>
 
@@ -622,11 +577,9 @@
                   class="list-group-item list-group-item-action"
                 >
                   <li>
-                    Acuario (lisas de colores) 14x20cm 22×30cm 32x30cm
-                    30x41cm
+                    Acuario (lisas de colores) 14x20cm 22×30cm 32x30cm 30x41cm
                     <br />
-                    Kraft (papel madera) 14x20cm 22x30cm 32x30cm
-                    30x41cm 34x49cm 
+                    Kraft (papel madera) 14x20cm 22x30cm 32x30cm 30x41cm 34x49cm
                     <br />
                     Fantasía 14x20cm 30x41cm
                   </li>
@@ -722,10 +675,10 @@
             alt=""
             class="icono"
           />
-          <span class="text-success">Exhibidores</span>
+          <span class="text-special-color">Exhibidores</span>
         </h1>
         <a href="./assets/exhibidoresprecios.pdf" target="_blank">
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn special-color">
             Lista de precios
             <i class="fas fa-download"></i>
           </button>
@@ -785,7 +738,8 @@
               href="./assets/exhibidores/exhibcrepe.jpg"
               target="_blank"
               class="list-group-item list-group-item-action"
-              >Exhibidores de <span class="bold"><br />PAPEL CREPE</span> <br />
+              >Exhibidores de <span class="bold"><br />PAPEL CREPE</span>
+              <br />
               Medidas: Alto 1,90m, Ancho 36cm, Profundidad 50cm <br />
               24 estantes de 15x15cm C/techo <br />
               color Roble
@@ -820,10 +774,10 @@
             alt=""
             class="icono"
           />
-          <span class="text-success">Pizarras</span>
+          <span class="text-special-color">Pizarras</span>
         </h1>
         <a href="./assets/pizarrasprecios.pdf" target="_blank">
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn special-color">
             Lista de precios
             <i class="fas fa-download"></i>
           </button>
@@ -932,7 +886,7 @@
               class="list-group-item list-group-item-action"
               ><span class="bold">MESA</span><br />
               50cmx50cmx42cm barnizada excelente calidad
-              </a>
+            </a>
             <a
               href="./assets/pizarras/banquitos.jpg"
               target="_blank"
@@ -995,7 +949,7 @@
               ><span class="bold">PIZARRAS INFANTILES</span><br />
               chica: 40x40x75cm <br />
               chica con bandeja: 40x40x75cm<br />
-              grande: 60x55x100cm 
+              grande: 60x55x100cm
             </a>
             <a
               href="./assets/pizarras/colgtiz.jpg"
@@ -1079,10 +1033,10 @@
             src="https://cdn-icons-png.flaticon.com/512/3004/3004618.png"
             alt=""
           />
-          Accesorios para el <span class="text-success">Pelo</span>
+          Accesorios para el <span class="text-special-color">Pelo</span>
         </h1>
         <a href="./assets/peloprecios.pdf" target="_blank">
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn special-color">
             Lista de precios
             <i class="fas fa-download"></i>
           </button>
@@ -1131,7 +1085,8 @@
               href="./assets/accesoriosPelo/perl.jpg"
               target="_blank"
               class="list-group-item list-group-item-action"
-              ><span class="bold">HEBILLAS Y GOMITAS CON PERLAS</span> <br />
+              ><span class="bold">HEBILLAS Y GOMITAS CON PERLAS</span>
+              <br />
               Pack x10u
             </a>
           </div>
@@ -1192,10 +1147,10 @@
             alt=""
             class="icono"
           />
-          <span class="text-success">Marroquinería</span>
+          <span class="text-special-color">Marroquinería</span>
         </h1>
         <a href="./assets/marroquineriaprecios.pdf" target="_blank">
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn special-color">
             Lista de precios
             <i class="fas fa-download"></i>
           </button>
@@ -1219,9 +1174,7 @@
                   target="_blank"
                   class="list-group-item list-group-item-action"
                 >
-                  <li>
-                    LARA TOTE BAG FLOR  JULI CARI RITA PILAR
-                  </li>
+                  <li>LARA TOTE BAG FLOR JULI CARI RITA PILAR</li>
                 </a>
               </ul>
             </div>
@@ -1259,10 +1212,7 @@
                   target="_blank"
                   class="list-group-item list-group-item-action"
                 >
-                  <li>
-                    PAZ LUCÍA NACHA SOFI CAMI
-                    LUNA SOFI
-                  </li>
+                  <li>PAZ LUCÍA NACHA SOFI CAMI LUNA SOFI</li>
                 </a>
               </ul>
             </div>
@@ -1332,10 +1282,10 @@
             alt=""
             class="icono"
           />
-          100%<span class="text-success"> Cuero</span>
+          100%<span class="text-special-color"> Cuero</span>
         </h1>
         <a href="./assets/cueroprecios.pdf" target="_blank">
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn special-color">
             Lista de precios
             <i class="fas fa-download"></i>
           </button>
@@ -1440,10 +1390,10 @@
             alt=""
             class="icono"
           />
-          Productos<span class="text-success"> sublimados</span>
+          Productos<span class="text-special-color"> sublimados</span>
         </h1>
         <a href="./assets/sublimadosprecios.pdf" target="_blank">
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn special-color">
             Lista de precios
             <i class="fas fa-download"></i>
           </button>
@@ -1458,8 +1408,7 @@
             target="_blank"
             class="list-group-item list-group-item-action"
             ><span class="bold">CARTUCHERAS</span><br />de neoprene 22,5cmx11cm
-            </a
-          >
+          </a>
           <div class="list-group-item list-group-item-action dropdown">
             <p
               class="btn dropdown-toggle bold"
@@ -1602,10 +1551,11 @@
             alt=""
             class="icono"
           />
-          <span class="text-success">Tinturas</span> y tratamientos capilares
+          <span class="text-special-color">Tinturas</span> y tratamientos
+          capilares
         </h1>
         <a href="./assets/tinturasytratprecios.pdf" target="_blank">
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn special-color">
             Lista de precios
             <i class="fas fa-download"></i>
           </button>
@@ -1621,8 +1571,7 @@
               class="list-group-item list-group-item-action"
               ><span class="bold">Tintura EstereoColor Kit</span><br />Kit:
               tintura permanente 47gr + oxidante 47gr + guantes + tratamiento
-              </a
-            >
+            </a>
             <a
               href="./assets/tinturas/EstereoColor_Carta-de-Colores_2023.pdf"
               target="_blank"
@@ -1749,8 +1698,7 @@
               target="_blank"
               class="list-group-item list-group-item-action"
               ><span class="bold">Bonmetique HD</span><br />Tintura crema gel /
-              </a
-            >
+            </a>
             <a
               href="./assets/tinturas/Carta de colores BONMETIQUE.pdf"
               target="_blank"
@@ -1779,8 +1727,8 @@
               target="_blank"
               class="list-group-item list-group-item-action"
               ><span class="bold">Nougat Coloración</span><br />en crema / sin
-              amoníaco </a
-            >
+              amoníaco
+            </a>
             <a
               href="./assets/tinturas/cartanougat.jpg"
               target="_blank"
@@ -1797,7 +1745,7 @@
 
     <section class="container pt-5 mb-3" id="seccion-contacto">
       <div
-        class="container border-success p-5 mb-3"
+        class="container border-primary p-5 mb-3"
         style="max-width: 500px"
         id="contenedor-formulario"
       >
@@ -1864,7 +1812,7 @@
           </div>
 
           <div class="mb-3">
-            <button type="submit" class="btn btn-success w-100 fs-5">
+            <button type="submit" class="btn special-color w-100 fs-5">
               Enviar Mensaje
             </button>
           </div>
