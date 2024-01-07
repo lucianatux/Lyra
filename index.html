@@ -138,8 +138,8 @@
 
     <section id="inicio">
       <div
-        id="carousel1"
-        class="carousel slide"
+        id="carouselExampleCaptions"
+        class="carousel slide carousel1"
         data-bs-ride="carousel"
         data-bs-wrap="true"
       >
@@ -210,15 +210,15 @@
         </button>
       </div>
       <div
-        id="carousel2"
-        class="carousel slide"
+        id="carouselExampleCaptions2"
+        class="carousel slide carousel2"
         data-bs-ride="carousel"
         data-bs-wrap="true"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/menu/hebillas.jpeg"
+              src="./assets/menu/hebillas2.jpeg"
               class="d-block"
               alt="..."
             />
@@ -228,35 +228,35 @@
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/menu/subli.jpeg"
+              src="./assets/menu/subli2.jpeg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/menu/librer.jpeg"
+              src="./assets/menu/librer2.jpeg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/menu/marro.jpeg"
+              src="./assets/menu/marro2.jpeg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/menu/tintu.jpeg"
+              src="./assets/menu/tintu2.jpeg"
               class="d-block"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/menu/cuero.jpeg"
+              src="./assets/menu/cuero2.jpeg"
               class="d-block"
               alt="..."
             />
@@ -265,7 +265,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselExampleCaptions2"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -274,7 +274,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselExampleCaptions2"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -288,54 +288,63 @@
     <!--========================================================== -->
     <section class="pt-5">
       <div class="gallery">
-        <a class="enlace" href="#libreria">
-          <div class="elem-gallery">
-            <img src="./assets/menu/librer.jpeg" alt="" />
-            <p class="texto-gallery">Librería</p>
-          </div>
-        </a>
-        <a class="enlace" href="#accesoriosPelo">
-          <div class="elem-gallery">
-            <img src="./assets/menu/hebillas.jpeg" alt="" />
-            <p class="texto-gallery">Accesorios<br/> para el pelo</p>
-          </div>
-        </a>
-        <a class="enlace" href="#sublimados">
-          <div class="elem-gallery">
-            <img src="./assets/menu/subli.jpeg" alt="" />
-            <p class="texto-gallery">Sublimados</p>
-          </div>
-        </a>   
-        <a class="enlace" href="#marroquineria">
-          <div class="elem-gallery">
-            <img src="./assets/menu/marro.jpeg" alt="" />
-            <p class="texto-gallery">Marroquinería</p>
-          </div>
-        </a>
-        <a class="enlace" href="#cuero">
-          <div class="elem-gallery">
-            <img src="./assets/menu/cuero.jpeg" alt="" />
-            <p class="texto-gallery">Cuero</p>
-          </div>
-        </a>
-        <a class="enlace" href="#tinturas">
-          <div class="elem-gallery">
-            <img src="./assets/menu/tintu.jpeg" alt="" />
-            <p class="texto-gallery">Tinturas</p>
-          </div>
-        </a>
-        <a class="enlace" href="#carpinteria">
-          <div class="elem-gallery">
-            <img src="./assets/menu/carpi.jpeg" alt="" />
-            <p class="texto-gallery">Carpintería</p>
-          </div>
-        </a>
-        <a class="enlace" href="#promos">
-          <div class="elem-gallery">
-            <img src="./assets/menu/carpi.jpeg" alt="" />
-            <p class="texto-gallery">Promos</p>
-          </div>
-        </a>
+        <div class="row">
+          <a class="enlace col-md-3 col-sm-6" href="#promos">
+            <div class="elem-gallery">
+              <img src="./assets/menu/promos1.jpeg" alt="" />
+              <p class="texto-gallery">Promos</p>
+            </div>
+          </a>
+          <a class="enlace col-md-3 col-sm-6" href="#libreria">
+            <div class="elem-gallery">
+              <img src="./assets/menu/librer.jpeg" alt="" />
+              <p class="texto-gallery">Librería</p>
+            </div>
+          </a>
+          <a class="enlace col-md-3 col-sm-6" href="#accesoriosPelo">
+            <div class="elem-gallery">
+              <img src="./assets/menu/hebillas.jpeg" alt="" />
+              <p class="texto-gallery">Accesorios<br/> para el pelo</p>
+            </div>
+          </a>
+          <a class="enlace col-md-3 col-sm-6" href="#sublimados">
+            <div class="elem-gallery">
+              <img src="./assets/menu/subli.jpeg" alt="" />
+              <p class="texto-gallery">Sublimados</p>
+            </div>
+          </a>  
+          
+        </div>
+        <div class="row">
+          <a class="enlace col-md-3 col-sm-6" href="#marroquineria">
+            <div class="elem-gallery">
+              <img src="./assets/menu/marro.jpeg" alt="" />
+              <p class="texto-gallery">Marroquinería</p>
+            </div>
+          </a> 
+          <a class="enlace col-md-3 col-sm-6" href="#cuero">
+            <div class="elem-gallery">
+              <img src="./assets/menu/cuero.jpeg" alt="" />
+              <p class="texto-gallery">Cuero</p>
+            </div>
+          </a>
+          <a class="enlace col-md-3 col-sm-6" href="#tinturas">
+            <div class="elem-gallery">
+              <img src="./assets/menu/tintu.jpeg" alt="" />
+              <p class="texto-gallery">Tinturas</p>
+            </div>
+          </a>
+          <a class="enlace col-md-3 col-sm-6" href="#carpinteria">
+            <div class="elem-gallery">
+              <img src="./assets/menu/carpi.jpeg" alt="" />
+              <p class="texto-gallery">Carpintería</p>
+            </div>
+          </a>
+         
+        </div>
+        
+       
+       
         
 
       </div>

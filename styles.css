@@ -8,7 +8,7 @@
 
 
 .light-mode {
-  --first-color: #e6e6e6;
+  --first-color: #eae2db;
   --second-color: #131313;
   --third-color: #d46d88;
   --success: #306ABB;
@@ -25,7 +25,7 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   background-color: var(--first-color);
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .bold {
@@ -48,6 +48,9 @@ button{
 }
 .text-special-color{
   color: var(--success);
+}
+h1{
+  color: var(--second-color);
 }
 
 /*===================HEADER==========================*/
@@ -131,13 +134,14 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 
 .slide{
-  width: 65vw;
+  width: 90vw;
   margin: auto;
 }
 
 .carousel-item img {
   height: 80vh;
   margin: auto;
+  object-fit: contain;
 }
 
 .carousel-control-prev-icon,
@@ -146,32 +150,21 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   color: #fff; 
 }
 
-.carousel-caption {
-  background-color: rgba(255,255 , 255, 0.6); 
-  color: var(--second-color); 
-  padding: 5px; 
-  margin-bottom: -40px; 
-}
-#carousel1{
+.carousel1{
   display: none;
 }
-#carousel2{
-  display: none;
-}
+
 
 
 /*===================GALLERY==========================*/
 
 
 .gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 50px;
-  max-width: 60%;
+  gap: 10px;
+  max-width: 70%;
   margin: 2rem auto;
   padding: 0;
 }
@@ -180,11 +173,10 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   width: 100%;
   max-width: 200px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 20px;
 }
-
 .elem-gallery img:hover {
-  box-shadow: 2px 2px 3px var(--second-color);
+box-shadow: 5px 5px 10px var(--second-color);
 }
 
 .gallery::after {
@@ -408,7 +400,12 @@ footer p {
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
 
 @media (max-width: 768px) {
-
+  .carousel2{
+    display: none;
+  }
+  .carousel1{
+    display: block;
+  }
   .distr{
     display: none;
   }
