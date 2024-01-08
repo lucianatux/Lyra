@@ -25,7 +25,7 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   background-color: var(--first-color);
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .bold {
@@ -50,6 +50,9 @@ button{
   color: var(--success);
 }
 h1{
+  color: var(--second-color);
+}
+hr{
   color: var(--second-color);
 }
 
@@ -96,7 +99,7 @@ button {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: var(--third-color);
+  background: black;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -160,6 +163,9 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 
 
 .gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -189,7 +195,27 @@ box-shadow: 5px 5px 10px var(--second-color);
 }
 
 .texto-gallery {
+  margin-top: 8px;
   color: var(--second-color);
+}
+/*====================PROMOS=========================*/
+
+.prom-elem{
+  margin-bottom: 30px;
+}
+.prom-elem img{
+ width: 100%;
+ border-radius: 20px;
+}
+.prom-elem p{
+  color: var(--second-color);
+  font-size: 18px;
+  margin-top: 10px;
+}
+.descuento{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight:900;
+ font-size: 22px;
 }
 
 /*===================RUBROS==========================*/
