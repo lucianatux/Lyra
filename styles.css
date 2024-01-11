@@ -224,8 +224,10 @@ box-shadow: 5px 5px 10px var(--second-color);
 
 /*===================RUBROS==========================*/
 #image-display {
-  max-width: 100%;
-  height: auto;
+  max-width: 80%;
+  height: 60vh;
+  padding: 20px;
+  border-radius: 30px;
 }
 
 .list-group-item:hover {
