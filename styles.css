@@ -55,6 +55,10 @@ h1{
 hr{
   color: var(--second-color);
 }
+p{
+  color: var(--second-color);
+  cursor: pointer;
+}
 
 /*===================HEADER==========================*/
 
@@ -219,6 +223,10 @@ box-shadow: 5px 5px 10px var(--second-color);
 }
 
 /*===================RUBROS==========================*/
+#image-display {
+  max-width: 100%;
+  height: auto;
+}
 
 .list-group-item:hover {
   background-color: rgb(230, 225, 217);
