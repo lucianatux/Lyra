@@ -28,27 +28,15 @@
     <title>Lyra</title>
   </head>
 
-  <body class="light-mode">
+  <body class="dark-mode">
     <!--========================================================== -->
     <!-- ENCABEZADO -->
     <!--========================================================== -->
     <div class="fixed-top">
-      <section class="container-fluid bg-dark text-center">
-        <div class="row">
-          <div class="col-md-11 col-sm-9">
-            <p class="text-light justify-content-center m-3">
-              Venta Mayorista - Hacemos envíos a Córdoba Capital y alrededores
-            </p>
-          </div>
-          <div class="col-md-1 col-sm-3 sun-moon" onclick="toggleDarkMode()">
-            <img class="img-fluid" src="./assets/lightdark.png" alt="dark-mode" id="lightdark"/>
-          </div>
-        </div>
-      </section>
-      <header class="container-fluid special-color d-flex justify-content-around">
+      <header class="container-fluid mt-2 align-items-center justify-content-center special-color d-flex justify-content-around">
         <p class="text-light m-2">
           <span id="lyra">LYRA <i class="fas fa-star"></i></span
-          ><span class="distr">Distribuidora</span>
+          ><span class="distr">Distribuidora de venta mayorista. Hacemos envíos</span>
         </p>
         <a
           href="https://wa.me/543512309375"
@@ -125,6 +113,9 @@
                 <li class="nav-item social-icon">
                   <a class="nav-link text-light" href="https://www.facebook.com/profile.php?id=100064069295797&mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noreferrer"><img src="./assets/nav-icon4.svg" alt="facebook-icon" /></a>
                   <a class="nav-link text-light" href="https://www.instagram.com/lyra.distribuidora?utm_source=qr&igsh=YjE5NDMyY2FhOQ==" target="_blank" rel="noreferrer"><img src="./assets/nav-icon3.svg" alt="instagram-icon" /></a>
+                </li>
+                <li class="nav-item sun-moon" onclick="toggleDarkMode()">
+                  <img class="img-fluid" src="./assets/lightdark.png" alt="dark-mode" id="lightdark"/>
                 </li>
               </ul>
             </div>
@@ -303,13 +294,13 @@
           </a>
           <a class="enlace col-md-3 col-sm-6" href="#accesoriosPelo">
             <div class="elem-gallery">
-              <img src="./assets/menu/hebillas.jpeg" alt="" />
+              <img src="./assets/menu/hebillas3.jpg" alt="" />
               <p class="texto-gallery">Accesorios<br/> para el pelo</p>
             </div>
           </a>
           <a class="enlace col-md-3 col-sm-6" href="#sublimados">
             <div class="elem-gallery">
-              <img src="./assets/menu/subli.jpeg" alt="" />
+              <img src="./assets/menu/subli3.jpg" alt="" />
               <p class="texto-gallery">Sublimados</p>
             </div>
           </a>  
@@ -344,43 +335,6 @@
       </div>
     </section>
 
-    <!--========================================================== -->
-    <!-- QUIENES SOMOS-->
-    <!--========================================================== -->
-    <!--
-    <section class="container pt-5" id="quienesSomos">
-      <div
-        class="container w-75 justify-content-center align-items-center text-center"
-      >
-        <hr />
-        <h1 class="p-4 fs-1">
-          <span class="text-special-color">Quiénes Somos</span>
-        </h1>
-        <p>
-          "Somos un equipo de amigos y amigas comprometidos con la calidad y el
-          servicio al cliente. Llevamos más de 20 años distribuyendo productos
-          locales de alta calidad en Córdoba y el interior, trabajando de forma
-          cooperativa y autónoma para apoyar la industria de nuestra región y
-          llevar lo mejor de nuestros productos a negocios de todo el país.
-          Desde 2020, contamos con nuestra propia fábrica de pizarras y
-          exhibidores, lo que nos permite ofrecer aún más opciones a nuestros
-          clientes. Nos ubicamos en el Barrio Marqués de Sobremonte, Córdoba
-          capital, Argentina. ¡Nos encantaría atenderte y ofrecerte la mejor
-          experiencia posible! ¡Estamos a tu disposición!"
-        </p>
-      </div>
-    </section>
-
-    <section class="container-grid">
-      <img src="./assets/grupo/gru07.jpg" alt="unohkdf" class="img img-1" />
-      <img src="./assets/grupo/gru06.jpg" alt="doskjh" class="img img-2" />
-      <img src="./assets/grupo/gru11.jpg" alt="treshkh" class="img img-3" />
-      <img src="./assets/grupo/gru14.jpg" alt="cuatrogjkg" class="img img-4" />
-      <img src="./assets/grupo/gru02.jpg" alt="cincohgu" class="img img-5" />
-      <img src="./assets/grupo/gru15.jpg" alt="seiskjg" class="img img-6" />
-    </section>
--->
-
  <!--========================================================== -->
     <!-- SECCION PROMOS-->
     <!--========================================================== -->
@@ -402,7 +356,7 @@
         </div>
         <div class="col-md-3 col-sm-6 prom-elem">
           <img src="./assets/menu/funky.jpeg" alt="">
-          <p>30 funky color semipermanente<br/>colores a elección<br/>
+          <p>30 funky tintura semipermanente<br/>colores a elección<br/>
           <span class="descuento">10%</span> de descuento</p>
         </div>
         <div class="col-md-3 col-sm-6 prom-elem">
@@ -431,14 +385,14 @@
           Artículos de <span class="text-special-color">Librería</span>
         </h1>
         <a href="./assets/21diciembrelib.pdf" target="_blank">
-          <button type="button" class="btn special-color">
+          <button type="button" class="btn special-color text-light">
             Descargar Catálogo
             <i class="fas fa-download"></i>
           </button>
         </a>
       </div>
 <div class="row">
-  <div class="col-4">
+  <div class="col-3">
     <div class="list-group">
       <p data-image="./assets/libreria/cartulinas.jpg">Cartulinas</p>
       <p data-image="./assets/libreria/gomaeva.jpeg">Goma eva</p>
@@ -452,13 +406,15 @@
       <p data-image="./assets/libreria/rompecabezas.jpeg">Rompecabezas</p>
       <p data-image="./assets/libreria/palitos.jpg">Palitos de Helado</p>
       <p data-image="./assets/libreria/viruta.jpg">Viruta</p>
-      <p data-image="./assets/libreria/papelesespeciales.jpg">Papeles especiales A4 x 10hojas</p>
+      <p data-image="./assets/libreria/papelesespeciales.jpg">Papeles especiales A4</p>
       <p data-image="./assets/libreria/sobres.jpeg">Sobres de colores</p>
       <p data-image="./assets/libreria/catalogo.jpg">Y muchas cosas mas...</p>
     </div>
   </div>
-  <div class="col-8 justify-content-center">
+  <div class="col-6 justify-content-center">
     <img id="image-display" src="" alt="">
+  </div>
+  <div class="col-3">
     <p></p>
   </div>
 </div>

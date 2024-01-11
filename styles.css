@@ -9,16 +9,18 @@
 
 .light-mode {
   --first-color: #eae2db;
-  --second-color: #131313;
-  --third-color: #d46d88;
-  --success: #306ABB;
+  --second-color: #121212;
+  --third-color: #d9d1ca;
+  --fourth-color: #232323;
+  --special: #306ABB;
 }
 
 .dark-mode {
   --first-color: #121212;
   --second-color: #e6e6e6;
-  --third-color: #d46d88;
-  --success: #306ABB;
+  --third-color: #232323;
+  --fourth-color: #d9d1ca;
+  --special: #306ABB;
 }
 
 body {
@@ -43,11 +45,11 @@ button{
   font-family: "Aclonica", sans-serif;
 }
 .special-color{
-  background-color: var(--success);
+  background-color: var(--special);
   color: var(--first-color);
 }
 .text-special-color{
-  color: var(--success);
+  color: var(--special);
 }
 h1{
   color: var(--second-color);
@@ -87,13 +89,12 @@ button {
 .sun-moon{
   width: 50px;
   height: 50px;
-  padding: 5px;
-  margin: 5px;
+  margin-left: 20px;
   border-radius: 50%;
-  background-color: var(--second-color);
+  background-color: var(--first-color);
 }
 .sun-moon:hover{
-  box-shadow: 0 0 20px gray;
+  box-shadow: 0 0 20px white;
 }
 
 .social-icon {
@@ -110,14 +111,14 @@ button {
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid var(--success);
+  border: 1px solid var(--special);
 }
 .social-icon a::before {
   content: "";
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: var(--success);
+  background-color: var(--special);
   border-radius: 50%;
   transform: scale(0);
 transition: 0.3s ease-in-out;
@@ -224,10 +225,18 @@ box-shadow: 5px 5px 10px var(--second-color);
 
 /*===================RUBROS==========================*/
 #image-display {
-  max-width: 80%;
+  max-width: 100%;
   height: 60vh;
   padding: 20px;
   border-radius: 30px;
+}
+.list-group p{
+  border: 3px solid var(--third-color);
+  border-radius: 30px;
+  text-align: center;
+}
+.list-group p:hover{
+  box-shadow: 1px 1px 10px var(--second-color);
 }
 
 .list-group-item:hover {
