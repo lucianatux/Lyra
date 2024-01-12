@@ -205,14 +205,15 @@ box-shadow: 5px 5px 10px var(--second-color);
 }
 /*====================PROMOS=========================*/
 
-.prom-elem{
+.basic-gallery-elem{
   margin-bottom: 30px;
+  padding: 20px;
 }
-.prom-elem img{
+.basic-gallery-elem img{
  width: 100%;
  border-radius: 20px;
 }
-.prom-elem p{
+.basic-gallery-elem p{
   color: var(--second-color);
   font-size: 18px;
   margin-top: 10px;
@@ -223,12 +224,57 @@ box-shadow: 5px 5px 10px var(--second-color);
  font-size: 22px;
 }
 
+/*===================grid==========================*/
+
+.libreria-grid {
+  display: grid;
+  width: 100%;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "lib1 lib1 lib1 lib2 lib2 lib2 lib2 lib2 lib3 lib3 lib3 lib3"
+    "lib1 lib1 lib1 lib2 lib2 lib2 lib2 lib2 lib3 lib3 lib3 lib3";
+  gap: 5px;
+}
+.item-lib {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lib1 {
+  grid-area: lib1;
+}
+.lib2 {
+  grid-area: lib2;
+}
+.lib3 {
+  grid-area: lib3;
+}
+@media screen and (max-width: 992px) {
+  .libreria-grid {
+    grid-template-areas:
+      "lib1 lib1 lib1 lib1 lib2 lib2 lib2 lib2 lib2 lib2 lib2 lib2"
+      "lib1 lib1 lib1 lib1 lib3 lib3 lib3 lib3 lib3 lib3 lib3 lib3";
+    gap: 5px;
+  }
+}
+
 /*===================RUBROS==========================*/
+
 #image-display {
   max-width: 100%;
-  height: 60vh;
   padding: 20px;
   border-radius: 30px;
+}
+#info-display{
+  padding: 20px;
+}
+.list-group{
+  padding: 0 20px 0 0;
 }
 .list-group p{
   border: 3px solid var(--third-color);
@@ -242,6 +288,8 @@ box-shadow: 5px 5px 10px var(--second-color);
 .list-group-item:hover {
   background-color: rgb(230, 225, 217);
 }
+
+
 
 .subtit{
   background-color: rgb(230, 225, 217);
@@ -319,57 +367,6 @@ box-shadow: 5px 5px 10px var(--second-color);
   font-size: 12px;
 }
 
-/*===================quienes somos==========================*/
-
-.container-grid {
-  display: grid;
-  width: 70%;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-areas:
-    "img1 img2 img3 img3 img3"
-    "img1 img2 img3 img3 img3"
-    "img4 img4 img3 img3 img3"
-    "img4 img4 img3 img3 img3"
-    "img6 img6 img6 img5 img5"
-    "img6 img6 img6 img5 img5";
-  gap: 5px;
-}
-
-.img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.img:hover {
-  filter: grayscale(50%);
-  cursor: pointer;
-  transition: filter 0.5s;
-}
-
-.img-1 {
-  grid-area: img1;
-}
-.img-2 {
-  grid-area: img2;
-}
-.img-3 {
-  grid-area: img3;
-}
-.img-4 {
-  grid-area: img4;
-}
-.img-5 {
-  grid-area: img5;
-}
-.img-6 {
-  grid-area: img6;
-}
 
 /* prueba */
 .wrapper {
