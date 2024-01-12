@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Catálogo completo de juguetería y artículos de librería'
     },
     'cartucheras': {
-      'image': './assets/sublimados/cartucheras.jpg',
+      'image': './assets/sublimados/cartucheras.jpeg',
       'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $323 Blanca $290'
     },
     'portacosmeticos': {
@@ -88,11 +88,11 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Papel de Regalo<br/>Medidas: 70cm x 100cm ilustración 90gr<br/>Precio: $593 c/u<br/>Mínimo 5 unidades por diseño.'
     },
     'bandolerasinfantiles': {
-      'image': './assets/sublimados/bandolerasinfantiles.jpg',
+      'image': './assets/sublimados/bandolerasinfantiles.jpeg',
       'info': 'Bolsas Kraft<br/>14cmx20cm $277<br/>22cmx30cm $331<br/>30cmx41cm $439<br/>Bolsa vino 14x40cm $336<br/>Bolsa vino doble 22x42cm $377'
     },
     'mochilasinfantiles': {
-      'image': './assets/sublimados/mochilasinfantiles.jpg',
+      'image': './assets/sublimados/mochilasinfantiles.jpeg',
       'info': 'Bolsas Acuario<br/>14cmx20cm $360<br/>22cmx30cm $462<br/>30cmx41cm $655'
     },
     'bolsilloauto': {
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Bolsas Fantasía<br/>14cmx20cm $408<br/>22cmx30cm $556<br/>30cmx41cm $774'
     },
     'set asador': {
-      'image': './assets/sublimados/setasador.jpg',
+      'image': './assets/sublimados/setasador.jpeg',
       'info': 'Libritos para colorear<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Precio: $268 c/u<br/>Mínimo 3 unidades por diseño'
     },
     'almohadones': {
@@ -124,13 +124,19 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-  const listGroup = document.querySelector('.list-group');
-  const imageDisplay = document.getElementById('image-display');
-  const infoDisplay = document.getElementById('info-display');
+  const listGroup = document.querySelector('.list-group-lib');
+  const imageDisplay = document.getElementById('image-display-lib');
+  const infoDisplay = document.getElementById('info-display-lib');
+  const listGroupSub = document.querySelector('.list-group-sub');
+  const imageDisplaySub = document.getElementById('image-display-sub');
+  const infoDisplaySub = document.getElementById('info-display-sub');
   
   setupListHoverListener(listGroup, imageDisplay, infoDisplay);
+  setupListHoverListener(listGroupSub, imageDisplaySub, infoDisplaySub);
+
   
   // Mostrar la información por defecto al cargar la página
   mostrarInformacion('cartulinas', imageDisplay, infoDisplay);
+  mostrarInformacion('cartucheras', imageDisplaySub, infoDisplaySub);
 
 });

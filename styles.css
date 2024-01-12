@@ -226,7 +226,7 @@ box-shadow: 5px 5px 10px var(--second-color);
 
 /*===================grid==========================*/
 
-.libreria-grid {
+.special-grid {
   display: grid;
   width: 100%;
   margin: 20px 0;
@@ -235,42 +235,42 @@ box-shadow: 5px 5px 10px var(--second-color);
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    "lib1 lib1 lib1 lib2 lib2 lib2 lib2 lib2 lib3 lib3 lib3 lib3"
-    "lib1 lib1 lib1 lib2 lib2 lib2 lib2 lib2 lib3 lib3 lib3 lib3";
+    "elem-grid1 elem-grid1 elem-grid1 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid3 elem-grid3 elem-grid3 elem-grid3"
+    "elem-grid1 elem-grid1 elem-grid1 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid3 elem-grid3 elem-grid3 elem-grid3";
   gap: 5px;
 }
-.item-lib {
+.item-grid {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.lib1 {
-  grid-area: lib1;
+.elem-grid1 {
+  grid-area: elem-grid1;
 }
-.lib2 {
-  grid-area: lib2;
+.elem-grid2 {
+  grid-area: elem-grid2;
 }
-.lib3 {
-  grid-area: lib3;
+.elem-grid3 {
+  grid-area: elem-grid3;
 }
 @media screen and (max-width: 992px) {
-  .libreria-grid {
+  .special-grid {
     grid-template-areas:
-      "lib1 lib1 lib1 lib1 lib2 lib2 lib2 lib2 lib2 lib2 lib2 lib2"
-      "lib1 lib1 lib1 lib1 lib3 lib3 lib3 lib3 lib3 lib3 lib3 lib3";
+      "elem-grid1 elem-grid1 elem-grid1 elem-grid1 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2"
+      "elem-grid1 elem-grid1 elem-grid1 elem-grid1 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3";
     gap: 5px;
   }
 }
 
 /*===================RUBROS==========================*/
 
-#image-display {
+.image-display {
   max-width: 100%;
   padding: 20px;
   border-radius: 30px;
 }
-#info-display{
+.info-display{
   padding: 20px;
 }
 .list-group{
