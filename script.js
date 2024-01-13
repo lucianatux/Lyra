@@ -73,39 +73,35 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'cartucheras': {
       'image': './assets/sublimados/cartucheras.jpg',
-      'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $323 Blanca $290'
+      'info': 'Cartucheras<br/>Medidas: 23cmx12cm<br/>Precio: $2310'
     },
     'portacosmeticos': {
       'image': './assets/sublimados/portacosmeticos.jpeg',
-      'info': 'Goma eva<br/>Pack por 10 unidades por color<br/>$4880 ($488 c/u)'
+      'info': 'Portacosméticos<br/>Medidas: 19cmx13cm<br/>Precio: $2310'
     },
     'monederos': {
       'image': './assets/sublimados/monederos.jpg',
-      'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $3950 ($395 c/u)<br/>Color $5560 ($556 c/u)'
+      'info': 'Monederos<br/>Medidas: 10cmx8cm<br/>Precio: $1782'
     },
     'luncheras': {
       'image': './assets/sublimados/luncheras.jpg',
-      'info': 'Papel de Regalo<br/>Medidas: 70cm x 100cm ilustración 90gr<br/>Precio: $593 c/u<br/>Mínimo 5 unidades por diseño.'
+      'info': 'Luncheras<br/>Medidas: 18cmx23cm<br/>'
     },
     'bandolerasinfantiles': {
-      'image': './assets/sublimados/bandolerasinfantiles.jpeg',
-      'info': 'Bolsas Kraft<br/>14cmx20cm $277<br/>22cmx30cm $331<br/>30cmx41cm $439<br/>Bolsa vino 14x40cm $336<br/>Bolsa vino doble 22x42cm $377'
+      'image': './assets/sublimados/bandolerasinfantiles.jpg',
+      'info': 'Bandoleras infantiles<br/>Medidas: 21cmx14cmx7cm<br/>'
     },
     'mochilasinfantiles': {
-      'image': './assets/sublimados/mochilasinfantiles.jpeg',
-      'info': 'Bolsas Acuario<br/>14cmx20cm $360<br/>22cmx30cm $462<br/>30cmx41cm $655'
+      'image': './assets/sublimados/mochilasinfantiles.jpg',
+      'info': 'Mochilas infantiles<br/>Medidas: 20cmx31cmx9cm<br/>Precio: $7680'
     },
     'bolsilloauto': {
       'image': './assets/sublimados/bolsilloauto.jpg',
-      'info': 'Bolsas Fantasía<br/>14cmx20cm $408<br/>22cmx30cm $556<br/>30cmx41cm $774'
+      'info': 'Bolsillo para el auto<br/>Medidas: 21cmx23cm<br/>'
     },
-    'set asador': {
-      'image': './assets/sublimados/setasador.jpeg',
-      'info': 'Libritos para colorear<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Precio: $268 c/u<br/>Mínimo 3 unidades por diseño'
-    },
-    'almohadones': {
-      'image': './assets/sublimados/almohadones.jpeg',
-      'info': 'Rompecabezas<br/>Medidas:28cm x 19cm<br/>24 piezas<br/>Precio: $610'
+    'setasador': {
+      'image': './assets/sublimados/setasador3.jpg',
+      'info': 'Set de asador<br/>Tabla de 20cmx20cm. Cubiertos<br/>Estuche medidas: 21cmx23cm <br/>'
     },
   };
   
