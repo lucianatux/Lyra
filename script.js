@@ -64,15 +64,15 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $1105<br/>Autoadhesivo mate A4 x10u $1105<br/>Papel obra color A4 75gr x20u $649<br/>Papel fotografico A4 180gr x10u $1224'
     },
     'sobres': {
-      'image': './assets/libreria/sobres.jpeg',
+      'image': './assets/libreria/sobres.jpg',
       'info': 'Sobres de colores<br/>Chico (Tarjeta) Medidas: 7.5 X 10.5 Precio: $65<br/>Mediano (Comercial) Medidas: 11.4 X 16.2 Precio: $96<br/>Grande (Retrato) Medidas: 12.5 X 19 Precio: $104'
     },
     'catalogo': {
       'image': './assets/libreria/catalogo.jpg',
-      'info': 'Catálogo completo de juguetería y artículos de librería'
+      'info': 'Catálogo completo<br/>de juguetería<br/>y artículos de librería'
     },
     'cartucheras': {
-      'image': './assets/sublimados/cartucheras.jpeg',
+      'image': './assets/sublimados/cartucheras.jpg',
       'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $323 Blanca $290'
     },
     'portacosmeticos': {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $3950 ($395 c/u)<br/>Color $5560 ($556 c/u)'
     },
     'luncheras': {
-      'image': './assets/sublimados/luncheras.jpeg',
+      'image': './assets/sublimados/luncheras.jpg',
       'info': 'Papel de Regalo<br/>Medidas: 70cm x 100cm ilustración 90gr<br/>Precio: $593 c/u<br/>Mínimo 5 unidades por diseño.'
     },
     'bandolerasinfantiles': {

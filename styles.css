@@ -22,31 +22,27 @@
   --fourth-color: #d9d1ca;
   --special: #306ABB;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   background-color: var(--first-color);
   font-size: 18px;
 }
-
 .bold {
   font-family: "Amaranth", sans-serif;
   font-weight: 800;
   color: #2d2d2d;
 }
-
 button{
   margin: 5px;
 }
-
 #lyra {
   font-size: 25px;
   font-family: "Aclonica", sans-serif;
 }
 .special-color{
   background-color: var(--special);
-  color: var(--first-color);
+  color: #eee;
 }
 .text-special-color{
   color: var(--special);
@@ -59,32 +55,27 @@ hr{
 }
 p{
   color: var(--second-color);
-  cursor: pointer;
 }
 
 /*===================HEADER==========================*/
-
 #tel {
   text-decoration: none;
   color: var(--first-color);
 }
-
 #tel:hover {
-  color: var(--first-color);
-  text-shadow: 1px 1px 1px var(--first-color);
+  border-radius: 20px;
+  box-shadow: 0 0 10px #222;
+  background-color: #3aca46 ;
 }
-
 #menu a,
 button {
   font-size: 18px !important;
 }
-
 #menu a {
-  color: var(--first-color);
+  color: #eee;
 }
-
 #menu a:hover {
-  background-color: #80aa86;
+  background-color: #104b8f;
 }
 .sun-moon{
   width: 50px;
@@ -135,38 +126,29 @@ transition: 0.3s ease-in-out;
 filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 /*===================CAROUSEL==========================*/
-
 #inicio{
   padding-top: 120px;
   padding-bottom: 50px;
 }
-
 .slide{
   width: 90vw;
   margin: auto;
 }
-
 .carousel-item img {
   height: 80vh;
   margin: auto;
   object-fit: contain;
 }
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: var(--third-color); 
   color: #fff; 
 }
-
 .carousel1{
   display: none;
 }
 
-
-
 /*===================GALLERY==========================*/
-
-
 .gallery {
   display: flex;
   flex-direction: row;
@@ -179,7 +161,6 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   margin: 2rem auto;
   padding: 0;
 }
-
 .elem-gallery img {
   width: 100%;
   max-width: 200px;
@@ -189,22 +170,19 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .elem-gallery img:hover {
 box-shadow: 5px 5px 10px var(--second-color);
 }
-
 .gallery::after {
   content: "";
   width: 350px;
 }
-
 .enlace {
   text-decoration: none;
 }
-
 .texto-gallery {
   margin-top: 8px;
   color: var(--second-color);
 }
-/*====================PROMOS=========================*/
 
+/*====================PROMOS=========================*/
 .basic-gallery-elem{
   margin-bottom: 30px;
   padding: 20px;
@@ -225,7 +203,6 @@ box-shadow: 5px 5px 10px var(--second-color);
 }
 
 /*===================grid==========================*/
-
 .special-grid {
   display: grid;
   width: 100%;
@@ -244,7 +221,6 @@ box-shadow: 5px 5px 10px var(--second-color);
   height: 100%;
   object-fit: cover;
 }
-
 .elem-grid1 {
   grid-area: elem-grid1;
 }
@@ -264,14 +240,17 @@ box-shadow: 5px 5px 10px var(--second-color);
 }
 
 /*===================RUBROS==========================*/
-
+.icono {
+  width: 40px;
+  height: auto;
+}
 .image-display {
   max-width: 100%;
   padding: 20px;
   border-radius: 30px;
 }
 .info-display{
-  padding: 20px;
+  padding: 20% 20px 20px 20px;
 }
 .list-group{
   padding: 0 20px 0 0;
@@ -284,7 +263,6 @@ box-shadow: 5px 5px 10px var(--second-color);
 .list-group p:hover{
   box-shadow: 1px 1px 10px var(--second-color);
 }
-
 .list-group-item:hover {
   background-color: rgb(230, 225, 217);
 }
@@ -294,133 +272,28 @@ box-shadow: 5px 5px 10px var(--second-color);
 .subtit{
   background-color: rgb(230, 225, 217);
 }
-
-.icono {
-  width: 40px;
-  height: auto;
-}
-
 .dropdown-toggle {
   white-space: unset;
 }
-
-.hamburguer {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  background: white;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 5);
-}
-
-.img-galeria {
-  object-fit: cover;
-  width: 10%;
-  display: block;
-  margin-bottom: 15px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 5);
-  cursor: pointer;
-}
-
-.imagenlight {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(100%);
-  transition: transform 0.2s ease-in-out;
-}
-
-.show {
-  transform: translate(0);
-}
-
-.agregarimagen {
-  width: 50%;
-  border-radius: 10px;
-  transform: scale(0);
-  transition: transform 0.3s 0.2s;
-  object-fit: cover;
-}
-
-.showimage {
-  transform: scale(1);
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 40px;
-  cursor: pointer;
-}
-
 #porta{
   font-size: 12px;
 }
 
-
-/* prueba */
-.wrapper {
-  position: relative;
-  top: 40vh;
-}
-#button1 {
-  border: 5px solid #ffab33;
-  width: 200px;
-  text-align: center;
-  padding: 10px;
-  font-size: 30px;
-  cursor: pointer;
-  margin: auto;
-  background: #ff5733;
-}
-
-#button1:hover {
-  background: #dff30b;
-}
-
-#mes {
-  font-size: 26px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.hide {
-  visibility: hidden;
-}
-
-.reveal {
-  visibility: visible;
-}
-
 /*=========================CONTACTOS FORMULARIO================================*/
-
 #contenedor-formulario {
   background: var(--first-color);
   border-radius: 5px;
   border: 5px solid var(--second-color);
 }
-
 #titulo-formulario {
   color: #3f3f3f;
 }
-
 .icono-contacto {
   width: 80px;
   height: auto;
 }
 
 /*=========================FOOTER================================*/
-
 footer {
   background: var(--third-color);
   min-height: 200px;
