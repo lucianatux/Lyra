@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $323 Blanca $290'
     },
     'gomaeva': {
-      'image': './assets/libreria/gomaeva.jpeg',
+      'image': './assets/libreria/gomaeva.jpg',
       'info': 'Goma eva<br/>Pack por 10 unidades por color<br/>$4880 ($488 c/u)'
     },
     'papelafiche': {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $3950 ($395 c/u)<br/>Color $5560 ($556 c/u)'
     },
     'papelderegalo': {
-      'image': './assets/libreria/papelderegalo.jpeg',
+      'image': './assets/libreria/papelderegalo.jpg',
       'info': 'Papel de Regalo<br/>Medidas: 70cm x 100cm ilustración 90gr<br/>Precio: $593 c/u<br/>Mínimo 5 unidades por diseño.'
     },
     'bolsaskraft': {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Libritos para colorear<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Precio: $268 c/u<br/>Mínimo 3 unidades por diseño'
     },
     'rompecabezas': {
-      'image': './assets/libreria/rompecabezas.jpeg',
+      'image': './assets/libreria/rompecabezas.jpg',
       'info': 'Rompecabezas<br/>Medidas:28cm x 19cm<br/>24 piezas<br/>Precio: $610'
     },
     'palitosdehelado': {
