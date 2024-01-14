@@ -163,6 +163,46 @@ document.addEventListener('DOMContentLoaded', function () {
       'image': './assets/tinturas/carta.jpg',
       'info': 'Carta de colores<br/>EstereoColor<br/> <a href="./assets/tinturas/carta.pdf" target="_blank"><button type="button" class="btn special-color">Descargar<i class="fas fa-download"></i></button></a>'
     },
+    'infantiltiza': {
+      'image': './assets/carpinteria/infantiltiza.jpg',
+      'info': '<br/><br/>'
+    },
+    'infantilfibron': {
+      'image': './assets/carpinteria/',
+      'info': '<br/><br/>'
+    },
+    'atril': {
+      'image': './assets/carpinteria/',
+      'info': '<br/><br/>'
+    },
+    'mesaybanco': {
+      'image': './assets/carpinteria/',
+      'info': '<br/><br/>'
+    },
+    'colgantetiza': {
+      'image': './assets/carpinteria/',
+      'info': '<br/><br/>'
+    },
+    'colgantefibron': {
+      'image': './assets/carpinteria/',
+      'info': '<br/><br/>'
+    },
+    'jenga': {
+      'image': './assets/carpinteria/',
+      'info': '<br/><br/>'
+    },
+    'cartulinero': {
+      'image': './assets/carpinteria/',
+      'info': '<br/><br/>'
+    },
+    'afichero': {
+      'image': './assets/carpinteria/',
+      'info': '<br/><br/>'
+    },
+    'hojas': {
+      'image': './assets/carpinteria/',
+      'info': '<br/><br/>'
+    },
   };
   
   function mostrarInformacion(dataKey, imageDisplay, infoDisplay) {
