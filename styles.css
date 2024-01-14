@@ -266,9 +266,6 @@ box-shadow: 5px 5px 10px var(--second-color);
 .list-group-item:hover {
   background-color: rgb(230, 225, 217);
 }
-
-
-
 .subtit{
   background-color: rgb(230, 225, 217);
 }
@@ -277,6 +274,9 @@ box-shadow: 5px 5px 10px var(--second-color);
 }
 #porta{
   font-size: 12px;
+}
+.hair-icon{
+  filter: invert(50%);
 }
 
 /*=========================CONTACTOS FORMULARIO================================*/
@@ -295,7 +295,7 @@ box-shadow: 5px 5px 10px var(--second-color);
 
 /*=========================FOOTER================================*/
 footer {
-  background: var(--third-color);
+  background: var(--special);
   min-height: 200px;
 }
 footer p {

@@ -80,19 +80,19 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Portacosméticos<br/>Medidas: 19cmx13cm<br/>Precio: $2310'
     },
     'monederos': {
-      'image': './assets/sublimados/monederos.jpg',
+      'image': './assets/sublimados/monedero.jpg',
       'info': 'Monederos<br/>Medidas: 10cmx8cm<br/>Precio: $1782'
     },
     'luncheras': {
       'image': './assets/sublimados/luncheras.jpg',
-      'info': 'Luncheras<br/>Medidas: 18cmx23cm<br/>'
+      'info': 'Luncheras<br/>Medidas: 18cmx23cm<br/>$5382'
     },
     'bandolerasinfantiles': {
       'image': './assets/sublimados/bandolerasinfantiles.jpg',
-      'info': 'Bandoleras infantiles<br/>Medidas: 21cmx14cmx7cm<br/>'
+      'info': 'Bandoleras infantiles<br/>Medidas: 21cmx14cmx7cm<br/>$5920'
     },
     'mochilasinfantiles': {
-      'image': './assets/sublimados/mochilasinfantiles.jpg',
+      'image': './assets/sublimados/mochilainfantil.jpg',
       'info': 'Mochilas infantiles<br/>Medidas: 20cmx31cmx9cm<br/>Precio: $7680'
     },
     'bolsilloauto': {
@@ -100,23 +100,23 @@ document.addEventListener('DOMContentLoaded', function () {
       'info': 'Bolsillo para el auto<br/>Medidas: 21cmx23cm<br/>'
     },
     'setasador': {
-      'image': './assets/sublimados/setasador3.jpg',
+      'image': './assets/sublimados/setasador.jpg',
       'info': 'Set de asador<br/>Tabla de 20cmx20cm. Cubiertos<br/>Estuche medidas: 21cmx23cm <br/>'
     },
     'bandoleraclasica': {
-      'image': './assets/marroquineria/bandoleraclasica.jpeg',
+      'image': './assets/marroquineria/bandoleraclasica.jpg',
       'info': 'Bandolera clásica<br/>Medidas: 18cmx25cmx8cm<br/>Precio: $8085'
     },
     'bandolerapuffer': {
-      'image': './assets/marroquineria/bandolerapuffer.jpeg',
+      'image': './assets/marroquineria/bandolerapuffer.jpg',
       'info': 'Bandolera puffer<br/>Medidas: 23cmx25cmx8cm<br/>Precio: $9075'
     },
     'bandoleraunisex': {
-      'image': './assets/marroquineria/bandoleraunisex.jpeg',
-      'info': 'Bandolera unisex<br/>Medidas: 21cmx14cmx7cm<br/>'
+      'image': './assets/marroquineria/bandoleraunisex.jpg',
+      'info': 'Bandolera unisex<br/>Medidas: 21cmx14cmx7cm<br/>$5920'
     },
     'bolsomatero': {
-      'image': './assets/marroquineria/bolsomatero.jpeg',
+      'image': './assets/marroquineria/bolsomatero.jpg',
       'info': 'Bolso matero<br/>Medidas: 33cmx28cmx10cm<br/>Precio: $10560'
     },
     'mochilapuffer': {
@@ -126,6 +126,42 @@ document.addEventListener('DOMContentLoaded', function () {
     'mochilaescolar': {
       'image': './assets/marroquineria/mochilaescolar.jpg',
       'info': 'Mochila escolar<br/>Medidas: 34cmx28cmx12cm<br/>Precio: Lona lisa $10400 Camuflada $11200'
+    },
+    'kit': {
+      'image': './assets/tinturas/kit.jpg',
+      'info': 'EstereoColor Kit $1959<br/>Tintura + oxidante + tratamiento + guantes'
+    },
+    'funky': {
+      'image': './assets/tinturas/funky4.jpg',
+      'info': 'Funky $1238<br/>coloración semipermanente<br/>'
+    },
+    'cartafunky': {
+      'image': './assets/tinturas/cartafunky.jpg',
+      'info': 'Carta de colores Funky<br/>coloración semipermanente<br/>'
+    },
+    'funkyneon': {
+      'image': './assets/tinturas/funkyneon.jpg',
+      'info': 'Funky neón $1277<br/>coloración semipermanente<br/>'
+    },
+    'shock': {
+      'image': './assets/tinturas/shock.jpg',
+      'info': 'Shock capilar $932<br/>Tratamiento intensivo 47gr<br/>Argán, keratina, macadamia, coco, bótox, colágeno, blindaje, minuto express, rubios luminosos, carbón detox, oro 24k, silver, palta, banana y co-wash'
+    },
+    'oleo': {
+      'image': './assets/tinturas/oleo.jpg',
+      'info': 'Óleo capilar $423<br/>sachet de 4ml<br/>Mínimo: 10 unidades $4230<br/>Aceite de almendras<br/>Crema para peinar macadamia<br/>Aceite de argán<br/>Aceite de coco<br/>Ablandador de canas'
+    },
+    'sachet': {
+      'image': './assets/tinturas/sachet.jpg',
+      'info': 'Sachet EstereoColor $1372<br/>Tintura + oxidante'
+    },
+    'oxidante': {
+      'image': './assets/tinturas/oxidante.jpg',
+      'info': 'Oxidante capilar Bonmetique $729<br/>20 y 30 volúmenes | 100ml<br/>'
+    },
+    'carta': {
+      'image': './assets/tinturas/carta.jpg',
+      'info': 'Carta de colores<br/>EstereoColor<br/> <a href="./assets/tinturas/carta.pdf" target="_blank"><button type="button" class="btn special-color">Descargar<i class="fas fa-download"></i></button></a>'
     },
   };
   
@@ -153,15 +189,21 @@ document.addEventListener('DOMContentLoaded', function () {
   const listGroupMar = document.querySelector('.list-group-mar');
   const imageDisplayMar = document.getElementById('image-display-mar');
   const infoDisplayMar = document.getElementById('info-display-mar');
+  const listGroupTin = document.querySelector('.list-group-tin');
+  const imageDisplayTin = document.getElementById('image-display-tin');
+  const infoDisplayTin = document.getElementById('info-display-tin');
   
   setupListHoverListener(listGroup, imageDisplay, infoDisplay);
   setupListHoverListener(listGroupSub, imageDisplaySub, infoDisplaySub);
   setupListHoverListener(listGroupMar, imageDisplayMar, infoDisplayMar);
+  setupListHoverListener(listGroupTin, imageDisplayTin, infoDisplayTin);
+
 
   
   // Mostrar la información por defecto al cargar la página
   mostrarInformacion('cartulinas', imageDisplay, infoDisplay);
   mostrarInformacion('cartucheras', imageDisplaySub, infoDisplaySub);
   mostrarInformacion('bandoleraclasica', imageDisplayMar, infoDisplayMar);
+  mostrarInformacion('kit', imageDisplayTin, infoDisplayTin);
 
 });
