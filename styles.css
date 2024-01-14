@@ -230,14 +230,6 @@ box-shadow: 5px 5px 10px var(--second-color);
 .elem-grid3 {
   grid-area: elem-grid3;
 }
-@media screen and (max-width: 992px) {
-  .special-grid {
-    grid-template-areas:
-      "elem-grid1 elem-grid1 elem-grid1 elem-grid1 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2"
-      "elem-grid1 elem-grid1 elem-grid1 elem-grid1 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3";
-    gap: 5px;
-  }
-}
 
 /*===================RUBROS==========================*/
 .icono {
@@ -335,24 +327,48 @@ footer p {
     width: 90% !important;
     margin: auto;
   }
-
   #bg-contactos {
     top: -120px;
   }
-
-  #inicio{
-    margin-top: 120px;
-  }
-
   .slide{
     width: 90vw;
     margin: auto;
   }
-  
-  .carousel-item img {
-    width: 70vw;
-    margin: auto;
+  #inicio{
+    padding-top: 20px;
+    padding-bottom: 0px;
   }
-  
+  .carousel-item img {
+    width: 100vw;
+    margin: 0;
+  }
+  .enlace {
+    width: 50%;
+  }
+  .list-group{
+    font-size: 12px;
+  }
+  .list-group p{
+    border: none;
+  }
+  .info-display{
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .item-grid{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
+@media screen and (max-width: 992px) {
+  .special-grid {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "elem-grid1 elem-grid1 elem-grid1 elem-grid1 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2"
+      "elem-grid1 elem-grid1 elem-grid1 elem-grid1 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3"
+      "elem-grid1 elem-grid1 elem-grid1 elem-grid1 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3";
 
+      gap: 5px;
+  }
+}
