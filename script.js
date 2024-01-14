@@ -165,43 +165,39 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'infantiltiza': {
       'image': './assets/carpinteria/infantiltiza.jpg',
-      'info': '<br/><br/>'
+      'info': 'Pizarra infantil para tiza<br/>Tiza 75cm alto x40cmx40cm<br/>Tiza 1m alto x50cmx60cm<br/>Tiza doble 1m'
     },
     'infantilfibron': {
-      'image': './assets/carpinteria/',
-      'info': '<br/><br/>'
+      'image': './assets/carpinteria/infantilfibron.jpg',
+      'info': 'Pizarra infantil para fibrón<br/>Fibrón 75cm alto x40cmx40cm<br/>Fibrón 1m alto x50cmx60cm<br/>Fibrón doble 1m'
     },
     'atril': {
-      'image': './assets/carpinteria/',
-      'info': '<br/><br/>'
+      'image': './assets/carpinteria/atril.jpg',
+      'info': 'Atril infantil<br/>Atril 75cm alto x40cmx40cm<br/>Atril 1m alto x50cmx60cm<br/>Atril doble 1m'
     },
     'mesaybanco': {
-      'image': './assets/carpinteria/',
-      'info': '<br/><br/>'
+      'image': './assets/carpinteria/mesaybanco.jpg',
+      'info': 'Mesas y banquitos<br/>Mesa 50x50 x42cm alto<br/>Mesa 60x60 x50cm alto<br/>Mesa larga 120x60 x50cm alto<br/>Banquito 14,5cm x35cm ancho x25cm alto<br/>Banco 120cm ancho x19cm x 27cm alto'
     },
-    'colgantetiza': {
-      'image': './assets/carpinteria/',
-      'info': '<br/><br/>'
-    },
-    'colgantefibron': {
-      'image': './assets/carpinteria/',
-      'info': '<br/><br/>'
+    'colgante': {
+      'image': './assets/carpinteria/colgante.jpg',
+      'info': 'Pizarrones para colgar<br/>Tiza 40x60cm<br/>Tiza 60x90cm<br/>Fibrón 40x60cm<br/>Fibrón 60x90cm'
     },
     'jenga': {
-      'image': './assets/carpinteria/',
-      'info': '<br/><br/>'
+      'image': './assets/carpinteria/jenga.jpg',
+      'info': 'Jenga<br/>Natural 42x13cm <br/>De Color 42x13cm <br/>Jenga Con Caja<br/>Natural 42x13cm <br/>De Color 42x13cm'
     },
     'cartulinero': {
-      'image': './assets/carpinteria/',
-      'info': '<br/><br/>'
+      'image': './assets/carpinteria/cartulinero.jpg',
+      'info': 'Cartulineros<br/>65 cm de ancho<br/>48 cm de profundidad<br/>Altura<br/>1,22 m el de 12 y 19 estantes<br/>1,50 m el de 23 estantes<br/>1,90 m el de 30 estantes'
     },
     'afichero': {
-      'image': './assets/carpinteria/',
-      'info': '<br/><br/>'
+      'image': './assets/carpinteria/afichero.jpg',
+      'info': 'Afichero<br/>Estantes 12<br/>Alto 170 cm<br/>Ancho 82 cm<br/>Profundidad 55 cm'
     },
     'hojas': {
-      'image': './assets/carpinteria/',
-      'info': '<br/><br/>'
+      'image': './assets/carpinteria/hojas.jpg',
+      'info': 'Exhibidores de hojas<br/>De pie: 23 Estantes 147x30x25<br/>De Mostrador: 10 Estantes 62x25x35cm'
     },
   };
   
@@ -232,11 +228,16 @@ document.addEventListener('DOMContentLoaded', function () {
   const listGroupTin = document.querySelector('.list-group-tin');
   const imageDisplayTin = document.getElementById('image-display-tin');
   const infoDisplayTin = document.getElementById('info-display-tin');
+  const listGroupCar = document.querySelector('.list-group-car');
+  const imageDisplayCar = document.getElementById('image-display-car');
+  const infoDisplayCar = document.getElementById('info-display-car');
   
   setupListHoverListener(listGroup, imageDisplay, infoDisplay);
   setupListHoverListener(listGroupSub, imageDisplaySub, infoDisplaySub);
   setupListHoverListener(listGroupMar, imageDisplayMar, infoDisplayMar);
   setupListHoverListener(listGroupTin, imageDisplayTin, infoDisplayTin);
+  setupListHoverListener(listGroupCar, imageDisplayCar, infoDisplayCar);
+
 
 
   
@@ -245,5 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
   mostrarInformacion('cartucheras', imageDisplaySub, infoDisplaySub);
   mostrarInformacion('bandoleraclasica', imageDisplayMar, infoDisplayMar);
   mostrarInformacion('kit', imageDisplayTin, infoDisplayTin);
+  mostrarInformacion('infantiltiza', imageDisplayCar, infoDisplayCar);
+
 
 });
