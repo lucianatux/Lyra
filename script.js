@@ -103,6 +103,30 @@ document.addEventListener('DOMContentLoaded', function () {
       'image': './assets/sublimados/setasador3.jpg',
       'info': 'Set de asador<br/>Tabla de 20cmx20cm. Cubiertos<br/>Estuche medidas: 21cmx23cm <br/>'
     },
+    'bandoleraclasica': {
+      'image': './assets/marroquineria/bandoleraclasica.jpeg',
+      'info': 'Bandolera clásica<br/>Medidas: 18cmx25cmx8cm<br/>Precio: $8085'
+    },
+    'bandolerapuffer': {
+      'image': './assets/marroquineria/bandolerapuffer.jpeg',
+      'info': 'Bandolera puffer<br/>Medidas: 23cmx25cmx8cm<br/>Precio: $9075'
+    },
+    'bandoleraunisex': {
+      'image': './assets/marroquineria/bandoleraunisex.jpeg',
+      'info': 'Bandolera unisex<br/>Medidas: 21cmx14cmx7cm<br/>'
+    },
+    'bolsomatero': {
+      'image': './assets/marroquineria/bolsomatero.jpeg',
+      'info': 'Bolso matero<br/>Medidas: 33cmx28cmx10cm<br/>Precio: $10560'
+    },
+    'mochilapuffer': {
+      'image': './assets/marroquineria/mochilapuffer.jpg',
+      'info': 'Mochila puffer<br/>Medidas: 35cmx25cmx9cm<br/>Precio: $10560'
+    },
+    'mochilaescolar': {
+      'image': './assets/marroquineria/mochilaescolar.jpg',
+      'info': 'Mochila escolar<br/>Medidas: 34cmx28cmx12cm<br/>Precio: Lona lisa $10400 Camuflada $11200'
+    },
   };
   
   function mostrarInformacion(dataKey, imageDisplay, infoDisplay) {
@@ -126,13 +150,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const listGroupSub = document.querySelector('.list-group-sub');
   const imageDisplaySub = document.getElementById('image-display-sub');
   const infoDisplaySub = document.getElementById('info-display-sub');
+  const listGroupMar = document.querySelector('.list-group-mar');
+  const imageDisplayMar = document.getElementById('image-display-mar');
+  const infoDisplayMar = document.getElementById('info-display-mar');
   
   setupListHoverListener(listGroup, imageDisplay, infoDisplay);
   setupListHoverListener(listGroupSub, imageDisplaySub, infoDisplaySub);
+  setupListHoverListener(listGroupMar, imageDisplayMar, infoDisplayMar);
 
   
   // Mostrar la información por defecto al cargar la página
   mostrarInformacion('cartulinas', imageDisplay, infoDisplay);
   mostrarInformacion('cartucheras', imageDisplaySub, infoDisplaySub);
+  mostrarInformacion('bandoleraclasica', imageDisplayMar, infoDisplayMar);
 
 });
