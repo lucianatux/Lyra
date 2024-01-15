@@ -61,10 +61,12 @@ label{
   font-size: 14px;
 }
 
+
 /*===================HEADER==========================*/
 #tel {
   text-decoration: none;
   color: var(--first-color);
+  padding: auto 20px;
 }
 #tel:hover {
   border-radius: 20px;
@@ -82,24 +84,27 @@ button {
   background-color: #104b8f;
 }
 .sun-moon{
-  width: 50px;
-  height: 50px;
-  margin-left: 20px;
   border-radius: 50%;
   background-color: var(--first-color);
 }
 .sun-moon:hover{
   box-shadow: 0 0 20px white;
 }
+.img-sun-moon{
+  width: 35px;
+  height: 35px;
+}
 
 .social-icon {
-  display: inline-block;
+  display: inline-flex;
   margin-left: 14px;
 }
-.social-icon a {
+.social-icon a{
+  background-color: #111;
+}
+.social-icon a, .social-icon div {
   width: 42px;
   height: 42px;
-  background: black;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -318,9 +323,6 @@ footer p {
   .carousel1{
     display: block;
   }
-  .distr{
-    display: none;
-  }
   #lyra{
     font-size: 20px;
   }
@@ -374,6 +376,12 @@ footer p {
   .container{
     width: 80%;
   }
+  #tel{
+    padding: auto 5px;
+  }
+ footer p{
+  font-size: 16px;
+ }
 }
 @media screen and (max-width: 992px) {
   .special-grid {
@@ -382,5 +390,10 @@ footer p {
       "elem-grid1 elem-grid1 elem-grid1 elem-grid1 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2 elem-grid2"
       "elem-grid1 elem-grid1 elem-grid1 elem-grid1 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3 elem-grid3";
       gap: 5px;
+  }
+}
+@media (max-width: 1222px){
+  .distr{
+    display: none;
   }
 }
