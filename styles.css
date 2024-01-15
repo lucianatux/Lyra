@@ -353,6 +353,11 @@ footer p {
   .list-group p{
     border: none;
   }
+  .list-group p:hover{
+    border-radius: 1px;
+    box-shadow: 1px 1px 1px transparent;
+    color: var(--special);
+  }
   .info-display{
     font-size: 16px;
     margin-top: 0;
