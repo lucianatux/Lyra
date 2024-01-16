@@ -216,9 +216,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-  const listGroup = document.querySelector('.list-group-lib');
-  const imageDisplay = document.getElementById('image-display-lib');
-  const infoDisplay = document.getElementById('info-display-lib');
+  const listGroupLib = document.querySelector('.list-group-lib');
+  const imageDisplayLib = document.getElementById('image-display-lib');
+  const infoDisplayLib = document.getElementById('info-display-lib');
   const listGroupSub = document.querySelector('.list-group-sub');
   const imageDisplaySub = document.getElementById('image-display-sub');
   const infoDisplaySub = document.getElementById('info-display-sub');
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const imageDisplayCar = document.getElementById('image-display-car');
   const infoDisplayCar = document.getElementById('info-display-car');
   
-  setupListHoverListener(listGroup, imageDisplay, infoDisplay);
+  setupListHoverListener(listGroupLib, imageDisplayLib, infoDisplayLib);
   setupListHoverListener(listGroupSub, imageDisplaySub, infoDisplaySub);
   setupListHoverListener(listGroupMar, imageDisplayMar, infoDisplayMar);
   setupListHoverListener(listGroupTin, imageDisplayTin, infoDisplayTin);
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   
   // Mostrar la información por defecto al cargar la página
-  mostrarInformacion('cartulinas', imageDisplay, infoDisplay);
+  mostrarInformacion('cartulinas', imageDisplayLib, infoDisplayLib);
   mostrarInformacion('cartucheras', imageDisplaySub, infoDisplaySub);
   mostrarInformacion('bandoleraclasica', imageDisplayMar, infoDisplayMar);
   mostrarInformacion('kit', imageDisplayTin, infoDisplayTin);

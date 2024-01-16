@@ -34,131 +34,108 @@
     <!--========================================================== -->
     <div class="fixed-top">
       <header
-        class="container-fluid mt-2 text-light align-items-center justify-content-center special-color d-flex justify-content-around"
+        class="container-fluid text-light align-items-center special-color justify-content-around"
       >
-        <nav class="navbar navbar-expand-lg navbar-light p-0 m-0" id="menu">
-          <div class="container align-items-center">
-            <p class="text-light m-2">
+        <nav id="barra">
+          <p class="text-light m-2 px-2">
               <span id="lyra">LYRA <i class="fas fa-star"></i></span
               ><span class="distr"
                 >Distribuidora de venta mayorista. Hacemos envíos</span
               >
-            </p>
-            <a
+          </p>
+          <a
             href="https://wa.me/543512309375"
             target="_blank"
             id="tel"
-            class="fs-5 text-light px-md-5 px-sm-1"
+            class="fs-5 text-light p-2"
             ><i class="bi bi-whatsapp"></i> Chat
           </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
+          <div class="nav-item dropdown">
+              <a
+              class="nav-link dropdown-toggle "
+              href="#inicio"
+              role="button"
+              data-bs-toggle="dropdown"
               aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav px-5 align-items-center">
-                <li class="nav-item">
+              >Menu
+              </a>
+              <ul class="dropdown-menu special-color">
+                <li>
                   <a
-                    class="nav-link "
-                    aria-current="page"
-                    href="#inicio"
-                    >Inicio</a
+                  class="dropdown-item" href="#inicio"
+                  >Inicio</a
                   >
                 </li>
-                <li class="nav-item">
+                <li>
                   <a
-                    class="nav-link "
-                    aria-current="page"
-                    href="#promos"
+                  class="dropdown-item" href="#promos"
+                  >Promos
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item " href="#libreria"
+                    >Librería</a
                   >
-                    Promos
+                </li>
+                <li>
+                  <a class="dropdown-item " href="#accesoriosPelo"
+                    >Accesorios para el pelo
                   </a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle "
-                    href="#inicio"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >Rubros
-                  </a>
-                  <ul class="dropdown-menu special-color">
-                    <li>
-                      <a class="dropdown-item " href="#libreria"
-                        >Librería</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item " href="#accesoriosPelo"
-                        >Accesorios para el pelo
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item " href="#sublimados"
-                        >Sublimados</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item " href="#marroquineria"
-                        >Marroquinería
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item " href="#cuero"
-                        >Cuero</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item " href="#tinturas"
-                        >Tinturas</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item " href="#carpinteria"
-                        >Carpinteria
-                      </a>
-                    </li>
-                  </ul>
+                <li>
+                  <a class="dropdown-item " href="#sublimados"
+                    >Sublimados</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#seccion-contacto"
+                <li>
+                  <a class="dropdown-item " href="#marroquineria"
+                    >Marroquinería
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item " href="#cuero"
+                    >Cuero</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item " href="#tinturas"
+                    >Tinturas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item " href="#carpinteria"
+                    >Carpinteria
+                  </a>
+                </li>
+                <hr/>
+                <li>
+                  <a class="dropdown-item " href="#seccion-contacto"
                     >Contacto</a
                   >
                 </li>
-                <li class="nav-item social-icon">
-                  <a
-                    class="nav-link "
-                    href="https://www.facebook.com/profile.php?id=100064069295797&mibextid=rS40aB7S9Ucbxw6v"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><img src="./assets/nav-icon4.svg" alt="facebook-icon"
-                  /></a>
-                  <a
-                    class="nav-link "
-                    href="https://www.instagram.com/lyra.distribuidora?utm_source=qr&igsh=YjE5NDMyY2FhOQ=="
-                    target="_blank"
-                    rel="noreferrer"
-                    ><img src="./assets/nav-icon3.svg" alt="instagram-icon"
-                  /></a>
-                  <div class=" sun-moon " onclick="toggleDarkMode()">
-                    <img
-                    class="img-sun-moon"
-                    src="./assets/lightdark.png"
-                    alt="dark-mode"
-                    id="lightdark"
-                  />
-                  </div>
-                </li>
               </ul>
-            </div>
+          </div>
+          <div class="social-icon ms-auto">
+              <a
+                href="https://www.facebook.com/profile.php?id=100064069295797&mibextid=rS40aB7S9Ucbxw6v"
+                target="_blank"
+                rel="noreferrer"
+                ><img src="./assets/nav-icon4.svg" alt="facebook-icon"
+              /></a>
+              <a
+                href="https://www.instagram.com/lyra.distribuidora?utm_source=qr&igsh=YjE5NDMyY2FhOQ=="
+                target="_blank"
+                rel="noreferrer"
+                ><img src="./assets/nav-icon3.svg" alt="instagram-icon"
+              /></a>
+              <div class=" sun-moon " onclick="toggleDarkMode()">
+                <img
+                class="img-sun-moon"
+                src="./assets/lightdark.png"
+                alt="dark-mode"
+                id="lightdark"
+              />
+              </div>
           </div>
         </nav>
       </header>
@@ -372,9 +349,9 @@
     <!-- SECCION LIBRERÍA-->
     <!--========================================================== -->
 
-    <section class="container pt-5" id="libreria">
+    <section class=" w-100 pt-5" id="libreria">
       <div
-        class="container justify-content-center align-items-center text-center"
+        class=" justify-content-center align-items-center text-center"
       >
         <hr />
         <h1 class="fs-2">
@@ -392,7 +369,7 @@
           </button>
         </a>
       </div>
-      <div class="special-grid">
+      <div class="special-grid grid-lib">
         <div class="item-grid elem-grid1">
           <div class="list-group list-group-lib">
             <p data-key="cartulinas">Cartulinas</p>
@@ -456,9 +433,9 @@
     <!-- SECCION SUBLIMADOS-->
     <!--========================================================== -->
 
-    <section class="container pt-5" id="sublimados">
+    <section class="w-100 pt-5" id="sublimados">
       <div
-        class="container justify-content-center align-items-center text-center"
+        class=" justify-content-center align-items-center text-center"
       >
         <hr />
         <h1 class="fs-2">
@@ -476,8 +453,8 @@
           </button>
         </a>
       </div>
-      <div class="special-grid">
-        <div class="item-grid elem-grid1 mt-5">
+      <div class="special-grid grid-sub">
+        <div class="item-grid elem-grid1">
           <div class="list-group list-group-sub">
             <p data-key="cartucheras">Cartucheras</p>
             <p data-key="portacosmeticos">Portacosméticos</p>
@@ -487,6 +464,7 @@
             <p data-key="mochilasinfantiles">Mochilas infantiles</p>
             <p data-key="bolsilloauto">Bolsillo para el auto</p>
             <p data-key="setasador">Set de asador</p>
+            <div class="space-sub"></div>
           </div>
         </div>
         <div class="item-grid elem-grid2">
@@ -502,9 +480,9 @@
     <!-- SECCION MARROQUINERÍA-->
     <!--========================================================== -->
 
-    <section class="container pt-5" id="marroquineria">
+    <section class=" pt-5" id="marroquineria">
       <div
-        class="container justify-content-center align-items-center text-center"
+        class="justify-content-center align-items-center text-center"
       >
         <hr />
         <h1 class="fs-2">
@@ -516,7 +494,7 @@
           <span class="text-special-color">Marroquinería</span>
         </h1>
       </div>
-      <div class="special-grid">
+      <div class="special-grid grid-mar">
         <div class="item-grid elem-grid1 mt-5">
           <div class="list-group list-group-mar">
             <p data-key="bandoleraclasica">Bandoleras clásicas</p>
@@ -589,9 +567,9 @@
     <!-- SECCION TINTURAS-->
     <!--========================================================== -->
 
-    <section class="container pt-5 mb-5" id="tinturas">
+    <section class="pt-5 mb-5" id="tinturas">
       <div
-        class="container justify-content-center align-items-center text-center"
+        class="justify-content-center align-items-center text-center"
       >
         <hr />
         <h1 class="fs-2">
@@ -604,7 +582,7 @@
           capilares
         </h1>
       </div>
-      <div class="special-grid">
+      <div class="special-grid grid-tin">
         <div class="item-grid elem-grid1 mt-5">
           <div class="list-group list-group-tin">
             <p data-key="kit">EstereoColor kit</p>
@@ -631,9 +609,9 @@
     <!-- SECCION CARPINTERIA-->
     <!--========================================================== -->
 
-    <section class="container pt-5" id="carpinteria">
+    <section class="pt-5" id="carpinteria">
       <div
-        class="container justify-content-center align-items-center text-center"
+        class="justify-content-center align-items-center text-center"
       >
         <hr />
         <h1 class="fs-2">
@@ -651,7 +629,7 @@
           </button>
         </a>
       </div>
-      <div class="special-grid">
+      <div class="special-grid grid-car">
         <div class="item-grid elem-grid1 mt-5">
           <div class="list-group list-group-car">
             <p data-key="infantiltiza">Pizarras infantiles para tiza</p>
