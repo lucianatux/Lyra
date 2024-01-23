@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'papelderegalo': {
       'image': './assets/libreria/papelderegalo.jpg',
-      'info': 'Papel de Regalo<br/>Medidas: 70cm x 100cm ilustración 90gr<br/>Precio: $593 c/u<br/>Mínimo 5 unidades por diseño.'
+      'info': 'Papel de Regalo<br/>Medidas: 70cm x 100cm ilustración 90gr<br/>Precio: $771 c/u<br/>Mínimo 5 unidades por diseño.'
     },
     'bolsaskraft': {
       'image': './assets/libreria/bolsaskraft.jpg',
@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'papelesespeciales': {
       'image': './assets/libreria/papelesespeciales.jpg',
-      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $1105<br/>Autoadhesivo mate A4 x10u $1105<br/>Papel obra color A4 75gr x20u $649<br/>Papel fotografico A4 180gr x10u $1224'
+      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $1105<br/>Autoadhesivo mate A4 x10u $1105<br/>Papel obra color A4 75gr x20u $778<br/>Papel fotografico A4 180gr x10u $1224'
     },
     'sobres': {
       'image': './assets/libreria/sobres.jpg',
-      'info': 'Sobres de colores<br/>Chico (Tarjeta) Medidas: 7.5 X 10.5 Precio: $65<br/>Mediano (Comercial) Medidas: 11.4 X 16.2 Precio: $96<br/>Grande (Retrato) Medidas: 12.5 X 19 Precio: $104'
+      'info': 'Sobres de colores<br/>Chico (Tarjeta) Medidas: 7.5 X 10.5 Precio: $78<br/>Mediano (Comercial) Medidas: 11.4 X 16.2 Precio: $115<br/>Grande (Retrato) Medidas: 12.5 X 19 Precio: $127'
     },
     'catalogo': {
       'image': './assets/libreria/catalogo.jpg',
