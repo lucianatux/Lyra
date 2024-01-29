@@ -33,23 +33,23 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'bolsaskraft': {
       'image': './assets/libreria/bolsaskraft.jpg',
-      'info': 'Bolsas Kraft<br/>14cmx20cm $277<br/>22cmx30cm $331<br/>30cmx41cm $439<br/>Bolsa vino 14x40cm $336<br/>Bolsa vino doble 22x42cm $377'
+      'info': 'Bolsas Kraft<br/>14cmx20cm $292<br/>22cmx30cm $348<br/>30cmx41cm $461<br/>Bolsa vino 14x40cm $353<br/>Bolsa vino doble 22x42cm $397'
     },
     'bolsasacuario': {
       'image': './assets/libreria/bolsasacuario.jpg',
-      'info': 'Bolsas Acuario<br/>14cmx20cm $360<br/>22cmx30cm $462<br/>30cmx41cm $655'
+      'info': 'Bolsas Acuario<br/>14cmx20cm $379<br/>22cmx30cm $485<br/>30cmx41cm $687'
     },
     'bolsasfantasia': {
       'image': './assets/libreria/bolsasfantasia.jpg',
-      'info': 'Bolsas Fantasía<br/>14cmx20cm $408<br/>22cmx30cm $556<br/>30cmx41cm $774'
+      'info': 'Bolsas Fantasía<br/>14cmx20cm $429<br/>22cmx30cm $585<br/>30cmx41cm $813'
     },
     'libritos': {
       'image': './assets/libreria/libritos.jpg',
-      'info': 'Libritos para colorear<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Precio: $268 c/u<br/>Mínimo 3 unidades por diseño'
+      'info': 'Libritos para colorear<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Precio: $356 c/u<br/>Mínimo 3 unidades por diseño'
     },
     'rompecabezas': {
       'image': './assets/libreria/rompecabezas.jpg',
-      'info': 'Rompecabezas<br/>Medidas:28cm x 19cm<br/>24 piezas<br/>Precio: $610'
+      'info': 'Rompecabezas<br/>Medidas:28cm x 19cm<br/>24 piezas<br/>Precio: $1140'
     },
     'palitosdehelado': {
       'image': './assets/libreria/palitos.jpg',
