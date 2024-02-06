@@ -76,19 +76,20 @@ label{
 }
 #information{
   color: var(--second-color);
-  line-height: 1.5;
+  line-height: 1.8;
   padding: 20px;
 }
 #lottie-info{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 50px;
+  margin: 0 20%;
 }
 #what{
   background-color: #3aca46 ;
-  border-radius: 20px;
-  margin: 0 20px;
+  border-radius: 50%;
+  margin: 20px;
+  padding: 5px;
 }
 
 /*===================HEADER==========================*/
@@ -362,6 +363,7 @@ footer p {
   }
   #information{
     font-size: 14px;
+    padding: 0 0 0 8px;
   }
   .carousel2{
     display: none;
