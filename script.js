@@ -17,19 +17,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const dataInfo = {
     'cartulinas': {
       'image': './assets/libreria/cartulinas.jpg',
-      'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $323 Blanca $290'
+      'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $343 Blanca $291'
     },
     'gomaeva': {
       'image': './assets/libreria/gomaeva.jpg',
-      'info': 'Goma eva<br/>Pack por 10 unidades por color<br/>$4880 ($488 c/u)'
+      'info': 'Goma eva<br/>Pack por 10 unidades por color<br/>$6490 ($649 c/u)'
     },
     'papelafiche': {
       'image': './assets/libreria/papelafiche.jpg',
-      'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $3950 ($395 c/u)<br/>Color $5560 ($556 c/u)'
+      'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $4750 ($475 c/u)<br/>Color $6680 ($668 c/u)'
     },
     'papelderegalo': {
       'image': './assets/libreria/papelderegalo.jpg',
-      'info': 'Papel de Regalo<br/>Medidas: 70cm x 100cm ilustración 90gr<br/>Precio: $771 c/u<br/>Mínimo 5 unidades por diseño.'
+      'info': 'Papel de Regalo<br/>Medidas: 70cm x 100cm ilustración 90gr<br/>Precio: $772 c/u<br/>Mínimo 5 unidades por diseño.'
     },
     'bolsaskraft': {
       'image': './assets/libreria/bolsaskraft.jpg',
@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'palitosdehelado': {
       'image': './assets/libreria/palitos.jpg',
-      'info': 'Palitos de helado<br/>Color x 50 $751<br/>Natural x 50 $522<br/>Gigante color x30 $787<br/>Gigante natural x30 $625'
+      'info': 'Palitos de helado<br/>Color x 50 $751<br/>Natural x 50 $522<br/>Gigante color x30 $787<br/>Gigante natural x30 $626'
     },
     'viruta': {
       'image': './assets/libreria/viruta.jpg',
-      'info': 'Viruta<br/>En bolsa x50gr<br/>De color $814<br/>Natural $647'
+      'info': 'Viruta<br/>En bolsa x50gr<br/>De color $814<br/>Natural $648'
     },
     'papelesespeciales': {
       'image': './assets/libreria/papelesespeciales.jpg',
