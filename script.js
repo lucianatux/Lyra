@@ -247,7 +247,5 @@ document.addEventListener('DOMContentLoaded', function () {
   mostrarInformacion('bandoleraclasica', imageDisplayMar, infoDisplayMar);
   mostrarInformacion('kit', imageDisplayTin, infoDisplayTin);
   mostrarInformacion('infantiltiza', imageDisplayCar, infoDisplayCar);
-
-
 });
 
