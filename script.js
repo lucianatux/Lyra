@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'papelesespeciales': {
       'image': './assets/libreria/papelesespeciales.jpg',
-      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $1105<br/>Autoadhesivo mate A4 x10u $1105<br/>Papel obra color A4 75gr x20u $778<br/>Papel fotografico A4 180gr x10u $1224'
+      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $1787<br/>Autoadhesivo mate A4 x10u $1677<br/>Papel obra color A4 75gr x20u $778<br/>Papel fotografico A4 180gr x10u $2176'
     },
     'sobres': {
       'image': './assets/libreria/sobres.jpg',
