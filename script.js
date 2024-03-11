@@ -33,15 +33,15 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'bolsaskraft': {
       'image': './assets/libreria/bolsaskraft.jpg',
-      'info': 'Bolsas Kraft<br/>14cmx20cm $292<br/>22cmx30cm $348<br/>30cmx41cm $461<br/>Bolsa vino 14x40cm $353<br/>Bolsa vino doble 22x42cm $397'
+      'info': 'Bolsas Kraft<br/>18cmx20cm $332<br/>22cmx30cm $383<br/>30cmx41cm $507<br/>Bolsa vino 14x40cm $389<br/>Bolsa vino doble 22x42cm $436'
     },
     'bolsasacuario': {
       'image': './assets/libreria/bolsasacuario.jpg',
-      'info': 'Bolsas Acuario<br/>14cmx20cm $379<br/>22cmx30cm $485<br/>30cmx41cm $687'
+      'info': 'Bolsas Acuario<br/>14cmx20cm $417<br/>22cmx30cm $532<br/>30cmx41cm $756'
     },
     'bolsasfantasia': {
       'image': './assets/libreria/bolsasfantasia.jpg',
-      'info': 'Bolsas Fantasía<br/>14cmx20cm $429<br/>22cmx30cm $585<br/>30cmx41cm $813'
+      'info': 'Bolsas Fantasía<br/>14cmx20cm $472<br/>22cmx30cm $664<br/>30cmx41cm $895'
     },
     'libritos': {
       'image': './assets/libreria/libritos.jpg',
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'papelesespeciales': {
       'image': './assets/libreria/papelesespeciales.jpg',
-      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $1787<br/>Autoadhesivo mate A4 x10u $1677<br/>Papel obra color A4 75gr x20u $778<br/>Papel fotografico A4 180gr x10u $2176'
+      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $2036<br/>Autoadhesivo mate A4 x10u $1911<br/>Papel obra color A4 75gr x20u $888<br/>Papel fotografico A4 180gr x10u $2481'
     },
     'sobres': {
       'image': './assets/libreria/sobres.jpg',
