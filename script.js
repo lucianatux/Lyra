@@ -103,6 +103,18 @@ document.addEventListener('DOMContentLoaded', function () {
       'image': './assets/sublimados/setasador.jpg',
       'info': 'Set de asador<br/>Tabla de 20cmx20cm. Cubiertos<br/>Estuche medidas: 21cmx23cm <br/>'
     },
+    'carterasseptiembre': {
+      'image': './assets/marroquineria/cartsept.jpg',
+      'info': 'Carteras Septiembre<br/>Lara, Pilar visón, Pilar negra,<br/>Zaira, Rita negra, Rita combinada, <br/>Nacha, Bolso Flor, Bolso XXL'
+    },
+    'mochilasseptiembre': {
+      'image': './assets/marroquineria/mochisept.jpg',
+      'info': 'Mochilas Septiembre<br/>Lola beige, Lola negra,<br/>Juli verde, Sole negra, Luisa visón,<br/>Roma negra'
+    },
+    'bandolerasseptiembre': {
+      'image': './assets/marroquineria/bandosept.jpg',
+      'info': 'Bandoleras Septiembre<br/>Paz negra, Paz visón,<br/>Cami espejo, Cami croco suela, Cami croco plata,<br/>Luna negra, Luna beige, Luna visón, Riñonera,<br/>Marti, Lucía negra, Vera suela'
+    },
     'bandoleraclasica': {
       'image': './assets/marroquineria/bandoleraclasica.jpg',
       'info': 'Bandolera clásica<br/>Medidas: 18cmx25cmx8cm<br/>Precio: $8085'
@@ -244,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Mostrar la información por defecto al cargar la página
   mostrarInformacion('cartulinas', imageDisplayLib, infoDisplayLib);
   mostrarInformacion('cartucheras', imageDisplaySub, infoDisplaySub);
-  mostrarInformacion('bandoleraclasica', imageDisplayMar, infoDisplayMar);
+  mostrarInformacion('carterasseptiembre', imageDisplayMar, infoDisplayMar);
   mostrarInformacion('kit', imageDisplayTin, infoDisplayTin);
   mostrarInformacion('infantiltiza', imageDisplayCar, infoDisplayCar);
 });
