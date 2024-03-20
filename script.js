@@ -129,11 +129,11 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'kit': {
       'image': './assets/tinturas/kit.jpg',
-      'info': 'EstereoColor Kit $1959<br/>Tintura + oxidante + tratamiento + guantes'
+      'info': 'EstereoColor Kit $2352<br/>Tintura + oxidante + tratamiento + guantes'
     },
     'funky': {
       'image': './assets/tinturas/funky4.jpg',
-      'info': 'Funky $1238<br/>coloración semipermanente<br/>'
+      'info': 'Funky $1490<br/>coloración semipermanente<br/>'
     },
     'cartafunky': {
       'image': './assets/tinturas/cartafunky.jpg',
@@ -141,23 +141,23 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'funkyneon': {
       'image': './assets/tinturas/funkyneon.jpg',
-      'info': 'Funky neón $1277<br/>coloración semipermanente<br/>'
+      'info': 'Funky neón $1490<br/>coloración semipermanente<br/>'
     },
     'shock': {
       'image': './assets/tinturas/shock.jpg',
-      'info': 'Shock capilar $932<br/>Tratamiento intensivo 47gr<br/>Argán, keratina, macadamia, coco, bótox, colágeno, blindaje, minuto express, rubios luminosos, carbón detox, oro 24k, silver, palta, banana y co-wash'
+      'info': 'Shock capilar $1098<br/>Tratamiento intensivo 47gr<br/>Argán, keratina, macadamia, coco, bótox, colágeno, blindaje, minuto express, rubios luminosos, carbón detox, oro 24k, silver, palta, banana y co-wash'
     },
     'oleo': {
       'image': './assets/tinturas/oleo.jpg',
-      'info': 'Óleo capilar $423<br/>sachet de 4ml<br/>Mínimo: 10 unidades $4230<br/>Aceite de almendras<br/>Crema para peinar macadamia<br/>Aceite de argán<br/>Aceite de coco<br/>Ablandador de canas'
+      'info': 'Óleo capilar $512<br/>sachet de 4ml<br/>Mínimo: 10 unidades $5120<br/>Aceite de almendras<br/>Crema para peinar macadamia<br/>Aceite de argán<br/>Aceite de coco<br/>Ablandador de canas'
     },
     'sachet': {
       'image': './assets/tinturas/sachet.jpg',
-      'info': 'Sachet EstereoColor $1372<br/>Tintura + oxidante'
+      'info': 'Sachet EstereoColor $1645<br/>Tintura + oxidante'
     },
     'oxidante': {
       'image': './assets/tinturas/oxidante.jpg',
-      'info': 'Oxidante capilar Bonmetique $729<br/>20 y 30 volúmenes | 100ml<br/>'
+      'info': 'Oxidante capilar Bonmetique $1178<br/>20 y 30 volúmenes | 100ml<br/>'
     },
     'carta': {
       'image': './assets/tinturas/carta.jpg',
