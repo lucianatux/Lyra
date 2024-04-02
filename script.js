@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const dataInfo = {
     'cartulinas': {
       'image': './assets/libreria/cartulinas.jpg',
-      'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $343 Blanca $291'
+      'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $410 Blanca $306'
     },
     'gomaeva': {
       'image': './assets/libreria/gomaeva.jpg',
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'papelafiche': {
       'image': './assets/libreria/papelafiche.jpg',
-      'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $4750 ($475 c/u)<br/>Color $6680 ($668 c/u)'
+      'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $5320 ($532 c/u)<br/>Color $7480 ($748 c/u)'
     },
     'papelderegalo': {
       'image': './assets/libreria/papelderegalo.jpg',
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'bolsasfantasia': {
       'image': './assets/libreria/bolsasfantasia.jpg',
-      'info': 'Bolsas Fantasía<br/>14cmx20cm $472<br/>22cmx30cm $664<br/>30cmx41cm $895'
+      'info': 'Bolsas Fantasía<br/>14cmx20cm $472<br/>22cmx30cm $644<br/>30cmx41cm $895'
     },
     'libritos': {
       'image': './assets/libreria/libritos.jpg',
