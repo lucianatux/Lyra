@@ -73,27 +73,27 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'cartucheras': {
       'image': './assets/sublimados/cartucheras.jpg',
-      'info': 'Cartucheras<br/>Medidas: 23cmx12cm<br/>Precio: $2310'
+      'info': 'Cartucheras<br/>Medidas: 23cmx12cm<br/>Precio: $2656'
     },
     'portacosmeticos': {
       'image': './assets/sublimados/portacosmeticos.jpeg',
-      'info': 'Portacosméticos<br/>Medidas: 19cmx13cm<br/>Precio: $2310'
+      'info': 'Portacosméticos<br/>Medidas: 19cmx13cm<br/>Precio: $2656'
     },
     'monederos': {
       'image': './assets/sublimados/monedero.jpg',
-      'info': 'Monederos<br/>Medidas: 10cmx8cm<br/>Precio: $1782'
+      'info': 'Monederos<br/>Medidas: 10cmx8cm<br/>Precio: $2049'
     },
     'luncheras': {
       'image': './assets/sublimados/luncheras.jpg',
-      'info': 'Luncheras<br/>Medidas: 18cmx23cm<br/>$5382'
+      'info': 'Luncheras<br/>Medidas: 18cmx23cm<br/>$6189'
     },
     'bandolerasinfantiles': {
       'image': './assets/sublimados/bandolerasinfantiles.jpg',
-      'info': 'Bandoleras infantiles<br/>Medidas: 21cmx14cmx7cm<br/>$5920'
+      'info': 'Bandoleras infantiles<br/>Medidas: 21cmx14cmx7cm<br/>$6808'
     },
     'mochilasinfantiles': {
       'image': './assets/sublimados/mochilainfantil.jpg',
-      'info': 'Mochilas infantiles<br/>Medidas: 20cmx31cmx9cm<br/>Precio: $7680'
+      'info': 'Mochilas infantiles<br/>Medidas: 20cmx31cmx9cm<br/>Precio: $8832'
     },
     'bolsilloauto': {
       'image': './assets/sublimados/bolsilloauto.jpg',
@@ -117,27 +117,27 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'bandoleraclasica': {
       'image': './assets/marroquineria/bandoleraclasica.jpg',
-      'info': 'Bandolera clásica<br/>Medidas: 18cmx25cmx8cm<br/>Precio: $8085'
+      'info': 'Bandolera clásica<br/>Medidas: 18cmx25cmx8cm<br/>Precio: $9297'
     },
     'bandolerapuffer': {
       'image': './assets/marroquineria/bandolerapuffer.jpg',
-      'info': 'Bandolera puffer<br/>Medidas: 23cmx25cmx8cm<br/>Precio: $9075'
+      'info': 'Bandolera puffer<br/>Medidas: 23cmx25cmx8cm<br/>Precio: $10436'
     },
     'bandoleraunisex': {
       'image': './assets/marroquineria/bandoleraunisex.jpg',
-      'info': 'Bandolera unisex<br/>Medidas: 21cmx14cmx7cm<br/>$5920'
+      'info': 'Bandolera unisex<br/>Medidas: 21cmx14cmx7cm<br/>$6808'
     },
     'bolsomatero': {
       'image': './assets/marroquineria/bolsomatero.jpg',
-      'info': 'Bolso matero<br/>Medidas: 33cmx28cmx10cm<br/>Precio: $10560'
+      'info': 'Bolso matero<br/>Medidas: 33cmx28cmx10cm<br/>Precio: $12144'
     },
     'mochilapuffer': {
       'image': './assets/marroquineria/mochilapuffer.jpg',
-      'info': 'Mochila puffer<br/>Medidas: 35cmx25cmx9cm<br/>Precio: $10560'
+      'info': 'Mochila puffer<br/>Medidas: 35cmx25cmx9cm<br/>Precio: $12144'
     },
     'mochilaescolar': {
       'image': './assets/marroquineria/mochilaescolar.jpg',
-      'info': 'Mochila escolar<br/>Medidas: 34cmx28cmx12cm<br/>Precio: Lona lisa $10400 Camuflada $11200'
+      'info': 'Mochila escolar<br/>Medidas: 34cmx28cmx12cm<br/>Precio: Lona lisa $11960 Camuflada $12880'
     },
     'kit': {
       'image': './assets/tinturas/kit.jpg',
