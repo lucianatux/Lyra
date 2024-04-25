@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const dataInfo = {
     'cartulinas': {
       'image': './assets/libreria/cartulinas.jpg',
-      'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $410 Blanca $306'
+      'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $504 Blanca $357'
     },
     'gomaeva': {
       'image': './assets/libreria/gomaeva.jpg',
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'papelafiche': {
       'image': './assets/libreria/papelafiche.jpg',
-      'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $5320 ($532 c/u)<br/>Color $7480 ($748 c/u)'
+      'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $5850 ($585 c/u)<br/>Color $8280 ($828 c/u)'
     },
     'papelderegalo': {
       'image': './assets/libreria/papelderegalo.jpg',
