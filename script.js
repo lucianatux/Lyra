@@ -175,6 +175,31 @@ document.addEventListener('DOMContentLoaded', function () {
       'image': './assets/tinturas/carta.jpg',
       'info': 'Carta de colores<br/>EstereoColor<br/> <a href="./assets/tinturas/carta.pdf" target="_blank"><button type="button" class="btn special-color">Descargar<i class="fas fa-download"></i></button></a>'
     },
+    'esmaltes': {
+      'image': './assets/otros/esmaltes.jpeg',
+      'info': 'Esmaltes McMora <br/>Larga duración, secado rápido <br/>8ml $1160 <br/>11 ml $1800<br/>Pincel panorámico, fórmula hipoalergénica.'
+    },
+    'morralhombre': {
+      'image': './assets/otros/morralhombre.jpeg',
+      'info': 'Morrales para hombre<br/>Color negro o gris<br/>$11400<br/>'
+    },
+    'tabaquera': {
+      'image': './assets/otros/tabaquera2.jpeg',
+      'info': 'Tabaquera<br/>Color suela<br/>$5900<br/>'
+    },
+    'tarjetero': {
+      'image': './assets/otros/tarjeteros.jpeg',
+      'info': 'Tarjeteros $2300<br/><br/>'
+    },
+    'llavero': {
+      'image': './assets/otros/llaveros.jpeg',
+      'info': 'Llaveros de clubes de fútbol<br/>$530<br/>'
+    },
+    'botineras': {
+      'image': './assets/otros/botineras.jpeg',
+      'info': 'Botineras para guardar los botines de fútbol.<br/>$6440<br/>Medidas: 35cmx19cmx12cm de profundidad.'
+    },
+    /*
     'infantiltiza': {
       'image': './assets/carpinteria/infantiltiza.jpg',
       'info': 'Pizarra infantil para tiza<br/>Tiza 75cm alto x40cmx40cm<br/>Tiza 1m alto x50cmx60cm<br/>Tiza doble 1m'
@@ -210,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function () {
     'hojas': {
       'image': './assets/carpinteria/hojas.jpg',
       'info': 'Exhibidores de hojas<br/>De pie: 23 Estantes 147x30x25<br/>De Mostrador: 10 Estantes 62x25x35cm'
-    },
+    },*/
   };
   
   function mostrarInformacion(dataKey, imageDisplay, infoDisplay) {
@@ -258,6 +283,6 @@ document.addEventListener('DOMContentLoaded', function () {
   mostrarInformacion('cartucheras', imageDisplaySub, infoDisplaySub);
   mostrarInformacion('carterasseptiembre', imageDisplayMar, infoDisplayMar);
   mostrarInformacion('kit', imageDisplayTin, infoDisplayTin);
-  mostrarInformacion('infantiltiza', imageDisplayCar, infoDisplayCar);
+  mostrarInformacion('esmaltes', imageDisplayCar, infoDisplayCar);
 });
 

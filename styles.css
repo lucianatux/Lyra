@@ -5,7 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -26,7 +28,7 @@ html {
   --special: #306ABB;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
   background-color: var(--first-color);
   font-size: 18px;
