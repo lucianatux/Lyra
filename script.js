@@ -33,35 +33,35 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'bolsaskraft': {
       'image': './assets/libreria/bolsaskraft.jpg',
-      'info': 'Bolsas Kraft<br/>18cmx20cm $332<br/>22cmx30cm $383<br/>30cmx41cm $507<br/>Bolsa vino 14x40cm $389<br/>Bolsa vino doble 22x42cm $436'
+      'info': 'Bolsas Kraft<br/>18cmx20cm <br/>22cmx30cm <br/>30cmx41cm <br/>Bolsa vino 14x40cm '
     },
     'bolsasacuario': {
       'image': './assets/libreria/bolsasacuario.jpg',
-      'info': 'Bolsas Acuario<br/>14cmx20cm $417<br/>22cmx30cm $532<br/>30cmx41cm $756'
+      'info': 'Bolsas Acuario<br/>14cmx20cm<br/>22cmx30cm<br/>30cmx41cm '
     },
     'bolsasfantasia': {
       'image': './assets/libreria/bolsasfantasia.jpg',
-      'info': 'Bolsas Fantasía<br/>14cmx20cm $472<br/>22cmx30cm $644<br/>30cmx41cm $895'
+      'info': 'Bolsas Fantasía<br/>14cmx20cm<br/>22cmx30cm<br/>30cmx41cm'
     },
     'libritos': {
       'image': './assets/libreria/libritos.jpg',
-      'info': 'Libritos para colorear<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Precio: $356 c/u<br/>Mínimo 3 unidades por diseño'
+      'info': 'Libritos para colorear<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Mínimo 3 unidades por diseño'
     },
     'rompecabezas': {
       'image': './assets/libreria/rompecabezas.jpg',
-      'info': 'Rompecabezas<br/>Medidas:28cm x 19cm<br/>24 piezas<br/>Precio: $1140'
+      'info': 'Rompecabezas<br/>Medidas:28cm x 19cm<br/>24 piezas'
     },
     'palitosdehelado': {
       'image': './assets/libreria/palitos.jpg',
-      'info': 'Palitos de helado<br/>Color x 50 $751<br/>Natural x 50 $522<br/>Gigante color x30 $787<br/>Gigante natural x30 $626'
+      'info': 'Palitos de helado<br/>Color x 50<br/>Natural x 50<br/>Gigante color x30<br/>Gigante natural x30'
     },
     'viruta': {
       'image': './assets/libreria/viruta.jpg',
-      'info': 'Viruta<br/>En bolsa x50gr<br/>De color $814<br/>Natural $648'
+      'info': 'Viruta<br/>En bolsa x50gr<br/>De color<br/>Natural'
     },
     'papelesespeciales': {
       'image': './assets/libreria/papelesespeciales.jpg',
-      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $2036<br/>Autoadhesivo mate A4 x10u $1911<br/>Papel obra color A4 75gr x20u $888<br/>Papel fotografico A4 180gr x10u $2481'
+      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u<br/>Autoadhesivo mate A4 x10u<br/>Papel obra color A4 75gr x20u<br/>Papel fotografico A4 180gr x10u'
     },
     'sobres': {
       'image': './assets/libreria/sobres.jpg',
@@ -85,15 +85,15 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'luncheras': {
       'image': './assets/sublimados/luncheras.jpg',
-      'info': 'Luncheras<br/>Medidas: 18cmx23cm<br/>$6189'
+      'info': 'Luncheras<br/>Medidas: 18cmx23cm'
     },
     'bandolerasinfantiles': {
       'image': './assets/sublimados/bandolerasinfantiles.jpg',
-      'info': 'Bandoleras infantiles<br/>Medidas: 21cmx14cmx7cm<br/>$6808'
+      'info': 'Bandoleras infantiles<br/>Medidas: 21cmx14cmx7cm'
     },
     'mochilasinfantiles': {
       'image': './assets/sublimados/mochilainfantil.jpg',
-      'info': 'Mochilas infantiles<br/>Medidas: 20cmx31cmx9cm<br/>Precio: $8832'
+      'info': 'Mochilas infantiles<br/>Medidas: 20cmx31cmx9cm'
     },
     'bolsilloauto': {
       'image': './assets/sublimados/bolsilloauto.jpg',
@@ -117,27 +117,27 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'bandoleraclasica': {
       'image': './assets/marroquineria/bandoleraclasica.jpg',
-      'info': 'Bandolera clásica<br/>Medidas: 18cmx25cmx8cm<br/>Precio: $9297'
+      'info': 'Bandolera clásica<br/>Medidas: 18cmx25cmx8cm'
     },
     'bandolerapuffer': {
       'image': './assets/marroquineria/bandolerapuffer.jpg',
-      'info': 'Bandolera puffer<br/>Medidas: 23cmx25cmx8cm<br/>Precio: $10436'
+      'info': 'Bandolera puffer<br/>Medidas: 23cmx25cmx8cm'
     },
     'bandoleraunisex': {
       'image': './assets/marroquineria/bandoleraunisex.jpg',
-      'info': 'Bandolera unisex<br/>Medidas: 21cmx14cmx7cm<br/>$6808'
+      'info': 'Bandolera unisex<br/>Medidas: 21cmx14cmx7cm'
     },
     'bolsomatero': {
       'image': './assets/marroquineria/bolsomatero.jpg',
-      'info': 'Bolso matero<br/>Medidas: 33cmx28cmx10cm<br/>Precio: $12144'
+      'info': 'Bolso matero<br/>Medidas: 33cmx28cmx10cm'
     },
     'mochilapuffer': {
       'image': './assets/marroquineria/mochilapuffer.jpg',
-      'info': 'Mochila puffer<br/>Medidas: 35cmx25cmx9cm<br/>Precio: $12144'
+      'info': 'Mochila puffer<br/>Medidas: 35cmx25cmx9cm'
     },
     'mochilaescolar': {
       'image': './assets/marroquineria/mochilaescolar.jpg',
-      'info': 'Mochila escolar<br/>Medidas: 34cmx28cmx12cm<br/>Precio: Lona lisa $11960 Camuflada $12880'
+      'info': 'Mochila escolar<br/>Medidas: 34cmx28cmx12cm'
     },
     'kit': {
       'image': './assets/tinturas/kit.jpg',
@@ -181,61 +181,24 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'morralhombre': {
       'image': './assets/otros/morralhombre.jpeg',
-      'info': 'Morrales para hombre<br/>Color negro o gris<br/>$11400<br/>'
+      'info': 'Morrales para hombre<br/>Color negro o gris'
     },
     'tabaquera': {
       'image': './assets/otros/tabaquera2.jpeg',
-      'info': 'Tabaquera<br/>Color suela<br/>$5900<br/>'
+      'info': 'Tabaquera<br/>Color suela'
     },
     'tarjetero': {
       'image': './assets/otros/tarjeteros.jpeg',
-      'info': 'Tarjeteros $2300<br/><br/>'
+      'info': 'Tarjeteros'
     },
     'llavero': {
       'image': './assets/otros/llaveros.jpeg',
-      'info': 'Llaveros de clubes de fútbol<br/>$530<br/>'
+      'info': 'Llaveros de clubes de fútbol'
     },
     'botineras': {
       'image': './assets/otros/botineras.jpeg',
-      'info': 'Botineras para guardar los botines de fútbol.<br/>$6440<br/>Medidas: 35cmx19cmx12cm de profundidad.'
+      'info': 'Botineras para guardar los botines de fútbol<br/>Medidas: 35cmx19cmx12cm de profundidad.'
     },
-    /*
-    'infantiltiza': {
-      'image': './assets/carpinteria/infantiltiza.jpg',
-      'info': 'Pizarra infantil para tiza<br/>Tiza 75cm alto x40cmx40cm<br/>Tiza 1m alto x50cmx60cm<br/>Tiza doble 1m'
-    },
-    'infantilfibron': {
-      'image': './assets/carpinteria/infantilfibron.jpg',
-      'info': 'Pizarra infantil para fibrón<br/>Fibrón 75cm alto x40cmx40cm<br/>Fibrón 1m alto x50cmx60cm<br/>Fibrón doble 1m'
-    },
-    'atril': {
-      'image': './assets/carpinteria/atril.jpg',
-      'info': 'Atril infantil<br/>Atril 75cm alto x40cmx40cm<br/>Atril 1m alto x50cmx60cm<br/>Atril doble 1m'
-    },
-    'mesaybanco': {
-      'image': './assets/carpinteria/mesaybanco.jpg',
-      'info': 'Mesas y banquitos<br/>Mesa 50x50 x42cm alto<br/>Mesa 60x60 x50cm alto<br/>Mesa larga 120x60 x50cm alto<br/>Banquito 14,5cm x35cm ancho x25cm alto<br/>Banco 120cm ancho x19cm x 27cm alto'
-    },
-    'colgante': {
-      'image': './assets/carpinteria/colgante.jpg',
-      'info': 'Pizarrones para colgar<br/>Tiza 40x60cm<br/>Tiza 60x90cm<br/>Fibrón 40x60cm<br/>Fibrón 60x90cm'
-    },
-    'jenga': {
-      'image': './assets/carpinteria/jenga.jpg',
-      'info': 'Jenga<br/>Natural 42x13cm <br/>De Color 42x13cm <br/>Jenga Con Caja<br/>Natural 42x13cm <br/>De Color 42x13cm'
-    },
-    'cartulinero': {
-      'image': './assets/carpinteria/cartulinero.jpg',
-      'info': 'Cartulineros<br/>65 cm de ancho<br/>48 cm de profundidad<br/>Altura<br/>1,22 m el de 12 y 19 estantes<br/>1,50 m el de 23 estantes<br/>1,90 m el de 30 estantes'
-    },
-    'afichero': {
-      'image': './assets/carpinteria/afichero.jpg',
-      'info': 'Afichero<br/>Estantes 12<br/>Alto 170 cm<br/>Ancho 82 cm<br/>Profundidad 55 cm'
-    },
-    'hojas': {
-      'image': './assets/carpinteria/hojas.jpg',
-      'info': 'Exhibidores de hojas<br/>De pie: 23 Estantes 147x30x25<br/>De Mostrador: 10 Estantes 62x25x35cm'
-    },*/
   };
   
   function mostrarInformacion(dataKey, imageDisplay, infoDisplay) {
