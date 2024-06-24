@@ -33,35 +33,35 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     'bolsaskraft': {
       'image': './assets/libreria/bolsaskraft.jpg',
-      'info': 'Bolsas Kraft<br/>18cmx20cm <br/>22cmx30cm <br/>30cmx41cm <br/>Bolsa vino 14x40cm '
+      'info': 'Bolsas Kraft<br/>18cmx20cm $337 <br/>22cmx30cm $389<br/>30cmx41cm $515 <br/>Bolsa vino 14x40cm $395'
     },
     'bolsasacuario': {
       'image': './assets/libreria/bolsasacuario.jpg',
-      'info': 'Bolsas Acuario<br/>14cmx20cm<br/>22cmx30cm<br/>30cmx41cm '
+      'info': 'Bolsas Acuario<br/>14cmx20cm $424<br/>22cmx30cm $541<br/>30cmx41cm $768'
     },
     'bolsasfantasia': {
       'image': './assets/libreria/bolsasfantasia.jpg',
-      'info': 'Bolsas Fantasía<br/>14cmx20cm<br/>22cmx30cm<br/>30cmx41cm'
+      'info': 'Bolsas Fantasía<br/>14cmx20cm $480<br/>22cmx30cm $654<br/>30cmx41cm $909'
     },
     'libritos': {
       'image': './assets/libreria/libritos.jpg',
-      'info': 'Libritos para colorear<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Mínimo 3 unidades por diseño'
+      'info': 'Libritos para colorear $361<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Mínimo 3 unidades por diseño'
     },
     'rompecabezas': {
       'image': './assets/libreria/rompecabezas.jpg',
-      'info': 'Rompecabezas<br/>Medidas:28cm x 19cm<br/>24 piezas'
+      'info': 'Rompecabezas $1158<br/>Medidas:28cm x 19cm<br/>24 piezas'
     },
     'palitosdehelado': {
       'image': './assets/libreria/palitos.jpg',
-      'info': 'Palitos de helado<br/>Color x 50<br/>Natural x 50<br/>Gigante color x30<br/>Gigante natural x30'
+      'info': 'Palitos de helado<br/>Color x 50 $763<br/>Natural x 50 $530<br/>Gigante color x30 $800<br/>Gigante natural x30 $636'
     },
     'viruta': {
       'image': './assets/libreria/viruta.jpg',
-      'info': 'Viruta<br/>En bolsa x50gr<br/>De color<br/>Natural'
+      'info': 'Viruta<br/>En bolsa x50gr<br/>De color $814<br/>Natural $648'
     },
     'papelesespeciales': {
       'image': './assets/libreria/papelesespeciales.jpg',
-      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u<br/>Autoadhesivo mate A4 x10u<br/>Papel obra color A4 75gr x20u<br/>Papel fotografico A4 180gr x10u'
+      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $2068<br/>Autoadhesivo mate A4 x10u $1941<br/>Papel obra color A4 75gr x20u $902<br/>Papel fotografico A4 180gr x10u $2519'
     },
     'sobres': {
       'image': './assets/libreria/sobres.jpg',
