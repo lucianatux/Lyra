@@ -1,251 +1,422 @@
-function toggleDarkMode() {
-  const body = document.body;
-  const img= document.getElementById('lightdark');
-  if (body.classList.contains('light-mode')) {
-    body.classList.remove('light-mode');
-    body.classList.add('dark-mode');
-    img.style.filter = ''; 
+document.addEventListener("DOMContentLoaded", function () {
+  const storedProducts = JSON.parse(localStorage.getItem("products")) || [];
+  const orderButton = document.getElementById("order");
+  const productList = document.getElementById("my-order");
+  const allProducts = document.getElementById("all-products-i-want");
+  const message = document.getElementById("message-order-list");
+  const menuItems = document.querySelectorAll(".item-menu");
+  const sections = document.querySelectorAll("section");
 
-  } else {
-    body.classList.remove('dark-mode');
-    body.classList.add('light-mode');
-    img.style.filter = 'invert(100%)'; 
-  }
-}
+  // ACCESO DIRECTO SIN SCROLL A LAS SECCIONES
+  function handleAnchorClick(e) {
+    e.preventDefault(); // Prevent the default anchor click behavior
 
-document.addEventListener('DOMContentLoaded', function () {
-  const dataInfo = {
-    'cartulinas': {
-      'image': './assets/libreria/cartulinas.jpg',
-      'info': 'Cartulinas<br/>Medidas: 45x64cm.<br/>Precio: Color $504 Blanca $357'
-    },
-    'gomaeva': {
-      'image': './assets/libreria/gomaeva.jpg',
-      'info': 'Goma eva<br/>Pack por 10 unidades por color<br/>$6490 ($649 c/u)'
-    },
-    'papelafiche': {
-      'image': './assets/libreria/papelafiche.jpg',
-      'info': 'Papel Afiche<br/>Pack por 10 unidades por color<br/>Blanco $5850 ($585 c/u)<br/>Color $8280 ($828 c/u)'
-    },
-    'papelderegalo': {
-      'image': './assets/libreria/papelderegalo.jpg',
-      'info': 'Papel de Regalo<br/>Medidas: 70cm x 100cm ilustración 90gr<br/>Precio: $772 c/u<br/>Mínimo 5 unidades por diseño.'
-    },
-    'bolsaskraft': {
-      'image': './assets/libreria/bolsaskraft.jpg',
-      'info': 'Bolsas Kraft<br/>18cmx20cm $337 <br/>22cmx30cm $389<br/>30cmx41cm $515 <br/>Bolsa vino 14x40cm $395'
-    },
-    'bolsasacuario': {
-      'image': './assets/libreria/bolsasacuario.jpg',
-      'info': 'Bolsas Acuario<br/>14cmx20cm $424<br/>22cmx30cm $541<br/>30cmx41cm $768'
-    },
-    'bolsasfantasia': {
-      'image': './assets/libreria/bolsasfantasia.jpg',
-      'info': 'Bolsas Fantasía<br/>14cmx20cm $480<br/>22cmx30cm $654<br/>30cmx41cm $909'
-    },
-    'libritos': {
-      'image': './assets/libreria/libritos.jpg',
-      'info': 'Libritos para colorear $361<br/>Tamaño A4<br/>Clásicos y Didácticos<br/>Mínimo 3 unidades por diseño'
-    },
-    'rompecabezas': {
-      'image': './assets/libreria/rompecabezas.jpg',
-      'info': 'Rompecabezas $1158<br/>Medidas:28cm x 19cm<br/>24 piezas'
-    },
-    'palitosdehelado': {
-      'image': './assets/libreria/palitos.jpg',
-      'info': 'Palitos de helado<br/>Color x 50 $763<br/>Natural x 50 $530<br/>Gigante color x30 $800<br/>Gigante natural x30 $636'
-    },
-    'viruta': {
-      'image': './assets/libreria/viruta.jpg',
-      'info': 'Viruta<br/>En bolsa x50gr<br/>De color $814<br/>Natural $648'
-    },
-    'papelesespeciales': {
-      'image': './assets/libreria/papelesespeciales.jpg',
-      'info': 'Papeles especiales<br/>Autoadhesivo satinado A4 x10u $2068<br/>Autoadhesivo mate A4 x10u $1941<br/>Papel obra color A4 75gr x20u $902<br/>Papel fotografico A4 180gr x10u $2519'
-    },
-    'sobres': {
-      'image': './assets/libreria/sobres.jpg',
-      'info': 'Sobres de colores<br/>Chico (Tarjeta) Medidas: 7.5 X 10.5 Precio: $78<br/>Mediano (Comercial) Medidas: 11.4 X 16.2 Precio: $115<br/>Grande (Retrato) Medidas: 12.5 X 19 Precio: $127'
-    },
-    'catalogo': {
-      'image': './assets/libreria/catalogo.jpg',
-      'info': 'Catálogo completo<br/>de juguetería<br/>y artículos de librería'
-    },
-    'cartucheras': {
-      'image': './assets/sublimados/cartucheras.jpg',
-      'info': 'Cartucheras<br/>Medidas: 23cmx12cm<br/>Precio: $2656'
-    },
-    'portacosmeticos': {
-      'image': './assets/sublimados/portacosmeticos.jpeg',
-      'info': 'Portacosméticos<br/>Medidas: 19cmx13cm<br/>Precio: $2656'
-    },
-    'monederos': {
-      'image': './assets/sublimados/monedero.jpg',
-      'info': 'Monederos<br/>Medidas: 10cmx8cm<br/>Precio: $2049'
-    },
-    'luncheras': {
-      'image': './assets/sublimados/luncheras.jpg',
-      'info': 'Luncheras<br/>Medidas: 18cmx23cm'
-    },
-    'bandolerasinfantiles': {
-      'image': './assets/sublimados/bandolerasinfantiles.jpg',
-      'info': 'Bandoleras infantiles<br/>Medidas: 21cmx14cmx7cm'
-    },
-    'mochilasinfantiles': {
-      'image': './assets/sublimados/mochilainfantil.jpg',
-      'info': 'Mochilas infantiles<br/>Medidas: 20cmx31cmx9cm'
-    },
-    'bolsilloauto': {
-      'image': './assets/sublimados/bolsilloauto.jpg',
-      'info': 'Bolsillo para el auto<br/>Medidas: 21cmx23cm<br/>'
-    },
-    'setasador': {
-      'image': './assets/sublimados/setasador.jpg',
-      'info': 'Set de asador<br/>Tabla de 20cmx20cm. Cubiertos<br/>Estuche medidas: 21cmx23cm <br/>'
-    },
-    'carterasseptiembre': {
-      'image': './assets/marroquineria/cartsept.jpg',
-      'info': 'Carteras Septiembre<br/>Lara, Pilar visón, Pilar negra,<br/>Zaira, Rita negra, Rita combinada, <br/>Nacha, Bolso Flor, Bolso XXL'
-    },
-    'mochilasseptiembre': {
-      'image': './assets/marroquineria/mochisept.jpg',
-      'info': 'Mochilas Septiembre<br/>Lola beige, Lola negra,<br/>Juli verde, Sole negra, Luisa visón,<br/>Roma negra'
-    },
-    'bandolerasseptiembre': {
-      'image': './assets/marroquineria/bandosept.jpg',
-      'info': 'Bandoleras Septiembre<br/>Paz negra, Paz visón,<br/>Cami espejo, Cami croco suela, Cami croco plata,<br/>Luna negra, Luna beige, Luna visón, Riñonera,<br/>Marti, Lucía negra, Vera suela'
-    },
-    'bandoleraclasica': {
-      'image': './assets/marroquineria/bandoleraclasica.jpg',
-      'info': 'Bandolera clásica<br/>Medidas: 18cmx25cmx8cm'
-    },
-    'bandolerapuffer': {
-      'image': './assets/marroquineria/bandolerapuffer.jpg',
-      'info': 'Bandolera puffer<br/>Medidas: 23cmx25cmx8cm'
-    },
-    'bandoleraunisex': {
-      'image': './assets/marroquineria/bandoleraunisex.jpg',
-      'info': 'Bandolera unisex<br/>Medidas: 21cmx14cmx7cm'
-    },
-    'bolsomatero': {
-      'image': './assets/marroquineria/bolsomatero.jpg',
-      'info': 'Bolso matero<br/>Medidas: 33cmx28cmx10cm'
-    },
-    'mochilapuffer': {
-      'image': './assets/marroquineria/mochilapuffer.jpg',
-      'info': 'Mochila puffer<br/>Medidas: 35cmx25cmx9cm'
-    },
-    'mochilaescolar': {
-      'image': './assets/marroquineria/mochilaescolar.jpg',
-      'info': 'Mochila escolar<br/>Medidas: 34cmx28cmx12cm'
-    },
-    'kit': {
-      'image': './assets/tinturas/kit.jpg',
-      'info': 'EstereoColor Kit $2352<br/>Tintura + oxidante + tratamiento + guantes'
-    },
-    'funky': {
-      'image': './assets/tinturas/funky4.jpg',
-      'info': 'Funky $1490<br/>coloración semipermanente<br/>'
-    },
-    'cartafunky': {
-      'image': './assets/tinturas/cartafunky.jpg',
-      'info': 'Carta de colores Funky<br/>coloración semipermanente<br/>'
-    },
-    'funkyneon': {
-      'image': './assets/tinturas/funkyneon.jpg',
-      'info': 'Funky neón $1490<br/>coloración semipermanente<br/>'
-    },
-    'shock': {
-      'image': './assets/tinturas/shock.jpg',
-      'info': 'Shock capilar $1098<br/>Tratamiento intensivo 47gr<br/>Argán, keratina, macadamia, coco, bótox, colágeno, blindaje, minuto express, rubios luminosos, carbón detox, oro 24k, silver, palta, banana y co-wash'
-    },
-    'oleo': {
-      'image': './assets/tinturas/oleo.jpg',
-      'info': 'Óleo capilar $512<br/>sachet de 4ml<br/>Mínimo: 10 unidades $5120<br/>Aceite de almendras<br/>Crema para peinar macadamia<br/>Aceite de argán<br/>Aceite de coco<br/>Ablandador de canas'
-    },
-    'sachet': {
-      'image': './assets/tinturas/sachet.jpg',
-      'info': 'Sachet EstereoColor $1645<br/>Tintura + oxidante'
-    },
-    'oxidante': {
-      'image': './assets/tinturas/oxidante.jpg',
-      'info': 'Oxidante capilar Bonmetique $1178<br/>20 y 30 volúmenes | 100ml<br/>'
-    },
-    'carta': {
-      'image': './assets/tinturas/carta.jpg',
-      'info': 'Carta de colores<br/>EstereoColor<br/> <a href="./assets/tinturas/carta.pdf" target="_blank"><button type="button" class="btn special-color">Descargar<i class="fas fa-download"></i></button></a>'
-    },
-    'esmaltes': {
-      'image': './assets/otros/esmaltes.jpeg',
-      'info': 'Esmaltes McMora <br/>Larga duración, secado rápido <br/>8ml $1160 <br/>11 ml $1800<br/>Pincel panorámico, fórmula hipoalergénica.'
-    },
-    'morralhombre': {
-      'image': './assets/otros/morralhombre.jpeg',
-      'info': 'Morrales para hombre<br/>Color negro o gris'
-    },
-    'tabaquera': {
-      'image': './assets/otros/tabaquera2.jpeg',
-      'info': 'Tabaquera<br/>Color suela'
-    },
-    'tarjetero': {
-      'image': './assets/otros/tarjeteros.jpeg',
-      'info': 'Tarjeteros'
-    },
-    'llavero': {
-      'image': './assets/otros/llaveros.jpeg',
-      'info': 'Llaveros de clubes de fútbol'
-    },
-    'botineras': {
-      'image': './assets/otros/botineras.jpeg',
-      'info': 'Botineras para guardar los botines de fútbol<br/>Medidas: 35cmx19cmx12cm de profundidad.'
-    },
-  };
-  
-  function mostrarInformacion(dataKey, imageDisplay, infoDisplay) {
-    var itemData = dataInfo[dataKey];
-    if (itemData) {
-      imageDisplay.src = itemData.image;
-      infoDisplay.innerHTML = itemData.info;
+    const targetId = this.getAttribute("href").substring(1); // Get the target section id
+    const targetSection = document.getElementById(targetId); // Get the target section element
+
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "instant" }); // Instantly scroll to the target section
+    } else {
+      // Si targetSection es null, permitimos que el enlace se comporte normalmente
+      window.location.href = this.getAttribute("href");
     }
   }
-  function setupListHoverListener(list, imageDisplay, infoDisplay) {
-    list.addEventListener('mouseover', function (event) {
-      if (event.target.tagName === 'P') {
-        var dataKey = event.target.getAttribute('data-key');
-        mostrarInformacion(dataKey, imageDisplay, infoDisplay);
+  document.querySelectorAll("#menu a, #icons-div a").forEach((anchor) => {
+    anchor.addEventListener("click", handleAnchorClick);
+  });
+
+  //ELEMENTO DE MENU DESTACADO SEGUN SECCION EN PANTALLA
+
+  window.addEventListener("scroll", () => {
+    let currentSection = "";
+
+    // Recorre todas las secciones
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      // Verifica si la sección está visible en la ventana
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute("id");
       }
     });
+
+    // Recorre todos los elementos del menú y aplica el estilo activo
+    menuItems.forEach((item) => {
+      item.classList.remove("observer-active");
+      if (item.getAttribute("href").substring(1) === currentSection) {
+        item.classList.add("observer-active");
+      }
+    });
+  });
+
+  //PRESENTACIÓN
+  const items = document.querySelectorAll(".icons-div > div");
+  const textDisplay = document.getElementById("text-display");
+
+  const texts = [
+    "Promociones",
+    "Librería y Juguetería",
+    "Accesorios para el pelo",
+    "Tinturas y tratamientos",
+    "Carteras y afines",
+    "Productos Sublimados",
+  ];
+  let currentIndex = 0;
+  let rotationInterval;
+
+  function updateActiveItem() {
+    // Remove active class from all items
+    items.forEach((item) => item.classList.remove("special"));
+
+    // Add active class to the current item
+    items[currentIndex].classList.add("special");
+
+    // Update the displayed text
+    textDisplay.textContent = texts[currentIndex];
+
+    // Move to the next item in the array
+    currentIndex = (currentIndex + 1) % items.length;
   }
-  const listGroupLib = document.querySelector('.list-group-lib');
-  const imageDisplayLib = document.getElementById('image-display-lib');
-  const infoDisplayLib = document.getElementById('info-display-lib');
-  const listGroupSub = document.querySelector('.list-group-sub');
-  const imageDisplaySub = document.getElementById('image-display-sub');
-  const infoDisplaySub = document.getElementById('info-display-sub');
-  const listGroupMar = document.querySelector('.list-group-mar');
-  const imageDisplayMar = document.getElementById('image-display-mar');
-  const infoDisplayMar = document.getElementById('info-display-mar');
-  const listGroupTin = document.querySelector('.list-group-tin');
-  const imageDisplayTin = document.getElementById('image-display-tin');
-  const infoDisplayTin = document.getElementById('info-display-tin');
-  const listGroupCar = document.querySelector('.list-group-car');
-  const imageDisplayCar = document.getElementById('image-display-car');
-  const infoDisplayCar = document.getElementById('info-display-car');
+
+  function startRotation() {
+    rotationInterval = setInterval(updateActiveItem, 3000);
+  }
+
+  function stopRotation() {
+    clearInterval(rotationInterval);
+  }
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Initialize the first active item
+  updateActiveItem();
+
+  // Event listener for scroll
+  window.addEventListener("scroll", () => {
+    const iconsDiv = document.querySelector(".icons-div");
+
+    if (isInViewport(iconsDiv)) {
+      if (!rotationInterval) {
+        startRotation();
+      }
+    } else {
+      stopRotation();
+      rotationInterval = null;
+    }
+  });
+
+  // Start the rotation initially
+  startRotation();
+
+  //LISTA DE "MI PEDIDO"
+  storedProducts.forEach((productText) => {
+    // Crear un contenedor para el producto seleccionado con botón de eliminación
+    const productContainer = document.createElement("div");
+    productContainer.className = "product-container";
+    productContainer.textContent = productText;
+
+    // Crear un botón de eliminación
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "🗑️";
+    removeButton.className = "remove-btn";
+    removeButton.title = "Eliminar";
+    removeButton.addEventListener("click", function () {
+      // Remover la visualización del producto
+      productContainer.remove();
+      // Actualizar el localStorage
+      let updatedProducts = JSON.parse(localStorage.getItem("products")) || [];
+      updatedProducts = updatedProducts.filter((item) => item !== productText);
+      localStorage.setItem("products", JSON.stringify(updatedProducts));
+    });
+
+    // Añadir el botón de eliminación al contenedor del producto
+    productContainer.appendChild(removeButton);
+
+    // Agregar el contenedor del producto al contenedor de todos los productos
+    document
+      .getElementById("all-products-i-want")
+      .appendChild(productContainer);
+  });
+
+  // CARRUSEL RESPONSIVE
+  if (window.innerWidth <= 868) {
+    // Selecciona todos los carruseles que tienen un id que empieza con "carouselFade"
+    const carousels = document.querySelectorAll('[id^="carouselFade"]');
+
+    carousels.forEach(function (carousel) {
+      const carouselInner = carousel.querySelector(".carousel-inner");
+      const slides = carousel.querySelectorAll(".carousel-item");
+
+      slides.forEach(function (slide) {
+        const secondImgAndText = slide.querySelector(".img-and-text.second");
+        if (secondImgAndText) {
+          // Crear una nueva slide
+          let newSlide = document.createElement("div");
+          newSlide.classList.add("carousel-item");
+
+          // Crear un nuevo contenedor para la imagen y descripción
+          let newSlides = document.createElement("div");
+          newSlides.classList.add("slides");
+
+          // Clonar el segundo conjunto de imagen y descripción
+          let clonedSecondImgAndText = secondImgAndText.cloneNode(true);
+          clonedSecondImgAndText.classList.remove("second");
+          clonedSecondImgAndText.classList.add("first");
+
+          // Agregar el conjunto clonado al nuevo contenedor
+          newSlides.appendChild(clonedSecondImgAndText);
+
+          // Agregar el nuevo contenedor a la nueva slide
+          newSlide.appendChild(newSlides);
+
+          // Agregar la nueva slide al carrusel
+          carouselInner.appendChild(newSlide);
+        }
+      });
+    });
+  }
+
+  // AGREGAR AL PEDIDO
+  document.querySelectorAll(".want-btn").forEach((button) => {
+    button.addEventListener("click", function () {
+      // Limpiar mensaje
+      message.textContent = "";
+
+      const parentElement = this.parentElement;
+
+      // Verificar si el contenedor tiene inputs
+      const detailProduct = parentElement.querySelector(".type-product");
+      const quantityInput = parentElement.querySelector(".number-product");
+
+      // Si existen inputs, verificar si están vacíos
+      if (detailProduct && quantityInput) {
+        if (!detailProduct.value.trim() || !quantityInput.value.trim()) {
+          alert("Por favor, completa los campos antes de agregar el producto.");
+          return; // Salir de la función si no están completos
+        }
+      }
+
+      let productText = "";
+      const selectElement = parentElement.querySelector("select");
+
+      if (selectElement) {
+        // Si hay un select, obtener solo el texto fuera de select e inputs
+        productText = Array.from(parentElement.childNodes)
+          .filter(
+            (node) =>
+              node.nodeType === Node.TEXT_NODE ||
+              (node.nodeType === Node.ELEMENT_NODE &&
+                node.tagName !== "SELECT" &&
+                node.tagName !== "INPUT" &&
+                node.tagName !== "BUTTON")
+          )
+          .map((node) => node.textContent.trim())
+          .join(" ")
+          .replace("Agregar al pedido", "")
+          .trim();
+      } else {
+        // Si no hay select, obtener todo el texto del contenedor como antes
+        productText = parentElement.textContent
+          .replace("Agregar al pedido", "")
+          .trim();
+      }
+
+      let detail = "";
+
+      // Si el detailProduct es un select, obtener solo el valor seleccionado
+      if (detailProduct && detailProduct.tagName === "SELECT") {
+        detail = detailProduct.options[detailProduct.selectedIndex].text;
+      } else if (detailProduct) {
+        // Si no es un select, obtener el valor del input normalmente
+        detail = detailProduct.value.trim();
+      }
+
+      let quantity = quantityInput ? quantityInput.value.trim() : "";
+
+      // Formatear el texto del producto
+      const productDetails =
+        detail || quantity
+          ? `${productText}${detail ? ` ${detail}` : ""}${
+              quantity ? ` cantidad: ${quantity}` : ""
+            }`
+          : productText;
+
+      console.log("Producto a agregar:", productDetails); // Verifica en la consola si se obtiene el texto correcto
+
+      // Guardar el producto en localStorage
+      let products = JSON.parse(localStorage.getItem("products")) || [];
+      products.push(productDetails);
+      localStorage.setItem("products", JSON.stringify(products));
+
+      // Crear un nuevo input oculto para enviar el nombre del producto
+      const hiddenInput = document.createElement("input");
+      hiddenInput.type = "hidden";
+      hiddenInput.name = "products[]"; // Array de productos
+      hiddenInput.value = productDetails;
+      document.getElementById("order-form").appendChild(hiddenInput);
+
+      // Crear un contenedor para el producto seleccionado con botón de eliminación
+      const productContainer = document.createElement("div");
+      productContainer.className = "product-container";
+      productContainer.textContent = productDetails;
+
+      // Crear un botón de eliminación
+      const removeButton = document.createElement("button");
+      removeButton.textContent = "🗑️";
+      removeButton.className = "remove-btn";
+      removeButton.title = "Eliminar";
+      removeButton.addEventListener("click", function () {
+        // Remover el input oculto correspondiente
+        hiddenInput.remove();
+        // Remover la visualización del producto
+        productContainer.remove();
+        // Actualizar el localStorage
+        let updatedProducts =
+          JSON.parse(localStorage.getItem("products")) || [];
+        updatedProducts = updatedProducts.filter(
+          (item) => item !== productDetails
+        );
+        localStorage.setItem("products", JSON.stringify(updatedProducts));
+      });
+
+      // Añadir el botón de eliminación al contenedor del producto
+      productContainer.appendChild(removeButton);
+
+      // Agregar el contenedor del producto al contenedor de todos los productos
+      const allProductsContainer = document.getElementById(
+        "all-products-i-want"
+      );
+      if (!allProductsContainer) {
+        console.error("Error: No se encontró el contenedor de productos.");
+        return;
+      }
+      allProductsContainer.appendChild(productContainer);
+
+      // Justo después de agregar el contenedor del producto al contenedor de todos los productos
+      allProductsContainer.appendChild(productContainer);
+
+      // Mostrar el mensaje "Producto añadido"
+      const addedMessage = document.createElement("p");
+      addedMessage.textContent = "Producto añadido";
+      addedMessage.className = "added-message"; // Clase para aplicar estilo
+      parentElement.appendChild(addedMessage);
+
+      // Opcional: Ocultar el mensaje después de un tiempo
+      setTimeout(() => {
+        addedMessage.remove();
+      }, 1500);
+
+      // Reiniciar los inputs si existen
+      if (detailProduct) detailProduct.value = "";
+      if (quantityInput) quantityInput.value = "";
+    });
+  });
+
+  // VER PEDIDO
+  if (!orderButton || !productList || !allProducts || !message) {
+    console.error(
+      "Error: Could not find one or more elements with specified IDs"
+    );
+    return;
+  }
+
+  orderButton.addEventListener("click", function () {
+    // Toggle the display of the order list
+    const isVisible = productList.style.display === "block";
+    productList.style.display = isVisible ? "none" : "block";
+
+    // Modificar el HTML del botón dependiendo del estado
+    const orderButtonText = document.getElementById("order-btn-text");
+    orderButtonText.innerHTML = isVisible
+      ? '<span class="fs-4">📝</span> Mi pedido' // HTML cuando la lista está oculta
+      : '<span class="fs-5">📝</span> Ocultar pedido'; // HTML cuando la lista está visible
+
+    // Check if the all-products-i-want div is empty
+    if (allProducts.children.length === 0) {
+      message.textContent = "Aún no has seleccionado ningún artículo";
+    } else {
+      message.textContent = "";
+    }
+  });
+
+  // BRISEIDA JS
+  const briseida = document.getElementById("briseida");
+  briseida.addEventListener("mouseover", function () {
+    briseida.style.transform = "translateX(300px)";
+  });
+  briseida.addEventListener("transitionend", function () {
+    if (briseida.style.transform === "translateX(300px)") {
+      briseida.style.transition = "none";
+      briseida.style.transform = "translateX(0)";
+      briseida.style.opacity = "1";
+
+      briseida.offsetHeight;
+
+      briseida.style.transition = "transform 1s linear, opacity 0.5s linear";
+    }
+  });
+
+  // SEARCH JS
+  /*
+  const searchInput = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+  const contentItems = document.querySelectorAll(".content-item");
+
+  searchButton.addEventListener("click", function () {
+    const query = searchInput.value.toLowerCase();
+    contentItems.forEach(function (item) {
+      if (item.textContent.toLowerCase().includes(query)) {
+        item.style.display = "";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+
+  searchInput.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      searchButton.click();
+    }
+  });*/
+
+  //CARRUSEL CARTERAS Y AFINES CON SELECT
+  const select = document.getElementById("carteras-select");
+  const galcarteras = document.getElementById("carouselFade5");
+  const galbandoleras = document.getElementById("carouselFade6");
+  const galmochilas = document.getElementById("carouselFade7");
+  const galaccesorios = document.getElementById("carouselFade8");
+
+  galcarteras.style.display = "block";
+  galbandoleras.style.display = "none";
+  galmochilas.style.display = "none";
+  galaccesorios.style.display = "none";
+
+  select.addEventListener("change", function () {
+    // Ocultar todas las galerías
+    galcarteras.style.display = "none";
+    galbandoleras.style.display = "none";
+    galmochilas.style.display = "none";
+    galaccesorios.style.display = "none";
   
-  setupListHoverListener(listGroupLib, imageDisplayLib, infoDisplayLib);
-  setupListHoverListener(listGroupSub, imageDisplaySub, infoDisplaySub);
-  setupListHoverListener(listGroupMar, imageDisplayMar, infoDisplayMar);
-  setupListHoverListener(listGroupTin, imageDisplayTin, infoDisplayTin);
-  setupListHoverListener(listGroupCar, imageDisplayCar, infoDisplayCar);
-
-
-
+    // Mostrar la galería seleccionada
+    let selectedGallery = document.getElementById(this.value);
+    if (selectedGallery) {
+      selectedGallery.style.display = "block";
+    }
+  });
   
-  // Mostrar la información por defecto al cargar la página
-  mostrarInformacion('cartulinas', imageDisplayLib, infoDisplayLib);
-  mostrarInformacion('cartucheras', imageDisplaySub, infoDisplaySub);
-  mostrarInformacion('carterasseptiembre', imageDisplayMar, infoDisplayMar);
-  mostrarInformacion('kit', imageDisplayTin, infoDisplayTin);
-  mostrarInformacion('esmaltes', imageDisplayCar, infoDisplayCar);
+
+
+
 });
 

@@ -2,9 +2,9 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="lyr2.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,860 +15,1901 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="assets/star.png" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Lyra</title>
   </head>
-  <body class="light-mode">
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-LK3VW8R612"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <body>
+    <!----------------------MENU---------------------->
 
-      gtag("config", "G-LK3VW8R612");
-    </script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <!--========================================================== -->
-    <!-- ENCABEZADO -->
-    <!--========================================================== -->
-    <div class="fixed-top">
-      <header
-        class="container-fluid text-light align-items-center special-color justify-content-around"
-      >
-        <nav id="barra">
-          <p class="text-light m-2 px-2">
-            <span id="lyra">LYRA <i class="fas fa-star"></i></span
-            ><span class="distr">Distribuidora de venta mayorista</span>
-          </p>
-          <a
-            href="https://wa.me/543512309375"
-            target="_blank"
-            id="tel"
-            class="fs-5 text-light p-2"
-            ><i class="bi bi-whatsapp"></i> Chat
-          </a>
-          <div class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#inicio"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >Menu
-            </a>
-            <ul class="dropdown-menu special-color">
-              <li>
-                <a class="dropdown-item" href="#inicio">Inicio</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#promos">Promos </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#libreria">Librería</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#accesoriosPelo"
-                  >Accesorios para el pelo
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#sublimados">Sublimados</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#marroquineria"
-                  >Marroquinería
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#cuero">Cuero</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#tinturas">Tinturas</a>
-              </li>
-
-              <li>
-                <a class="dropdown-item" href="#otros">Novedades</a>
-              </li>
-
-              <hr />
-              <li>
-                <a class="dropdown-item" href="#seccion-contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
-          <div class="social-icon ms-auto">
-            <a
-              href="https://www.facebook.com/profile.php?id=100064069295797&mibextid=rS40aB7S9Ucbxw6v"
-              target="_blank"
-              rel="noreferrer"
-              ><img src="./assets/nav-icon4.svg" alt="facebook-icon"
-            /></a>
-            <a
-              href="https://www.instagram.com/lyra.distribuidora?utm_source=qr&igsh=YjE5NDMyY2FhOQ=="
-              target="_blank"
-              rel="noreferrer"
-              ><img src="./assets/nav-icon3.svg" alt="instagram-icon"
-            /></a>
-            <div class="sun-moon" onclick="toggleDarkMode()">
-              <img
-                class="img-sun-moon"
-                src="./assets/lightdark.png"
-                alt="dark-mode"
-                id="lightdark"
-              />
-            </div>
-          </div>
-        </nav>
-      </header>
+    <div id="menu">
+      <a class="item-menu" href="#home">
+        <img class="rubro-icon invert" src="./assets/house.png" alt="" />
+        <p class="rubro-title">Inicio</p>
+        <p class="rubro-title-small">Inicio</p>
+      </a>
+      <a class="item-menu" href="#promos">
+        <img class="rubro-icon invert" src="./assets/promo.png" alt="" />
+        <p class="rubro-title">Promociones</p>
+        <p class="rubro-title-small">Promos</p>
+      </a>
+      <a class="item-menu" href="#libreria">
+        <img class="rubro-icon invert" src="./assets/libreria.png" alt="" />
+        <p class="rubro-title">Librería y Juguetería</p>
+        <p class="rubro-title-small">Librería</p>
+      </a>
+      <a class="item-menu" href="#hebillas">
+        <img class="rubro-icon invert" src="./assets/pelo.png" alt="" />
+        <p class="rubro-title">Accesorios para el pelo</p>
+        <p class="rubro-title-small">Hebillas</p>
+      </a>
+      <a class="item-menu" href="#tinturas">
+        <img class="rubro-icon invert" src="./assets/tinturas.png" alt="" />
+        <p class="rubro-title">Tinturas y tratamientos</p>
+        <p class="rubro-title-small">Tinturas</p>
+      </a>
+      <a class="item-menu" href="#carteras">
+        <img class="rubro-icon invert" src="./assets/carteras.png" alt="" />
+        <p class="rubro-title">Carteras y afines</p>
+        <p class="rubro-title-small">Carteras</p>
+      </a>
+      <a class="item-menu" href="#sublimados">
+        <img class="rubro-icon invert" src="./assets/sublim.png" alt="" />
+        <p class="rubro-title">Sublimados</p>
+        <p class="rubro-title-small">Sublimados</p>
+      </a>
+      <a class="item-menu" href="https://wa.me/543512309375" target="_blank">
+        <img class="rubro-icon whats" src="./assets/whatsapp.png" alt="" />
+        <p class="rubro-title">Chat de whatsapp</p>
+      </a>
     </div>
-    <!--========================================================== -->
-    <!-- CAROUSEL -->
-    <!--========================================================== -->
 
-    <section id="inicio">
-      <!--
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide carousel1"
-        data-bs-ride="carousel"
-        data-bs-wrap="true"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/menu/hebillas.jpeg" class="d-block" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <p></p>
+    <div id="content">
+      <!----------------------HOME---------------------->
+
+      <section class="menu-section" id="home">
+        <div class="div-lyra">
+          <img class="logo invert" src="lyr2.png" alt="" id="logo" />
+          <div id="lyramayorista">
+            <span class="lyra">LYRA </span>
+            <p id="mayorista">Distribuidora mayorista</p>
+          </div>
+          <div id="order">
+            <p id="order-btn-text"><span class="fs-4">📝</span>Mi pedido</p>
+          </div>
+        </div>
+        <div class="div-collage">
+          <img class="collage" src="./assets/col3.png" alt="" />
+          <img class="mirror" src="./assets/col3.png" alt="" />
+          <img class="collage2" src="./assets/col3.png" alt="" />
+          <img class="mirror2" src="./assets/col3.png" alt="" />
+        </div>
+
+        <p class="slogan">Un universo de productos para tu negocio</p>
+        <div class="icons-div" id="icons-div">
+          <div><a href="#promos"><img src="./assets/promo2.png" alt="" /></a></div>
+          <div><a href="#libreria"><img src="./assets/libreria2.png" alt="" /></a></div>
+          <div><a href="#hebillas"><img src="./assets/pelo2.png" alt="" /></a></div>
+          <div><a href="#tinturas"><img src="./assets/tinturas2.png" alt="" /></a></div>
+          <div><a href="#carteras"><img src="./assets/carteras2.png" alt="" /></a></div>
+          <div><a href="#sublimados"><img src="./assets/sublim2.png" alt="" /></a></div>
+        </div>
+        <div id="text-display"></div>
+
+        
+        <div id="my-order">
+          <h4>Mi pedido</h4>
+          <form
+            id="order-form"
+            action="https://formspree.io/f/xeqbkoww"
+            method="post"
+          >
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <p class="form-elem">
+                  Selecciona en nuestra página web los productos requeridos.<br />
+                  Envíanos tu pedido y/o escríbenos por whatsapp al 3512309375
+                  <a href="https://wa.me/543512309375" target="_blank">
+                    <img
+                      class="rubro-icon m-1"
+                      src="./assets/whatsapp.png"
+                      alt=""
+                    />
+                  </a>
+                  <br />
+                  Distribuidora Lyra. Córdoba Capital
+                </p>
+
+                <div class="form-elem">
+                  <label for="name">Nombre</label>
+                  <input
+                    type="input"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Nombre"
+                    required
+                  />
+                </div>
+
+                <div class="form-elem">
+                  <label for="phone">Teléfono</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="phone"
+                    id="phone"
+                    placeholder="549 351"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="message-order-list"></div>
+            <div class="form-elem form-control" id="all-products-i-want"></div>
+
+            <div class="form-elem">
+              <textarea
+                class="form-control"
+                name="message"
+                id="message"
+                rows="4"
+                placeholder="Escribe aquí los comentarios que consideres necesarios"
+              ></textarea>
+            </div>
+            <div class="form-elem">
+              <button
+                id="send-button"
+                type="submit"
+                class="btn w-100 text-light"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+        <!--
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Buscar..." />
+          <button id="search-button">Buscar</button>
+        </div>
+        -->
+        <div class="delivery">
+          <img
+            id="briseida"
+            class="car invert"
+            src="./assets/car1.png"
+            alt=""
+          />
+          <p>
+            Te ahorramos tiempo y esfuerzo <br />
+            con nuestro servicio de envío a domicilio
+          </p>
+        </div>
+      </section>
+      <!----------------------PROMOS---------------------->
+      <section class="menu-section" id="promos">
+        <hr class="m-5" />
+        <h3 class="text-center m-5">
+          PROMOCIONES
+          <img class="rubro-icon" src="./assets/promo.png" alt="" />
+        </h3>
+        <div id="carouselFade1" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./promos/cartu.jpeg" alt="..." />
+                  <p class="product-text">
+                    PROMO CARTULINAS<br />
+                    50 cartulinas (10 colores a elección. 5 unidades por color)
+                    $23940
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./promos/bolsas.jpeg" alt="..." />
+                  <p class="product-text">
+                    PROMO BOLSAS<br />
+                    50 bolsas (5 de cada tamaño y estilo) $25700
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./promos/libritos.jpg" alt="..." />
+                  <p class="product-text">
+                    PROMO LIBRITOS PARA COLOREAR<br />
+                    40 libritos surtidos $11680
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./promos/vinchas.jpeg" alt="..." />
+                  <p class="product-text">
+                    PROMO ACCESORIOS PELO<br />
+                    10 vinchas infantiles <br />
+                    10 scrunchis y 10 moños de gasa $26000
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./promos/cartus.jpg" alt="..." />
+                  <p class="product-text">
+                    PROMO CARTUCHERAS<br />
+                    20 cartucheras de neoprene sublimadas $50500<br />
+                    Diseños a elección
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./promos/kit.jpg" alt="..." />
+                  <p class="product-text">
+                    PROMO TINTURAS<br />
+                    20 tinturas kit EstereoColor<br />
+                    Y 10 funky surtidas $62000
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/subli.jpeg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/librer.jpeg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/marro.jpeg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/tintu.jpeg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/cuero.jpeg" class="d-block" alt="..." />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFade1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFade1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div
-        id="carouselExampleCaptions2"
-        class="carousel slide carousel2"
-        data-bs-ride="carousel"
-        data-bs-wrap="true"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/menu/hebillas2.jpeg" class="d-block" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <p></p>
+      </section>
+
+      <!----------------------LIBRERÍA Y JUGUETERÍA---------------------->
+      <section class="menu-section" id="libreria">
+        <hr class="m-5" />
+        <h3 class="text-center m-5">
+          LIBRERÍA Y JUGUETERÍA
+          <img class="rubro-icon" src="./assets/libreria.png" alt="" />
+        </h3>
+        <div id="carouselFade2" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./libreria/colorescartulinas.jpg" alt="..." />
+                  <p class="info-product">
+                    CARTULINAS<br />
+                    Blanca $357 Color $504 Flúor $915<br />
+                    Mínimo 5 unidades por color<br />Medidas: 45x64cm
+                  </p>
+                  <p class="product-input">
+                    Cartulinas<br />
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="5"
+                      min="5"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./libreria/gomaeva.jpg" alt="..." />
+                  <p class="info-product">
+                    Goma eva $649<br />
+                    Goma eva con brillo $1278
+                  </p>
+                  <p class="product-input">
+                    Goma eva<br />
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="2"
+                      min="2"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./libreria/papelafiche.jpg" alt="..." />
+                  <p class="info-product">
+                    Papel afiche<br />
+                    Blanco $585 Color $828<br />
+                    Mínimo 10 unidades por color
+                  </p>
+                  <p class="product-input">
+                    Papel afiche<br />
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="10"
+                      min="10"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./libreria/crepe2.jpg" alt="..." />
+                  <p class="info-product">
+                    Papel crepé $387<br />
+                    Mínimo 10 unidades por color
+                  </p>
+                  <p class="product-input">
+                    Papel crepé<br />
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="10"
+                      min="10"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./libreria/papelderegalo.jpg" alt="..." />
+                  <p class="info-product">
+                    Papel de regalo $772<br />
+                    Medidas: 70cm x 100cm <br />ilustración 90gr<br />
+                    Mínimo 5 unidades por diseño<br />
+                  </p>
+                  <p class="product-input">
+                    Papel de regalo<br />
+                    <select class="type-product" name="type-product" required>
+                      <option value=""></option>
+                      <option value="pinceladas">pinceladas</option>
+                      <option value="love">love</option>
+                      <option value="unicornios">unicornios</option>
+                      <option value="corazones">corazones</option>
+                       
+                      <option value="trama">trama multicolor</option>
+                      <option value="corbatas">corbatas</option>
+                      <option value="mandalas">mandalas</option>
+                      <option value="juguetes">juguetes</option>
+                       
+                      <option value="llamas">llamas</option>
+                      <option value="aviones">aviones</option>
+                      <option value="surtido">surtido</option>
+                    </select>
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="5"
+                      min="5"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./libreria/sobres.jpeg" alt="..." />
+                  <p class="info-product">
+                    Sobres de colores<br />
+                    Chico $78 | 7,5cm X 10,5cm<br />
+                    Mediano $115 | 11,4cm X 16,2cm<br />
+                    Grande $127 | 12,5cm X 19cm
+                  </p>
+                  <p class="product-input">
+                    Sobres de colores<br />
+                    <select class="type-product" name="type-product" required>
+                      <option value=""></option>
+                      <option value="chico">chico</option>
+                      <option value="mediano">mediano</option>
+                      <option value="grande">grande</option>
+                      <option value="surtido">surtido</option>
+                    </select>
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="5"
+                      min="5"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./libreria/bolsaskraft.jpg" alt="..." />
+                  <p class="info-product">
+                    Bolsas kraft<br />
+                    14cmx20cm $337 | 22cmx30cm $389 | 30cmx41cm $515 | 14cmx40cm
+                    $395
+                  </p>
+                  <p class="product-input">
+                    Bolsas kraft<br />
+                    <select class="type-product" name="type-product" required>
+                      <option value=""></option>
+                      <option value="14cmx20cm">14cmx20cm</option>
+                      <option value="22cmx30cm">22cmx30cm</option>
+                      <option value="30cmx41cm">30cmx41cm</option>
+                      <option value="14cmx40cmVino">14cmx40cm(vino)</option>
+                      <option value="surtido">surtido</option>
+                    </select>
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="5"
+                      min="5"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./libreria/bolsasacuario.jpg" alt="..." />
+                  <p class="info-product">
+                    Bolsas Acuario (lisas de colores)<br />
+                    14cmx20cm $424 | 22cmx30cm $541 | 30cmx41cm $768
+                  </p>
+                  <p class="product-input">
+                    Bolsas Acuario<br />
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="medida y color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="5"
+                      min="5"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./libreria/bolsasfantasia.jpeg" alt="..." />
+                  <p class="info-product">
+                    Bolsas Fantasía<br />
+                    14cmx20cm $480 | 22cmx30cm $654 | 30cmx41cm $909
+                  </p>
+                  <p class="product-input">
+                    Bolsas fantasía<br />
+                    <select class="type-product" name="type-product" required>
+                      <option value=""></option>
+                      <option value="14cmx20cm">14cmx20cm</option>
+                      <option value="22cmx30cm">22cmx30cm</option>
+                      <option value="30cmx41cm">30cmx41cm</option>
+                      <option value="surtido">surtido</option>
+                    </select>
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="5"
+                      min="5"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./libreria/libritos.jpg" alt="..." />
+                  <p class="info-product">
+                    Libritos para colorear $310<br />
+                    Tamaño A4 | Clásicos | Cuentos | Didácticos
+                  </p>
+                  <p class="product-input">
+                    Libritos<br />
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="detalle"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="5"
+                      min="5"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/subli2.jpeg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/librer2.jpeg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/marro2.jpeg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/tintu2.jpeg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/menu/cuero2.jpeg" class="d-block" alt="..." />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFade2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFade2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions2"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions2"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    --></section>
 
-    <!--========================================================== -->
-    <!-- RUBROS -->
-    <!--========================================================== -->
-    <section class="pt-5">
-      <div id="lottie-info">
-        <div class="lottie-div">
-          <lottie-player
-            src="./assets/caja.json"
-            background="transparent"
-            speed="1"
-            style="width: 200px; height: 200px"
-            loop
-            autoplay
-          ></lottie-player>
+        <div class="extra-div">
+          <h6 class="mt-5">
+            Haz click para ver nuestros catálogos completos de Librería y
+            Juguetería 🔽
+          </h6>
+          <div class="catalogo">
+            <div>
+              <a
+                href="./libreria/libreriaMayoristaAgosto.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h5>Catálogo de Librería</h5>
+                <img src="./libreria/catalogolibreria2.jpeg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="./libreria/jugueteriaMayoristaAgosto.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h5>Catálogo de Juguetería</h5>
+                <img src="./libreria/catalogojuguetes.jpeg" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
-        <div id="information">
-          <span id="lyra">LYRA <i class="fas fa-star"></i></span
-          ><a
-            href="https://wa.me/543512309375"
+      </section>
+      <!----------------------ACCESORIOS PARA EL PELO---------------------->
+      <section class="menu-section" id="hebillas">
+        <hr class="m-5" />
+
+        <h3 class="text-center m-5">
+          HEBILLAS | ACCESORIOS PARA EL PELO
+          <img class="rubro-icon" src="./assets/pelo.png" alt="" />
+        </h3>
+        <div id="carouselFade3" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./hebillas/broches.jpg" alt="..." />
+                  <p class="product-text">
+                    Hebillas clásicas de adulto<br />
+                    $10200 las 15 unidades<br />
+                    ($680 c/u)
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./hebillas/hebinfantiles.jpeg" alt="..." />
+                  <p class="product-text">
+                    Hebillas infantiles<br />
+                    $10200 los 15 pares<br />
+                    ($680 c/par)
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./hebillas/vinchasinfantiles.jpg" alt="..." />
+                  <p class="product-text">
+                    Vinchas infantiles<br />
+                    $16500 las 10 unidades surtidas ($1650 c/u)
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./hebillas/fiesta.jpg" alt="..." />
+                  <p class="product-text">
+                    Vinchas de fiesta <br />
+                    $8250 las 5 unidades surtidas ($1650 c/u)
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./hebillas/monosgas.jpeg" alt="..." />
+                  <p class="product-text">
+                    Moños de gasa grandes <br />
+                    $6300 las 10 unidades surtidas<br />
+                    ($630 c/u)
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./hebillas/scrunch.jpeg" alt="..." />
+                  <p class="product-text">
+                    Scrunchis <br />
+                    $6300 las 10 unidades surtidas<br />
+                    ($630 c/u)
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFade3"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFade3"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!----------------------TINTURAS---------------------->
+      <section class="menu-section" id="tinturas">
+        <hr class="m-5" />
+
+        <h3 class="text-center m-5">
+          TINTURAS Y TRATAMIENTOS
+          <img class="rubro-icon" src="./assets/tinturas.png" alt="" />
+        </h3>
+        <div class="extra-div">
+          <h5>Carta de tonos</h5>
+          <a
+            href="./tinturas/carta.pdf"
             target="_blank"
-            id="what"
-            class="fs-5 text-light"
-            ><i class="bi bi-whatsapp"></i> </a
-          ><br />
-          Hacemos envíos a Córdoba capital y alrededores <br />
-          Mínimo de compra $20000
+            rel="noopener noreferrer"
+          >
+            <button class="download-btn">
+              Descargar carta
+              <img class="icon-img" src="./assets/descargar.png" alt="" />
+            </button>
+          </a>
+          <div class="carta-img-div">
+            <img src="./tinturas/carta.jpg" alt="" />
+            <img src="./tinturas/cartafunky.jpg" alt="" />
+          </div>
         </div>
-      </div>
-      <div class="gallery">
-        <div class="row">
-          <a class="enlace col-md-3 col-sm-6" href="#promos">
-            <div class="elem-gallery">
-              <img src="./assets/menu/promos1.jpeg" alt="" />
-              <p class="texto-gallery">Promos</p>
+        <div id="carouselFade4" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./tinturas/kit.jpg" alt="..." />
+                  <p class="info-product">
+                    Kit EstereoColor<br />
+                    $2465 c/u<br />
+                    (Tintura + oxidante + guantes + post-coloración)
+                  </p>
+                  <p class="product-input">
+                    Tinturas kit
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="tono"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="1"
+                      min="1"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./tinturas/sachet.jpg" alt="..." />
+                  <p class="info-product">
+                    Sachet tintura + oxidante<br />
+                    $1725<br />
+                    (Sólo tonos 93 y 562)
+                  </p>
+                  <p class="product-input">
+                    Sachet EstereoColor<br />
+                    <select class="type-product" name="type-product" required>
+                      <option value=""></option>
+                      <option value="tono93">tono 93</option>
+                      <option value="tono562">tono 562</option>
+                    </select>
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="1"
+                      min="1"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
             </div>
-          </a>
-          <a class="enlace col-md-3 col-sm-6" href="#libreria">
-            <div class="elem-gallery">
-              <img src="./assets/menu/librer.jpeg" alt="" />
-              <p class="texto-gallery">Librería</p>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./tinturas/funky4.jpg" alt="..." />
+                  <p class="info-product">
+                    Funky color<br />
+                    $1568<br />
+                    Tintura semipermanente. Dura 12 lavados
+                  </p>
+                  <p class="product-input">
+                    Funky
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./tinturas/funkyneon.jpg" alt="..." />
+                  <p class="info-product">
+                    Funky neón <br />
+                    $1568<br />
+                    Tintura semipermanente
+                  </p>
+                  <p class="product-input">
+                    Funky neón<br />
+                    <select class="type-product" name="type-product" required>
+                      <option value=""></option>
+                      <option value="amarillo">amarillo neón</option>
+                      <option value="fucsia">fucsia neón</option>
+                      <option value="verde">verde neón</option>
+                      <option value="naranja">naranja neón</option>
+                    </select>
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="1"
+                      min="1"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
             </div>
-          </a>
-          <a class="enlace col-md-3 col-sm-6" href="#accesoriosPelo">
-            <div class="elem-gallery">
-              <img src="./assets/menu/hebillas3.jpg" alt="" />
-              <p class="texto-gallery">
-                Accesorios<br />
-                para el pelo
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./tinturas/shock.jpg" alt="..." />
+                  <p class="info-product">
+                    Shock capilar $1160<br />
+                    47gr. Argán, keratina, macadamia, coco, bótox, colágeno,
+                    blindaje, minuto express, rubios luminosos, carbón detox,
+                    oro 24k, silver y co-wash
+                  </p>
+                  <p class="product-input">
+                    Shock capilar
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="tratamiento"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./tinturas/oleo.jpg" alt="..." />
+                  <p class="info-product">
+                    Óleo capilar <br />
+                    $5380 las 10 unidades
+                  </p>
+                  <p class="product-input">
+                    Óleo capilar<br />
+                    <select class="type-product" name="type-product" required>
+                      <option value=""></option>
+                      <option value="argan">argán</option>
+                      <option value="macadamia">macadamia</option>
+                      <option value="coco">coco</option>
+                      <option value="almendras">almendras</option>
+                    </select>
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      step="10"
+                      min="10"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFade4"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFade4"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!----------------------CARTERAS Y AFINES---------------------->
+      <section class="menu-section" id="carteras">
+        <hr class="m-5" />
+
+        <h3 class="text-center m-5">
+          CARTERAS Y AFINES
+          <img class="rubro-icon" src="./assets/carteras.png" alt="" />
+        </h3>
+        <div class="extra-div">
+          <h5>Ver galería de imágenes de:</h5>
+          <select id="carteras-select" name="carteras_select">
+            <option value="carouselFade5">Carteras</option>
+            <option value="carouselFade6">Bandoleras</option>
+            <option value="carouselFade7">Mochilas</option>
+            <option value="carouselFade8">Accesorios</option>
+          </select>
+        </div>
+        <div id="carouselFade5" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/vero.jpeg" alt="..." />
+                  <p class="info-product">
+                    Vero<br />
+                    $14900
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/pilar.jpeg" alt="..." />
+                  <p class="info-product">
+                    Pilar<br />
+                    $13400
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/abrilbeigevison2.jpeg" alt="..." />
+                  <p class="info-product">
+                    Abril combinada beige-visón<br />
+                    $14050
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/abrilsuela.jpeg" alt="..." />
+                  <p class="info-product">
+                    Abril suela<br />
+                    $14050
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/lara.jpeg" alt="..." />
+                  <p class="info-product">
+                    Lara<br />
+                    $13850
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/tiziana.jpeg" alt="..." />
+                  <p class="info-product">
+                    Tiziana <br />
+                    $14900
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFade5"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFade5"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselFade6" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/pazsuela.jpeg" alt="..." />
+                  <p class="info-product">
+                    Paz suela<br />
+                    $12600
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/pazbeige.jpeg" alt="..." />
+                  <p class="info-product">
+                    Paz beige<br />
+                    $12600
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/carla.jpeg" alt="..." />
+                  <p class="info-product">
+                    Carla<br />
+                    $10700
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/morea.jpg" alt="..." />
+                  <p class="info-product">
+                    Morea negra <br />
+                    $11050
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/moreabeige.jpeg" alt="..." />
+                  <p class="info-product">
+                    Morea beige<br />
+                    $11050
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/moreacaramelo.jpeg" alt="..." />
+                  <p class="info-product">
+                    Morea caramelo<br />
+                    $11050
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/rominegra.jpg" alt="..." />
+                  <p class="info-product">
+                    Romi puffer negra<br />
+                    $10800
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/romiverde.jpg" alt="..." />
+                  <p class="info-product">
+                    Romi puffer verde<br />
+                    $10800
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/romirosa.jpg" alt="..." />
+                  <p class="info-product">
+                    Romi puffer rosa<br />
+                    $10800
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/luznegra.jpeg" alt="..." />
+                  <p class="info-product">
+                    Luz negra<br />
+                    $9500
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/luzcroconegra.jpeg" alt="..." />
+                  <p class="info-product">
+                    Luz croco negra<br />
+                    $9500
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/luna.jpeg" alt="..." />
+                  <p class="info-product">
+                    Luna<br />
+                    $7250
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFade6"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFade6"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselFade7" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/luisa.jpeg" alt="..." />
+                  <p class="info-product">
+                    Luisa negra<br />
+                    $13600
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/luisavison.jpeg" alt="..." />
+                  <p class="info-product">
+                    Luisa visón<br />
+                    $13600
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/luisacombi.jpeg" alt="..." />
+                  <p class="info-product">
+                    Luisa combinada<br />
+                    $13600
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/solereptil.jpeg" alt="..." />
+                  <p class="info-product">
+                    Sole <br />
+                    $13300
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFade7"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFade7"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselFade8" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/pechera.jpeg" alt="..." />
+                  <p class="info-product">
+                    Pechera<br />
+                    $9500
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/rinonera.jpeg" alt="..." />
+                  <p class="info-product">
+                    Riñonera<br />
+                    $9450
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/billeteras2.jpeg" alt="..." />
+                  <p class="info-product-small">
+                    Billeteras para dama<br />
+                    $4150
+                  </p>
+                  <p class="product-input">
+                    Billeteras
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/tarjetdama.jpeg" alt="..." />
+                  <p class="info-product-small">
+                    Tarjeteros de dama<br />
+                    $4000
+                  </p>
+                  <p class="product-input">
+                    Tarjeteros
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="color/diseño"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./carteras/hombre.jpeg" alt="..." />
+                  <p class="info-product">
+                    Morral para hombre<br />
+                    $11560
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/tabaquera.jpeg" alt="..." />
+                  <p class="info-product">
+                    Tabaquera<br />
+                    $6850
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./cuero/cintohombre.jpg" alt="..." />
+                  <p class="info-product">
+                    Cintos de hombre<br />
+                    $9000
+                  </p>
+                  <p class="product-input">
+                    Cintos de hombre
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="talle y color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./cuero/cintodama.jpg" alt="..." />
+                  <p class="info-product">
+                    Cintos de dama<br />
+                    $8250
+                  </p>
+                  <p class="product-input">
+                    Cintos de dama<br />
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="talle y color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./cuero/llaveros.jpg" alt="..." />
+                  <p class="info-product">
+                    Llaveros de cuero<br />
+                    $5250
+                  </p>
+                  <p class="product-input">
+                    Llaveros de cuero
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./carteras/tarjeteros.jpeg" alt="..." />
+                  <p class="info-product">
+                    Tarjeteros de hombre<br />
+                    $2500
+                  </p>
+                  <p class="product-input">
+                    Tarjeteros de hombre
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="color"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFade8"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFade8"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!----------------------SUBLIMADOS---------------------->
+      <section class="menu-section" id="sublimados">
+        <hr class="m-5" />
+
+        <h3 class="text-center m-5">
+          ACCESORIOS SUBLIMADOS
+          <img class="rubro-icon" src="./assets/sublim.png" alt="" />
+        </h3>
+        <div id="carouselFade9" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./sublimados/cartucheras.jpg" alt="..." />
+                  <p class="info-product">
+                    Cartucheras<br />
+                    $2656<br />
+                    Medidas: 23cmx12cm
+                  </p>
+                  <p class="product-input">
+                    Cartucheras
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="diseño"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./sublimados/portacosmeticos.jpeg" alt="..." />
+                  <p class="info-product">
+                    Portacosméticos<br />
+                    $2656<br />
+                    Medidas: 19cmx13cm
+                  </p>
+                  <p class="product-input">
+                    Portacosméticos
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="diseño"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./sublimados/luncheras.jpg" alt="..." />
+                  <p class="info-product">
+                    Luncheras<br />
+                    $5310<br />
+                    Medidas: 18cmx23cm
+                  </p>
+                  <p class="product-input">
+                    Luncheras
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="diseño"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./sublimados/rinoneras.jpeg" alt="..." />
+                  <p class="info-product">
+                    Riñoneras infantiles<br />
+                    $3820
+                  </p>
+                  <p class="product-input">
+                    Riñoneras
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="diseño"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slides">
+                <div class="img-and-text first">
+                  <img src="./sublimados/bandoleras.jpeg" alt="..." />
+                  <p class="info-product">
+                    Bandoleras infantiles <br />
+                    $4650<br />
+                    Medidas: 21cmx14cmx7cm
+                  </p>
+                  <p class="product-input">
+                    Bandoleras infantiles
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="diseño"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+                <div class="img-and-text second">
+                  <img src="./sublimados/bolsilloauto.jpg" alt="..." />
+                  <p class="info-product">
+                    Bolsillo para el auto <br />
+                    $3450<br />
+                    Medidas: 21cmx23cm
+                  </p>
+                  <p class="product-input">
+                    Bolsillo para el auto
+                    <input
+                      type="text"
+                      class="type-product"
+                      name="type-product"
+                      placeholder="diseño"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="number-product"
+                      name="number-product"
+                      placeholder="cantidad"
+                      required
+                    />
+                    <button class="want-btn">Agregar al pedido</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFade9"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFade9"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="extra-div my-5">
+          <p class="crazy-title">Elige aquí tus diseños preferidos:</p>
+          <div class="pdf-viewer">
+            <iframe src="./sublimados/sublimados2024.pdf"></iframe>
+          </div>
+          <div class="btn-div">
+            <a
+              href="./sublimados/sublimados2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="download-btn">
+                Ver catálogo en una pestaña nueva
+                <img class="icon-img" src="./assets/openicon.png" alt="" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------FORM---------------------->
+      <!--
+      <div id="form">
+        <hr class="m-5" />
+        <div id="contenedor-formulario">
+          <div class="text-center" id="titulo-formulario">
+            <div>
+              <h2>Contáctanos</h2>
+              <p>
+                Completa este formulario y/o escríbenos por whatsapp al
+                3512309375
+                <a href="https://wa.me/543512309375" target="_blank">
+                  <img
+                    class="rubro-icon m-1"
+                    src="./assets/whatsapp.png"
+                    alt=""
+                  />
+                </a>
               </p>
             </div>
-          </a>
-          <a class="enlace col-md-3 col-sm-6" href="#sublimados">
-            <div class="elem-gallery">
-              <img src="./assets/menu/subli3.jpg" alt="" />
-              <p class="texto-gallery">Sublimados</p>
+            <div id="lottie-info">
+              <div class="lottie-div">
+                <lottie-player
+                  src="./assets/02.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 250px; height: 250px"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="row">
-          <a class="enlace col-md-3 col-sm-6" href="#marroquineria">
-            <div class="elem-gallery">
-              <img src="./assets/menu/marro.jpeg" alt="" />
-              <p class="texto-gallery">Marroquinería</p>
+          </div>
+
+          <form
+            id="formulario-contacto"
+            action="https://formspree.io/f/xeqbkoww"
+            method="post"
+          >
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="form-elem">
+                  <label for="name">Nombre</label>
+                  <input
+                    type="input"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Nombre"
+                    required
+                  />
+                </div>
+
+                <div class="form-elem">
+                  <label for="phone">Teléfono</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="phone"
+                    id="phone"
+                    placeholder="549 351"
+                    required
+                  />
+                </div>
+                <div class="form-elem">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    rows="4"
+                    placeholder="Escribe aquí los productos que te interesan"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="form-elem">
+                  <label for="interests" class="mb-3"
+                    >Selecciona los rubros de tu interés:</label
+                  >
+                  <div id="interests">
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="libreria"
+                        name="interests[]"
+                        value="Librería"
+                      />
+                      <label for="libreria">Librería</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="jugueteria"
+                        name="interests[]"
+                        value="Juguetería"
+                      />
+                      <label for="jugueteria">Juguetería</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="accesorios"
+                        name="interests[]"
+                        value="Accesorios para el pelo"
+                      />
+                      <label for="accesorios">Accesorios para el pelo</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="tinturas"
+                        name="interests[]"
+                        value="Tinturas"
+                      />
+                      <label for="tinturas">Tinturas</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="carteras"
+                        name="interests[]"
+                        value="Carteras y afines"
+                      />
+                      <label for="carteras">Carteras y afines</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="sublimados"
+                        name="interests[]"
+                        value="Sublimados"
+                      />
+                      <label for="sublimados">Sublimados</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="otros"
+                        name="interests[]"
+                        value="Otros"
+                      />
+                      <label for="otros">Otros</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
-          <a class="enlace col-md-3 col-sm-6" href="#cuero">
-            <div class="elem-gallery">
-              <img src="./assets/menu/cuero.jpeg" alt="" />
-              <p class="texto-gallery">Cuero</p>
+
+            <div class="form-elem">
+              <button
+                id="send-button"
+                type="submit"
+                class="btn w-100 fs-5 text-light"
+              >
+                Enviar
+              </button>
             </div>
-          </a>
-          <a class="enlace col-md-3 col-sm-6" href="#tinturas">
-            <div class="elem-gallery">
-              <img src="./assets/menu/tintu.jpeg" alt="" />
-              <p class="texto-gallery">Tinturas</p>
+          </form>
+        </div>
+      </div>
+-->
+
+      <!----------------------FOOTER---------------------->
+
+      <footer>
+        <div class="footer-div">
+          <div>
+            <img class="logo invert" src="lyr2.png" alt="" />
+            <p class="fs-5 m-2">
+              <span class="lyra">LYRA </span>
+              Distribuidora
+            </p>
+          </div>
+          <div>
+            <p>Gracias por visitarnos!</p>
+            <p>Tel: +549 3512309375</p>
+            <p>Córdoba Capital, Argentina</p>
+            <div id="iconos">
+              <a href="https://wa.me/543512309375" target="_blank"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100064069295797"
+                target="_blank"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/lyra_distribuidora/"
+                target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
             </div>
-          </a>
-
-<a class="enlace col-md-3 col-sm-6" href="#otros">
-            <div class="elem-gallery">
-              <img src="./assets/menu/otros.jpg" alt="" />
-              <p class="texto-gallery">Novedades</p>
-            </div>
-          </a>
-
-          
-
-          <a class="enlace col-md-3 col-sm-6">
-            <div class="elem-gallery">
-              <img src="" alt="" />
-              <p class="texto-gallery"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!--========================================================== -->
-    <!-- SECCION PROMOS-->
-    <!--========================================================== -->
-    <section class="container pt-5" id="promos">
-      <hr />
-      <h1 class="text-center mb-5">Promos</h1>
-      <div class="row basic-gallery">
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/menu/hebillas.jpeg" alt="" />
-          <p>
-            30 prensas adulto,<br />15 pares de gomitas infantiles,<br />y 10
-            vinchas infantiles<br />
-            <span class="descuento">10%</span> de descuento
-          </p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/menu/subli3.jpg" alt="" />
-          <p>
-            50 cartucheras o <br />portacosméticos<br />a elección<br />
-            <span class="descuento">10%</span> de descuento
-          </p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/menu/funky.jpeg" alt="" />
-          <p>
-            25 funky tintura semipermanente<br />
-            <span class="descuento">10%</span> de descuento
-          </p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/menu/lib.jpg" alt="" />
-          <p>
-            100 cartulinas <br />20 colores<br />
-            <span class="descuento">5%</span> de descuento
-          </p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/libreria/sobres2.jpg" alt="" />
-          <p>
-            PROMO: 90 sobres de colores<br />30 unidades de cada tamaño<br />
-            <span class="descuento">5%</span> de descuento
-          </p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/libreria/bols.jpg" alt="" />
-          <p>
-            PROMO: 50 bolsas surtidas <br />5 de cada tamaño<br />
-            <span class="descuento">5%</span> de descuento
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!--========================================================== -->
-    <!-- SECCION LIBRERÍA-->
-    <!--========================================================== -->
-
-    <section class="w-100 pt-5" id="libreria">
-      <div class="justify-content-center align-items-center text-center">
-        <hr />
-        <h1 class="fs-2">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/5895/5895521.png"
-            alt=""
-            class="icono"
-          />
-          Artículos de <span class="text-special-color">Librería</span>
-        </h1>
-        <a href="./assets/12junioLib.pdf" target="_blank">
-          <button type="button" class="btn special-color">
-            Descargar Catálogo
-            <i class="fas fa-download"></i>
-          </button>
-        </a>
-      </div>
-      <div class="special-grid grid-lib">
-        <div class="item-grid elem-grid1">
-          <div class="list-group list-group-lib">
-            <p data-key="cartulinas">Cartulinas</p>
-            <p data-key="gomaeva">Goma eva</p>
-            <p data-key="papelafiche">Papel afiche</p>
-            <p data-key="papelderegalo">Papel de Regalo</p>
-            <p data-key="bolsaskraft">Bolsas Kraft</p>
-            <p data-key="bolsasacuario">Bolsas Acuario</p>
-            <p data-key="bolsasfantasia">Bolsas Fantasía</p>
-            <p data-key="libritos">Libritos</p>
-            <p data-key="rompecabezas">Rompecabezas</p>
-            <p data-key="palitosdehelado">Palitos de Helado</p>
-            <p data-key="viruta">Viruta</p>
-            <p data-key="papelesespeciales">Papeles especiales A4</p>
-            <p data-key="sobres">Sobres de colores</p>
-            <p data-key="catalogo">Y muchas cosas mas...</p>
           </div>
         </div>
-        <div class="item-grid elem-grid2">
-          <img class="image-display" id="image-display-lib" src="" alt="" />
-        </div>
-        <div class="item-grid elem-grid3">
-          <p class="info-display" id="info-display-lib"></p>
-        </div>
-      </div>
-    </section>
-    <!--========================================================== -->
-    <!-- SECCION ACCESORIOS PARA EL PELO-->
-    <!--========================================================== -->
-
-    <section class="container pt-5" id="accesoriosPelo">
-      <div
-        class="container justify-content-center align-items-center text-center"
-      >
-        <hr />
-        <h1 class="fs-2">
-          <img
-            class="icono"
-            src="https://cdn-icons-png.flaticon.com/512/3004/3004618.png"
-            alt=""
-          />
-          Accesorios para el <span class="text-special-color">Pelo</span>
-        </h1>
-        <a href="./assets/peloprecios.pdf" target="_blank">
-          <button type="button" class="btn special-color">
-            Lista de precios
-            <i class="fas fa-download"></i>
-          </button>
-        </a>
-      </div>
-      <div class="row basic-gallery mt-5">
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/broches.jpg" alt="" />
-          <p>Pack por 15 prensas adulto $10200<br />($680 c/u)</p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/vinchasinfantiles.jpg" alt="" />
-          <p>Pack por 10 vinchas infantiles $15000<br />($1500 c/u)</p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/gomitasinfantiles.jpg" alt="" />
-          <p>
-            Pack por 15 cartones con par de gomitas infantiles, tic tac,
-            brochecitos, etc. $10200<br />($680 c/u)
-          </p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/fiesta.jpg" alt="" />
-          <p>Pack por 5 vinchas de fiesta $8250<br />($1650 c/u)</p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/bandana.jpg" alt="" />
-          <p>Pack por 10 moños bandana $11500<br />($1150 c/u)</p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/monosgasa.jpg" alt="" />
-          <p>Pack por 10 moños de gasa grandes $5600<br />($560 c/u)</p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/monosmedianosgasa.jpg" alt="" />
-          <p>Pack por 10 moños de gasa medianos $2950<br />($295 c/u)</p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/monosmedianostela.jpg" alt="" />
-          <p>Pack por 10 moños de tela medianos $2950<br />($295 c/u)</p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/scrunchis.jpg" alt="" />
-          <p>Pack por 10 scrunchies de gasa $5600<br />($560 c/u)</p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/accesoriosPelo/diademas.jpg" alt="" />
-          <p>Pack por 5 diademas trenzadas $8250<br />($1650 c/u)</p>
-        </div>
-      </div>
-    </section>
-    <!--========================================================== -->
-    <!-- SECCION SUBLIMADOS-->
-    <!--========================================================== -->
-
-    <section class="w-100 pt-5" id="sublimados">
-      <div class="justify-content-center align-items-center text-center">
-        <hr />
-        <h1 class="fs-2">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/672/672428.png"
-            alt=""
-            class="icono"
-          />
-          Productos<span class="text-special-color"> sublimados</span>
-        </h1>
-        <a href="./assets/2024catalogo2024.pdf" target="_blank">
-          <button type="button" class="btn special-color">
-            Catálogo de imágenes
-            <i class="fas fa-download"></i>
-          </button>
-        </a>
-
-        <a href="./assets/sublimadosprecios.pdf" target="_blank">
-          <button type="button" class="btn special-color">
-            Lista de precios
-            <i class="fas fa-download"></i>
-          </button>
-        </a>
-      </div>
-      <div class="special-grid grid-sub">
-        <div class="item-grid elem-grid1">
-          <div class="list-group list-group-sub">
-            <p data-key="cartucheras">Cartucheras</p>
-            <p data-key="portacosmeticos">Portacosméticos</p>
-            <p data-key="monederos">Monederos</p>
-            <p data-key="luncheras">Luncheras</p>
-            <p data-key="bandolerasinfantiles">Bandoleras infantiles</p>
-            <p data-key="mochilasinfantiles">Mochilas infantiles</p>
-            <p data-key="bolsilloauto">Bolsillo para el auto</p>
-            <p data-key="setasador">Set de asador</p>
-            <div class="space-sub"></div>
-          </div>
-        </div>
-        <div class="item-grid elem-grid2">
-          <img class="image-display" id="image-display-sub" src="" alt="" />
-        </div>
-        <div class="item-grid elem-grid3">
-          <p class="info-display" id="info-display-sub"></p>
-        </div>
-      </div>
-    </section>
-
-    <!--========================================================== -->
-    <!-- SECCION MARROQUINERÍA-->
-    <!--========================================================== -->
-
-    <section class="pt-5" id="marroquineria">
-      <div class="justify-content-center align-items-center text-center">
-        <hr />
-        <h1 class="fs-2">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2136/2136052.png"
-            alt=""
-            class="icono"
-          />
-          <span class="text-special-color">Marroquinería</span>
-        </h1>
-        <p>Consultá diseños disponibles</p>
-
-        <a href="./assets/marroquineriaprecios.pdf" target="_blank">
-          <button type="button" class="btn special-color">
-            Lista de precios
-            <i class="fas fa-download"></i>
-          </button>
-        </a>
-      </div>
-      <div class="special-grid grid-mar">
-        <div class="item-grid elem-grid1 mt-5">
-          <div class="list-group list-group-mar">
-            <p data-key="carterasseptiembre">Carteras Septiembre</p>
-            <p data-key="mochilasseptiembre">Mochilas Septiembre</p>
-            <p data-key="bandolerasseptiembre">Bandoleras Septiembre</p>
-            <p data-key="bandoleraclasica">Bandoleras clásicas</p>
-            <p data-key="bandolerapuffer">Bandoleras puffer</p>
-            <p data-key="bandoleraunisex">Bandoleras unisex</p>
-            <p data-key="bolsomatero">Bolso matero</p>
-            <p data-key="mochilapuffer">Mochilas puffer</p>
-            <p data-key="mochilaescolar">Mochilas escolares</p>
-          </div>
-        </div>
-        <div class="item-grid elem-grid2">
-          <img class="image-display" id="image-display-mar" src="" alt="" />
-        </div>
-        <div class="item-grid elem-grid3">
-          <p class="info-display" id="info-display-mar"></p>
-        </div>
-      </div>
-    </section>
-
-    <!--========================================================== -->
-    <!-- SECCION CUERO-->
-    <!--========================================================== -->
-
-    <section class="container pt-5" id="cuero">
-      <div
-        class="container justify-content-center align-items-center text-center"
-      >
-        <hr />
-        <h1 class="fs-2">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/7157/7157472.png"
-            alt=""
-            class="icono"
-          />
-          100%<span class="text-special-color"> Cuero</span>
-        </h1>
-        <a href="./assets/cueroprecios.pdf" target="_blank">
-          <button type="button" class="btn special-color">
-            Lista de precios
-            <i class="fas fa-download"></i>
-          </button>
-        </a>
-      </div>
-      <div class="row basic-gallery mt-5">
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/cuero/cintohombre.jpg" alt="" />
-          <p>
-            Cinto de cuero para hombre $9000<br />
-            Liso o labrado. Marrón o negro
-          </p>
-          <hr />
-          <p>
-            Cinto de cuero de vestir $9000<br />
-            Colores: marrón o negro
-          </p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/cuero/cintodama.jpg" alt="" />
-          <p>Cinto de cuero para dama $8250<br />Colores: marrón o negro</p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/cuero/llaveros.jpg" alt="" />
-          <p>
-            Llavero con mosquetón $5250<br />
-            Llavero gota $3000
-          </p>
-        </div>
-        <div class="col-md-3 col-sm-6 basic-gallery-elem">
-          <img src="./assets/cuero/talles.jpg" alt="" />
-          <p>
-            TALLES CINTOS<br />
-            90-95 cm. para talle de pantalón de 38 al 42<br />
-            100 cm. para talle del 42 al 46<br />
-            105 cm. para talles del 46 al 50<br />
-            110 cm. para talle del 50 al 54<br />
-            115 cm. para talle 54 al 60<br />
-            120 cm. para talles del 60 al 64
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!--========================================================== -->
-    <!-- SECCION TINTURAS-->
-    <!--========================================================== -->
-
-    <section class="pt-5 mb-5" id="tinturas">
-      <div class="justify-content-center align-items-center text-center">
-        <hr />
-        <h1 class="fs-2">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/40/40739.png"
-            alt=""
-            class="icono hair-icon"
-          />
-          <span class="text-special-color">Tinturas</span> y tratamientos
-          capilares
-        </h1>
-        <a href="./assets/tinturasytratprecios.pdf" target="_blank">
-          <button type="button" class="btn special-color">
-            Lista de precios
-            <i class="fas fa-download"></i>
-          </button>
-        </a>
-      </div>
-      <div class="special-grid grid-tin">
-        <div class="item-grid elem-grid1 mt-5">
-          <div class="list-group list-group-tin">
-            <p data-key="kit">EstereoColor kit</p>
-            <p data-key="carta">Carta de colores EstereoColor</p>
-            <p data-key="funky">Funky</p>
-            <p data-key="cartafunky">Carta de colores Funky</p>
-            <p data-key="funkyneon">Funky neón</p>
-            <p data-key="shock">Shock capilar</p>
-            <p data-key="oleo">Óleo capilar</p>
-            <p data-key="sachet">EstereoColor sachet</p>
-            <p data-key="oxidante">Oxidante</p>
-          </div>
-        </div>
-        <div class="item-grid elem-grid2">
-          <img class="image-display" id="image-display-tin" src="" alt="" />
-        </div>
-        <div class="item-grid elem-grid3">
-          <p class="info-display" id="info-display-tin"></p>
-        </div>
-      </div>
-    </section>
-
-    <!--========================================================== -->
-    <!-- SECCION OTROS-->
-    <!--========================================================== -->
-
-    <section class="pt-5" id="otros">
-      <div class="justify-content-center align-items-center text-center">
-        <hr />
-        <h1 class="fs-2">
-          
-          <span class="text-special-color">Novedades</span>
-        </h1>
-      </div>
-      <div class="special-grid grid-car">
-        <div class="item-grid elem-grid1 mt-5">
-          <div class="list-group list-group-car">
-            <p data-key="esmaltes">Esmaltes Mc Mora</p>
-            <p data-key="morralhombre">Morrales para Hombre</p>
-            <p data-key="tabaquera">Tabaqueras</p>
-            <p data-key="tarjetero">Tarjeteros</p>
-            <p data-key="llavero">LLaveros</p>
-            <p data-key="botineras">Botineras</p>
-          </div>
-        </div>
-        <div class="item-grid elem-grid2">
-          <img class="image-display" id="image-display-car" src="" alt="" />
-        </div>
-        <div class="item-grid elem-grid3">
-          <p class="info-display" id="info-display-car"></p>
-        </div>
-      </div>
-    </section>
-<hr>
-    <!--========================================================== -->
-    <!-- CONTENEDOR DEL FORMULARIO -->
-    <!--========================================================== -->
-
-    <section class="pt-5" id="seccion-contacto">
-      <div
-        class="container border-primary p-3 mb-3"
-        style="max-width: 500px"
-        id="contenedor-formulario"
-      >
-        <div class="text-center mb-4" id="titulo-formulario">
-          <h2>
-            Contáctanos
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/3980/3980807.png"
-              alt=""
-              class="icono-contacto"
-            />
-          </h2>
-          <p>Estamos aquí para hacer realidad tus proyectos</p>
-        </div>
-
-        <form
-          id="formulario-contacto"
-          action="https://formspree.io/f/xeqbkoww"
-          method="post"
-        >
-          <div class="mb-3">
-            <label for="email">Email (opcional)</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              placeholder="correo@ejemplo.com"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="name">Nombre</label>
-            <input
-              type="input"
-              class="form-control"
-              id="name"
-              name="name"
-              placeholder="Nombre Apellido"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="phone">Teléfono</label>
-            <input
-              type="tel"
-              class="form-control"
-              name="phone"
-              id="phone"
-              placeholder="549 351"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <textarea
-              class="form-control"
-              name="message"
-              id="message"
-              rows="4"
-              placeholder="Escribe aquí los productos que te interesan"
-            ></textarea>
-          </div>
-
-          <div class="mb-3">
-            <button type="submit" class="btn special-color w-100 fs-5">
-              Enviar Mensaje
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!--========================================================== -->
-    <!--FOOTER-->
-    <!--========================================================== -->
-
-    <footer
-      class="w-100 d-flex align-items-center justify-content-center flex-wrap"
-    >
-      <div>
-        <p class="px-3 pt-3">Gracias por visitarnos!</p>
-        <p class="mb-0 p-2">
-          <span id="lyra">LYRA <i class="fas fa-star"></i></span> Distribuidora
-        </p>
-        <p>Tel: +549 3512309375</p>
-        <p>Córdoba Capital, Argentina</p>
-        <div id="iconos">
-          <a href="https://wa.me/543512309375" target="_blank"
-            ><i class="bi bi-whatsapp"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100064069295797"
-            target="_blank"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/lyra_distribuidora/"
-            target="_blank"
-            ><i class="bi bi-instagram"></i
-          ></a>
-        </div>
-      </div>
-      <div></div>
-    </footer>
+      </footer>
+    </div>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
