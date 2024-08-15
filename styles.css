@@ -391,12 +391,16 @@ form {
 /*****************agregar pedido CAROUSEL*****************/
 .info-product{
 height: 100px !important;
+position: relative;
+
 }
 .info-product-small{
   height: 60px !important;
+  position: relative;
 }
 .product-input {
   height: 180px !important;
+  position: relative;
 }
 .want-btn {
   width: 150px;
@@ -428,6 +432,8 @@ height: 100px !important;
   height: 40px !important;
   border-radius: 10px;
   font-weight: 600;
+  position: absolute;
+  top: -80%;
 }
 
 /*****************SECTIONS*****************/
