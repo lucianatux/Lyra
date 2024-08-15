@@ -349,6 +349,38 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  //ENVÍO POR WHATSAPP
+  document.getElementById("send-button").addEventListener("click", function (event) {
+    event.preventDefault(); // Evita que el formulario se envíe a Formspree
+  
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let products = JSON.parse(localStorage.getItem("products")) || [];
+  
+    if (products.length === 0) {
+      alert("No has agregado ningún producto a tu pedido.");
+      return;
+    }
+  
+    // Formatear el mensaje
+    let message = `Hola, soy ${name}. Quiero realizar el siguiente pedido:\n\n`;
+    products.forEach((product, index) => {
+      message += `${index + 1}. ${product}\n`;
+    });
+  
+    message += `\nMi teléfono de contacto es: ${phone}`;
+  
+    // Codificar el mensaje para la URL
+    let encodedMessage = encodeURIComponent(message);
+  
+    // Crear el enlace de WhatsApp
+    let whatsappLink = `https://wa.me/543512309375?text=${encodedMessage}`;
+  
+    // Redirigir al usuario a WhatsApp
+    window.open(whatsappLink, "_blank");
+  });
+  
+
   // BRISEIDA JS
   const briseida = document.getElementById("briseida");
   briseida.addEventListener("mouseover", function () {
