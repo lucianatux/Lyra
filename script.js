@@ -354,7 +354,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault(); // Evita que el formulario se envíe a Formspree
   
     let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
+    const comments = document.getElementById("message").value.trim(); 
     let products = JSON.parse(localStorage.getItem("products")) || [];
   
     if (products.length === 0) {
@@ -367,9 +367,11 @@ document.addEventListener("DOMContentLoaded", function () {
     products.forEach((product, index) => {
       message += `${index + 1}. ${product}\n`;
     });
-  
-    message += `\nMi teléfono de contacto es: ${phone}`;
-  
+     // Añadir los comentarios al mensaje si existen
+  if (comments) {
+    message += `\n*Comentarios adicionales:*\n${comments}`;
+  }
+    
     // Codificar el mensaje para la URL
     let encodedMessage = encodeURIComponent(message);
   
