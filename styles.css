@@ -363,7 +363,7 @@ form {
   max-width: 360px;
   padding: 0 10px;
 }
-.img-and-text p {
+.img-and-text p, .img-and-text div {
   width: 360px;
   height: 140px;
   padding: 10px;
@@ -392,7 +392,7 @@ form {
 .info-product{
 height: 100px !important;
 position: relative;
-
+overflow: visible;
 }
 .info-product-small{
   height: 60px !important;
@@ -441,7 +441,7 @@ position: relative;
   margin: 20px;
 }
 .info-btn{
-  padding: 3px 5px;
+  padding: 3px 8px;
   border-radius: 10px;
   box-shadow: 0px 0px 3px var(--second-color);
 }
@@ -449,6 +449,14 @@ position: relative;
   background: var(--fifth-color);
   color: var(--first-color);
 }
+.info-div{
+  background: var(--first-color); 
+  z-index: 999 !important;
+  border: 2px solid var(--third-color);
+  border-radius: 10px;
+  height: auto !important;
+}
+
 .extra-div {
   display: flex;
   flex-direction: column;
@@ -563,6 +571,9 @@ footer p {
     height: 160px;
     font-size: 15px;
   }
+  .info-div{
+    padding: 5px 50px !important;
+  }
 }
 
 @media (max-width: 868px) and (min-width: 569px) {
@@ -667,6 +678,9 @@ footer p {
   }
   .icon-img {
     width: 20px;
+  }
+  .info-div{
+    padding: 5px 35px !important;
   }
   footer {
     padding: 10px;

@@ -186,6 +186,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  //BOTONES INFO
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.info-div').forEach(div => {
+        div.style.display = 'none';
+    });
+});
+
+  document.querySelectorAll('.info-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const infoDiv = button.nextElementSibling;
+        if (infoDiv.style.display === 'block' || infoDiv.style.display === '') {
+            infoDiv.style.display = 'none';
+        } else {
+            infoDiv.style.display = 'block';
+        }
+    });
+});
+
   // AGREGAR AL PEDIDO
   document.querySelectorAll(".want-btn").forEach((button) => {
     button.addEventListener("click", function () {
