@@ -518,14 +518,6 @@ a h5{
 #carteras-select:hover {
   box-shadow: 0px 0px 6px var(--third-color);
 }
-.crazy-title{
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--first-color);
-  background: var(--seventh-color);
-  border-radius: 10px;
-  padding: 10px;
-}
 .pdf-viewer {
   width: 100%;
   overflow: hidden;
