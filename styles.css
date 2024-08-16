@@ -440,6 +440,15 @@ position: relative;
 .menu-section {
   margin: 20px;
 }
+.info-btn{
+  padding: 3px 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px var(--second-color);
+}
+.info-btn:hover{
+  background: var(--fifth-color);
+  color: var(--first-color);
+}
 .extra-div {
   display: flex;
   flex-direction: column;
