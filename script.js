@@ -447,11 +447,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const galbandoleras = document.getElementById("carouselFade6");
   const galmochilas = document.getElementById("carouselFade7");
   const galaccesorios = document.getElementById("carouselFade8");
+  const galhandbags = document.getElementById("carouselFade9");
+  
 
   galcarteras.style.display = "block";
   galbandoleras.style.display = "none";
   galmochilas.style.display = "none";
   galaccesorios.style.display = "none";
+  galhandbags.style.display = "none";
 
   select.addEventListener("change", function () {
     // Ocultar todas las galerías
@@ -459,6 +462,8 @@ document.addEventListener("DOMContentLoaded", function () {
     galbandoleras.style.display = "none";
     galmochilas.style.display = "none";
     galaccesorios.style.display = "none";
+    galhandbags.style.display = "none";
+
   
     // Mostrar la galería seleccionada
     let selectedGallery = document.getElementById(this.value);
