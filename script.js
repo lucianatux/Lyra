@@ -187,22 +187,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   //BOTONES INFO
-  window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.info-div').forEach(div => {
-        div.style.display = 'none';
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".info-div").forEach((div) => {
+      div.style.display = "none";
     });
-});
+  });
 
-  document.querySelectorAll('.info-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const infoDiv = button.nextElementSibling;
-        if (infoDiv.style.display === 'block' || infoDiv.style.display === '') {
-            infoDiv.style.display = 'none';
-        } else {
-            infoDiv.style.display = 'block';
-        }
+  document.querySelectorAll(".info-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      const infoDiv = button.nextElementSibling;
+      if (infoDiv.style.display === "block" || infoDiv.style.display === "") {
+        infoDiv.style.display = "none";
+      } else {
+        infoDiv.style.display = "block";
+      }
     });
-});
+  });
 
   // AGREGAR AL PEDIDO
   document.querySelectorAll(".want-btn").forEach((button) => {
@@ -356,8 +356,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Modificar el HTML del botón dependiendo del estado
     const orderButtonText = document.getElementById("order-btn-text");
     orderButtonText.innerHTML = isVisible
-      ? '<span class="fs-4">📝</span> Mi pedido' // HTML cuando la lista está oculta
-      : '<span class="fs-5">📝</span> Ocultar pedido'; // HTML cuando la lista está visible
+      ? '<span class="cart-icon">🛒</span>' // HTML cuando la lista está oculta
+      : '<span class="cart-icon">🛒</span>'; // HTML cuando la lista está visible
 
     // Check if the all-products-i-want div is empty
     if (allProducts.children.length === 0) {
@@ -366,40 +366,46 @@ document.addEventListener("DOMContentLoaded", function () {
       message.textContent = "";
     }
   });
-
+  // Cerrar el formulario
+ document.getElementById('close-form')?.addEventListener('click', function() {
+    document.getElementById('my-order').style.display = 'none';
+    // Opcional: agregar mensaje o lógica adicional aquí
+});
   //ENVÍO POR WHATSAPP
-  document.getElementById("send-button").addEventListener("click", function (event) {
-    event.preventDefault(); // Evita que el formulario se envíe a Formspree
-  
-    let name = document.getElementById("name").value;
-    const comments = document.getElementById("message").value.trim(); 
-    let products = JSON.parse(localStorage.getItem("products")) || [];
-  
-    if (products.length === 0) {
-      alert("No has agregado ningún producto a tu pedido.");
-      return;
-    }
-  
-    // Formatear el mensaje
-    let message = `Hola, soy ${name}. Quiero realizar el siguiente pedido:\n\n`;
-    products.forEach((product, index) => {
-      message += `${index + 1}. ${product}\n`;
+  document
+    .getElementById("send-button")
+    .addEventListener("click", function (event) {
+      event.preventDefault(); // Evita que el formulario se envíe a Formspree
+
+      let name = document.getElementById("name").value;
+      const comments = document.getElementById("message").value.trim();
+      let products = JSON.parse(localStorage.getItem("products")) || [];
+
+      if (products.length === 0) {
+        alert("No has agregado ningún producto a tu pedido.");
+        return;
+      }
+
+      // Formatear el mensaje
+      let message = `Hola, soy ${name}. Quiero realizar el siguiente pedido:\n\n`;
+      products.forEach((product, index) => {
+        message += `• ${product}\n`;
+        index + 1;
+      });
+      // Añadir los comentarios al mensaje si existen
+      if (comments) {
+        message += `\n*Comentarios adicionales:*\n${comments}`;
+      }
+
+      // Codificar el mensaje para la URL
+      let encodedMessage = encodeURIComponent(message);
+
+      // Crear el enlace de WhatsApp
+      let whatsappLink = `https://wa.me/543512309375?text=${encodedMessage}`;
+
+      // Redirigir al usuario a WhatsApp
+      window.open(whatsappLink, "_blank");
     });
-     // Añadir los comentarios al mensaje si existen
-  if (comments) {
-    message += `\n*Comentarios adicionales:*\n${comments}`;
-  }
-    
-    // Codificar el mensaje para la URL
-    let encodedMessage = encodeURIComponent(message);
-  
-    // Crear el enlace de WhatsApp
-    let whatsappLink = `https://wa.me/543512309375?text=${encodedMessage}`;
-  
-    // Redirigir al usuario a WhatsApp
-    window.open(whatsappLink, "_blank");
-  });
-  
 
   // BRISEIDA JS
   const briseida = document.getElementById("briseida");
@@ -418,28 +424,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // SEARCH JS
-  /*
-  const searchInput = document.getElementById("search-input");
-  const searchButton = document.getElementById("search-button");
-  const contentItems = document.querySelectorAll(".content-item");
-
-  searchButton.addEventListener("click", function () {
-    const query = searchInput.value.toLowerCase();
-    contentItems.forEach(function (item) {
-      if (item.textContent.toLowerCase().includes(query)) {
-        item.style.display = "";
-      } else {
-        item.style.display = "none";
-      }
-    });
-  });
-
-  searchInput.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-      searchButton.click();
-    }
-  });*/
+ 
 
   //CARRUSEL CARTERAS Y AFINES CON SELECT
   const select = document.getElementById("carteras-select");
@@ -448,7 +433,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const galmochilas = document.getElementById("carouselFade7");
   const galaccesorios = document.getElementById("carouselFade8");
   const galhandbags = document.getElementById("carouselFade9");
-  
 
   galcarteras.style.display = "block";
   galbandoleras.style.display = "none";
@@ -464,16 +448,10 @@ document.addEventListener("DOMContentLoaded", function () {
     galaccesorios.style.display = "none";
     galhandbags.style.display = "none";
 
-  
     // Mostrar la galería seleccionada
     let selectedGallery = document.getElementById(this.value);
     if (selectedGallery) {
       selectedGallery.style.display = "block";
     }
   });
-  
-
-
-
 });
-

@@ -37,37 +37,37 @@
 
     <div id="menu">
       <a class="item-menu" href="#home">
-        <img class="rubro-icon invert" src="./assets/house.png" alt="" />
+        <img class="rubro-icon" src="./assets/house.png" alt="" />
         <p class="rubro-title">Inicio</p>
         <p class="rubro-title-small">Inicio</p>
       </a>
       <a class="item-menu" href="#promos">
-        <img class="rubro-icon invert" src="./assets/promo.png" alt="" />
+        <img class="rubro-icon" src="./assets/promo.png" alt="" />
         <p class="rubro-title">Promociones</p>
         <p class="rubro-title-small">Promos</p>
       </a>
       <a class="item-menu" href="#libreria">
-        <img class="rubro-icon invert" src="./assets/libreria.png" alt="" />
+        <img class="rubro-icon" src="./assets/libreria.png" alt="" />
         <p class="rubro-title">Librería y Juguetería</p>
         <p class="rubro-title-small">Librería</p>
       </a>
       <a class="item-menu" href="#hebillas">
-        <img class="rubro-icon invert" src="./assets/pelo.png" alt="" />
+        <img class="rubro-icon" src="./assets/pelo.png" alt="" />
         <p class="rubro-title">Accesorios para el pelo</p>
         <p class="rubro-title-small">Hebillas</p>
       </a>
       <a class="item-menu" href="#tinturas">
-        <img class="rubro-icon invert" src="./assets/tinturas.png" alt="" />
+        <img class="rubro-icon" src="./assets/tinturas.png" alt="" />
         <p class="rubro-title">Tinturas y tratamientos</p>
         <p class="rubro-title-small">Tinturas</p>
       </a>
       <a class="item-menu" href="#carteras">
-        <img class="rubro-icon invert" src="./assets/carteras.png" alt="" />
+        <img class="rubro-icon" src="./assets/carteras.png" alt="" />
         <p class="rubro-title">Carteras y afines</p>
         <p class="rubro-title-small">Carteras</p>
       </a>
       <a class="item-menu" href="#sublimados">
-        <img class="rubro-icon invert" src="./assets/sublim.png" alt="" />
+        <img class="rubro-icon" src="./assets/sublim.png" alt="" />
         <p class="rubro-title">Sublimados</p>
         <p class="rubro-title-small">Sublimados</p>
       </a>
@@ -87,9 +87,10 @@
             <span class="lyra">LYRA </span>
             <p id="mayorista">Distribuidora mayorista</p>
           </div>
-          <div id="order">
-            <p id="order-btn-text"><span class="fs-4">📝</span>Mi pedido</p>
-          </div>
+          <div></div>
+        </div>
+        <div id="order">
+          <p id="order-btn-text"><span class="cart-icon">🛒</span></p>
         </div>
         <div class="div-collage">
           <img class="collage" src="./assets/col3.png" alt="" />
@@ -122,20 +123,32 @@
         <div id="text-display"></div>
 
         <div id="my-order">
-          <h4>Mi pedido</h4>
+          <button type="button" id="close-form" class="close-btn">×</button>
           <form
             id="order-form"
             action="https://formspree.io/f/xeqbkoww"
             method="post"
           >
+          <div class="header-form">
+<h5><span class="cart-icon">🛒</span> Carrito de compras</h5>
+            <div>
+              <button
+                id="send-button"
+                type="submit"
+                class="btn text-dark"
+              >
+                Enviar vía <i class="bi bi-whatsapp"></i>
+              </button>
+            </div>
+          </div>
+            
             <div class="row">
               <div class="col-sm-12 col-md-12">
                 <p class="form-elem">
                   Selecciona en nuestra página web los productos requeridos y
                   envíanos tu pedido.
                   <br />
-                  Muchas Gracias ♡<br />
-                  Distribuidora Lyra. Córdoba Capital
+                  Muchas Gracias ♡ Distribuidora Lyra. Córdoba Capital
                 </p>
 
                 <div class="form-elem">
@@ -163,23 +176,8 @@
                 placeholder="Escribe aquí los comentarios que consideres necesarios"
               ></textarea>
             </div>
-            <div class="form-elem">
-              <button
-                id="send-button"
-                type="submit"
-                class="btn w-100 text-light"
-              >
-                Enviar
-              </button>
-            </div>
           </form>
         </div>
-        <!--
-        <div id="search-container">
-          <input type="text" id="search-input" placeholder="Buscar..." />
-          <button id="search-button">Buscar</button>
-        </div>
-        -->
         <div class="delivery">
           <img
             id="briseida"
@@ -189,11 +187,9 @@
           />
           <p>
             Te ahorramos tiempo y esfuerzo <br />
-            con nuestro servicio de envío a domicilio.<br/>
+            con nuestro servicio de envío a domicilio.<br />
           </p>
-          <p>
-            MÍNIMO DE COMPRA $40.000
-          </p>
+          <p>MÍNIMO DE COMPRA $40.000</p>
         </div>
       </section>
       <!----------------------PROMOS---------------------->
@@ -220,7 +216,8 @@
                   <img src="./promos/bolsas.jpeg" alt="..." />
                   <p class="product-text">
                     PROMO BOLSAS<br />
-                    70 bolsas (5 de cada tamaño y estilo + 20 de cotillon) $31.300
+                    70 bolsas (5 de cada tamaño y estilo + 20 de cotillon)
+                    $31.300
                     <button class="want-btn">Agregar al pedido</button>
                   </p>
                 </div>
@@ -1134,8 +1131,6 @@
                 </div>
               </div>
             </div>
-            
-          
           </div>
           <button
             class="carousel-control-prev"
@@ -1238,7 +1233,7 @@
                 </div>
               </div>
             </div>
-           
+
             <div class="carousel-item">
               <div class="slides">
                 <div class="img-and-text first">
@@ -1449,7 +1444,6 @@
                   <p class="info-product-small">
                     Tarjeteros de dama<br />
                     $4.700
-
                   </p>
                   <p class="product-input">
                     Tarjeteros
@@ -1954,168 +1948,6 @@
         </div>
       </section>
 
-      <!----------------------FORM---------------------->
-      <!--
-      <div id="form">
-        <hr class="m-5" />
-        <div id="contenedor-formulario">
-          <div class="text-center" id="titulo-formulario">
-            <div>
-              <h2>Contáctanos</h2>
-              <p>
-                Completa este formulario y/o escríbenos por whatsapp al
-                3512309375
-                <a href="https://wa.me/543512309375" target="_blank">
-                  <img
-                    class="rubro-icon m-1"
-                    src="./assets/whatsapp.png"
-                    alt=""
-                  />
-                </a>
-              </p>
-            </div>
-            <div id="lottie-info">
-              <div class="lottie-div">
-                <lottie-player
-                  src="./assets/02.json"
-                  background="transparent"
-                  speed="1"
-                  style="width: 250px; height: 250px"
-                  loop
-                  autoplay
-                ></lottie-player>
-              </div>
-            </div>
-          </div>
-
-          <form
-            id="formulario-contacto"
-            action="https://formspree.io/f/xeqbkoww"
-            method="post"
-          >
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <div class="form-elem">
-                  <label for="name">Nombre</label>
-                  <input
-                    type="input"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Nombre"
-                    required
-                  />
-                </div>
-
-                <div class="form-elem">
-                  <label for="phone">Teléfono</label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    name="phone"
-                    id="phone"
-                    placeholder="549 351"
-                    required
-                  />
-                </div>
-                <div class="form-elem">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    id="message"
-                    rows="4"
-                    placeholder="Escribe aquí los productos que te interesan"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6">
-                <div class="form-elem">
-                  <label for="interests" class="mb-3"
-                    >Selecciona los rubros de tu interés:</label
-                  >
-                  <div id="interests">
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="libreria"
-                        name="interests[]"
-                        value="Librería"
-                      />
-                      <label for="libreria">Librería</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="jugueteria"
-                        name="interests[]"
-                        value="Juguetería"
-                      />
-                      <label for="jugueteria">Juguetería</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="accesorios"
-                        name="interests[]"
-                        value="Accesorios para el pelo"
-                      />
-                      <label for="accesorios">Accesorios para el pelo</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="tinturas"
-                        name="interests[]"
-                        value="Tinturas"
-                      />
-                      <label for="tinturas">Tinturas</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="carteras"
-                        name="interests[]"
-                        value="Carteras y afines"
-                      />
-                      <label for="carteras">Carteras y afines</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="sublimados"
-                        name="interests[]"
-                        value="Sublimados"
-                      />
-                      <label for="sublimados">Sublimados</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="otros"
-                        name="interests[]"
-                        value="Otros"
-                      />
-                      <label for="otros">Otros</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-elem">
-              <button
-                id="send-button"
-                type="submit"
-                class="btn w-100 fs-5 text-light"
-              >
-                Enviar
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
--->
-
       <!----------------------FOOTER---------------------->
 
       <footer>
@@ -2128,8 +1960,7 @@
             </p>
           </div>
           <div>
-            <p>Gracias por visitarnos!</p>
-            <p>Tel: +549 3512309375</p>
+            <p>&copy; 2026 Lyra. Todos los derechos reservados.</p>
             <p>Córdoba Capital, Argentina</p>
             <div id="iconos">
               <a href="https://wa.me/543512309375" target="_blank"
@@ -2147,7 +1978,6 @@
                 ><i class="bi bi-instagram"></i
               ></a>
               -->
-              
             </div>
           </div>
         </div>
