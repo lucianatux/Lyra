@@ -438,7 +438,6 @@ form {
   box-shadow: 1px 1px 4px var(--second-color);
 }
 .want-btn:hover {
-  color: var(--first-color);
   background: var(--third-color);
 }
 .type-product {
