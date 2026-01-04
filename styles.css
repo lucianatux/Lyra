@@ -238,8 +238,8 @@ a {
 }
 #order {
   position: fixed;
-  top: 0.6rem;
-  right: 0.6rem;
+  top: 1rem;
+  right: 1rem;
   z-index: 999;
   background: var(--first-color);
   color: var(--first-color);
