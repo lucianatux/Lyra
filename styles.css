@@ -719,6 +719,11 @@ footer p {
   .cart-icon {
   font-size: 1.3rem;
 }
+.order{
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
   .car {
     width: 50px;
   }
